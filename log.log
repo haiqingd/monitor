@@ -1,0 +1,686 @@
+[33m[nodemon] 2.0.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+
+[7:48:55 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:55 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:55 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 24s
+
+[7:48:55 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 25s
+
+[7:48:55 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 26s
+
+[7:48:55 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 23s
+
+[7:48:55 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:56 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:56 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:56 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 18s
+
+[7:48:56 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 17s
+
+[7:48:56 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 19s
+
+[7:48:56 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 16s
+
+[7:48:56 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 15s
+
+[7:48:56 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 13s
+
+[7:48:56 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 12s
+
+[7:48:56 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 14s
+
+[7:48:56 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 11s
+
+[7:48:56 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 10s
+
+[7:48:56 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 9s
+
+[7:48:56 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 8s
+
+[7:48:56 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 6s
+
+[7:48:56 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 7s
+
+[7:48:56 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:56 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 5s
+
+[7:48:56 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:56 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:56 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:56 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:56 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:56 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:56 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:56 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:56 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:56 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 4s
+
+[7:48:56 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 3s
+
+[7:48:57 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:57 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:57 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:57 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:57 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:57 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:57 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:57 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:57 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:48:59 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:49:00 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:00 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:49:00 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:01 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:49:01 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:02 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:49:02 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:03 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:49:03 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:04 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:49:04 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:05 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+
+[7:49:05 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+服务正在启动中或查询语句错误
+服务正在启动中或查询语句错误
+
+[7:49:06 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:07 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:08 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:09 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:10 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:11 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:12 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:13 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:14 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:15 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:16 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:17 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:18 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:19 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:20 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:21 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:22 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:23 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:24 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:25 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:26 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+PromQL 执行语句：
+up{job='mysql_0'}
+PromQL 执行语句：
+up{job='linux_0'}
+PromQL 执行语句：
+rate(node_disk_read_bytes_total{job="linux_0"}[30s])
+PromQL 执行语句：
+rate(node_disk_written_bytes_total{job="linux_0"}[30s])
+PromQL 执行语句：
+irate(node_cpu_seconds_total{job="linux_0",mode="iowait"}[10s])*1000
+
+[7:49:26 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:27 PM]PromQL 执行语句：
+rate(mysql_global_status_questions{job ="mysql_0"}[10s])[1800s:5s] offset 2s
+
+[7:49:27 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[10s])*100)
+PromQL 执行语句：
+up{job='mysql_0'}
+PromQL 执行语句：
+up{job='linux_0'}
+PromQL 执行语句：
+rate(node_disk_read_bytes_total{job="linux_0"}[30s])
+PromQL 执行语句：
+rate(node_disk_written_bytes_total{job="linux_0"}[30s])
+PromQL 执行语句：
+irate(node_cpu_seconds_total{job="linux_0",mode="iowait"}[10s])*1000
+
+[7:49:27 PM]PromQL 执行语句：
+(100- 100*(node_memory_MemFree_bytes{job="linux_0"}%2Bnode_memory_Cached_bytes{job="linux_0"} %2B node_memory_Buffers_bytes{job="linux_0"} %2B node_memory_Slab_bytes{job="linux_0"} ) /node_memory_MemTotal_bytes{job="linux_0"})[60s:5s] offset 1s
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+准备写入文件
+数据写入成功！
+--------我是分割线-------------
+读取写入的数据！
+异步读取文件数据: 我是通 过fs.writeFile 写入文件的内容
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+准备写入文件
+数据写入成功！
+--------我是分割线-------------
+读取写入的数据！
+异步读取文件数据: curl -XPOST "http://47.102.197.233:9090/-/quit
+nohup /home/Prometheus/prometheus/prometheus --config.file=/home/Prometheus/prometheus/prometheus.yml --storage.tsdb.retention.size=10GB --storage.tsdb.retention.time=720d --web.enable-admin-api --web.enable-lifecycle &
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+准备写入文件
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting child process[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+
+[12:52:47 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[6s])*100)[200s:5s] offset 766727s
+http://47.102.197.233:9090/api/v1/query
+
+[12:52:49 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[6s])*100)[200s:5s] offset 766729s
+http://47.102.197.233:9090/api/v1/query
+
+[12:52:57 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[6s])*100)[60s:5s] offset 1s
+http://47.102.197.233:9090/api/v1/query
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+
+[1:57:51 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[6s])*100)[200s:5s] offset 1029831s
+http://47.102.197.233:9090/api/v1/query
+
+[1:58:01 PM]PromQL 执行语句：
+(100-irate(node_cpu_seconds_total{job="linux_0",mode="idle"}[6s])*100)[200s:5s] offset 165841s
+http://47.102.197.233:9090/api/v1/query
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/app.js`[39m
+app listened at http://127.0.0.1:3001
+MySQL connected. Username: root

@@ -1,0 +1,1467 @@
+[33m[nodemon] 2.0.3[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node src/app.js`[39m
+events.js:287
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+Emitted 'error' event on ReadStream instance at:
+    at internal/fs/streams.js:186:12
+    at FSReqCallback.wrapper [as oncomplete] (fs.js:488:5) {
+  errno: -9,
+  code: 'EBADF',
+  syscall: 'read'
+}
+Error parsing commandline arguments: unexpected web.enable-admin-api
+prometheus: error: unexpected web.enable-admin-api
+Error parsing commandline arguments: unexpected web.enable-admin-api
+prometheus: error: unexpected web.enable-admin-api
+level=info ts=2020-05-14T09:46:56.039Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T09:46:56.040Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T09:46:56.040Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T09:46:56.040Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T09:46:56.040Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T09:46:56.051Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T09:46:56.058Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T09:46:56.059Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T09:46:56.069Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=0
+level=info ts=2020-05-14T09:46:56.069Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=11.337206ms
+level=info ts=2020-05-14T09:46:56.070Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T09:46:56.070Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T09:46:56.071Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T09:46:56.075Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T09:46:56.075Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T09:47:44.297Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T09:47:44.297Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T09:47:44.297Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T09:47:44.297Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T09:47:44.297Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T09:47:44.297Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T09:47:44.298Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T09:47:44.298Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T09:47:44.299Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-14T09:47:44.329Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T09:47:44.329Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T09:47:44.330Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T09:48:18.699Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T09:48:18.700Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T09:48:18.700Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T09:48:18.700Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T09:48:18.700Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T09:48:18.708Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T09:48:18.716Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T09:48:18.726Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T09:48:18.743Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=1
+level=info ts=2020-05-14T09:48:18.745Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=1
+level=info ts=2020-05-14T09:48:18.745Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=29.652003ms
+level=info ts=2020-05-14T09:48:18.756Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T09:48:18.756Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T09:48:18.756Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T09:48:18.762Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T09:48:18.762Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T09:48:25.011Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T09:48:25.011Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T09:48:25.011Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T09:48:25.011Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T09:48:25.011Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T09:48:25.011Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T09:48:25.011Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T09:48:25.011Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T09:48:25.013Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-14T09:48:25.034Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T09:48:25.034Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T09:48:25.035Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T09:48:41.066Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T09:48:41.066Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T09:48:41.066Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T09:48:41.066Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T09:48:41.067Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T09:48:41.073Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T09:48:41.085Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T09:48:41.091Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T09:48:41.105Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=2
+level=info ts=2020-05-14T09:48:41.108Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=2
+level=info ts=2020-05-14T09:48:41.109Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=2
+level=info ts=2020-05-14T09:48:41.109Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=23.829697ms
+level=info ts=2020-05-14T09:48:41.122Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T09:48:41.122Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T09:48:41.122Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T09:48:41.132Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T09:48:41.132Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T09:48:54.964Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T09:48:54.964Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T09:48:54.964Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T09:48:54.964Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T09:48:54.964Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T09:48:54.964Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T09:48:54.964Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T09:48:54.964Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T09:48:54.966Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-14T09:48:54.985Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T09:48:54.985Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T09:48:54.986Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T09:49:16.462Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T09:49:16.462Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T09:49:16.462Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T09:49:16.462Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T09:49:16.462Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T09:49:16.471Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T09:49:16.474Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T09:49:16.499Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T09:49:16.510Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=3
+level=info ts=2020-05-14T09:49:16.513Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=3
+level=info ts=2020-05-14T09:49:16.515Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=3
+level=info ts=2020-05-14T09:49:16.515Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=3
+level=info ts=2020-05-14T09:49:16.515Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=40.686255ms
+level=info ts=2020-05-14T09:49:16.523Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T09:49:16.523Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T09:49:16.523Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T09:49:16.530Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T09:49:16.530Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T09:49:46.648Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T09:49:46.648Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T09:49:46.648Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T09:49:46.648Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T09:49:46.648Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T09:49:46.648Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T09:49:46.648Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T09:49:46.648Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T09:49:46.649Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-14T09:49:46.673Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T09:49:46.673Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T09:49:46.674Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T09:50:23.690Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T09:50:23.690Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T09:50:23.690Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T09:50:23.690Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T09:50:23.690Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T09:50:23.696Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T09:50:23.709Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T09:50:23.714Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T09:50:23.732Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=4
+level=info ts=2020-05-14T09:50:23.735Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=4
+level=info ts=2020-05-14T09:50:23.736Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=4
+level=info ts=2020-05-14T09:50:23.745Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=4
+level=info ts=2020-05-14T09:50:23.745Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=4
+level=info ts=2020-05-14T09:50:23.745Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=36.417842ms
+level=info ts=2020-05-14T09:50:23.756Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T09:50:23.756Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T09:50:23.756Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T09:50:23.761Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T09:50:23.761Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T09:50:58.674Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T09:50:58.674Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T09:50:58.674Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T09:50:58.674Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T09:50:58.674Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T09:50:58.674Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T09:50:58.674Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T09:50:58.674Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T09:50:58.676Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-14T09:50:58.695Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T09:50:58.695Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T09:50:58.696Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T09:51:22.905Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T09:51:22.905Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T09:51:22.905Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T09:51:22.905Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T09:51:22.905Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T09:51:22.911Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T09:51:22.926Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T09:51:22.930Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T09:51:22.942Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=5
+level=info ts=2020-05-14T09:51:22.950Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=5
+level=info ts=2020-05-14T09:51:22.952Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=5
+level=info ts=2020-05-14T09:51:22.962Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=5
+level=info ts=2020-05-14T09:51:22.968Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=5
+level=info ts=2020-05-14T09:51:22.968Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=5 maxSegment=5
+level=info ts=2020-05-14T09:51:22.968Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=42.705462ms
+level=info ts=2020-05-14T09:51:22.982Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T09:51:22.982Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T09:51:22.982Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T09:51:22.986Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T09:51:22.986Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T09:51:29.151Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T09:51:29.151Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T09:51:29.151Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T09:51:29.151Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T09:51:29.151Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T09:51:29.151Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T09:51:29.151Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T09:51:29.151Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T09:51:29.152Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-14T09:51:29.154Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T09:51:29.154Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T09:51:29.154Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T09:52:22.550Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T09:52:22.550Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T09:52:22.550Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T09:52:22.550Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T09:52:22.550Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T09:52:22.556Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T09:52:22.572Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T09:52:22.575Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T09:52:22.592Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=6
+level=info ts=2020-05-14T09:52:22.596Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=6
+level=info ts=2020-05-14T09:52:22.599Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=6
+level=info ts=2020-05-14T09:52:22.603Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=6
+level=info ts=2020-05-14T09:52:22.614Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=6
+level=info ts=2020-05-14T09:52:22.614Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=5 maxSegment=6
+level=info ts=2020-05-14T09:52:22.617Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=6 maxSegment=6
+level=info ts=2020-05-14T09:52:22.617Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=41.734742ms
+level=info ts=2020-05-14T09:52:22.625Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T09:52:22.625Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T09:52:22.625Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T09:52:22.633Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T09:52:22.633Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T09:54:10.466Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T09:54:10.466Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T09:54:10.466Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T09:54:10.466Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T09:54:10.466Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T09:54:10.466Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T09:54:10.466Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T09:54:10.466Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T09:54:10.467Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-14T09:54:10.473Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T09:54:10.473Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T09:54:10.474Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T09:54:55.348Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T09:54:55.348Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T09:54:55.348Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T09:54:55.348Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T09:54:55.348Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T09:54:55.356Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T09:54:55.367Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T09:54:55.380Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T09:54:55.387Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=7
+level=info ts=2020-05-14T09:54:55.387Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=7
+level=info ts=2020-05-14T09:54:55.391Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=7
+level=info ts=2020-05-14T09:54:55.396Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=7
+level=info ts=2020-05-14T09:54:55.403Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=7
+level=info ts=2020-05-14T09:54:55.403Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=5 maxSegment=7
+level=info ts=2020-05-14T09:54:55.422Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=6 maxSegment=7
+level=info ts=2020-05-14T09:54:55.422Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=7 maxSegment=7
+level=info ts=2020-05-14T09:54:55.422Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=55.473244ms
+level=info ts=2020-05-14T09:54:55.427Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T09:54:55.427Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T09:54:55.427Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T09:54:55.431Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T09:54:55.431Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T09:58:12.141Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T09:58:12.141Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T09:58:12.142Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T09:58:12.142Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T09:58:12.142Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T09:58:12.142Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T09:58:12.142Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T09:58:12.142Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T09:58:12.144Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-14T09:58:12.149Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T09:58:12.149Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T09:58:12.150Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T09:59:07.511Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T09:59:07.511Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T09:59:07.511Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T09:59:07.511Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T09:59:07.511Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T09:59:07.515Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T09:59:07.526Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T09:59:07.531Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T09:59:07.545Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=8
+level=info ts=2020-05-14T09:59:07.546Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=8
+level=info ts=2020-05-14T09:59:07.550Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=8
+level=info ts=2020-05-14T09:59:07.556Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=8
+level=info ts=2020-05-14T09:59:07.562Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=8
+level=info ts=2020-05-14T09:59:07.563Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=5 maxSegment=8
+level=info ts=2020-05-14T09:59:07.579Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=6 maxSegment=8
+level=info ts=2020-05-14T09:59:07.598Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=7 maxSegment=8
+level=info ts=2020-05-14T09:59:07.598Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=8 maxSegment=8
+level=info ts=2020-05-14T09:59:07.598Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=72.145771ms
+level=info ts=2020-05-14T09:59:07.604Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T09:59:07.604Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T09:59:07.604Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T09:59:07.607Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T09:59:07.607Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T09:59:13.682Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T09:59:13.682Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T09:59:13.682Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T09:59:13.682Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T09:59:13.682Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T09:59:13.682Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T09:59:13.682Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T09:59:13.682Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T09:59:13.684Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-14T09:59:13.699Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T09:59:13.699Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T09:59:13.700Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T10:01:36.331Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T10:01:36.332Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T10:01:36.332Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T10:01:36.332Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T10:01:36.332Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T10:01:36.337Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T10:01:36.352Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T10:01:36.374Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T10:01:36.390Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=9
+level=info ts=2020-05-14T10:01:36.391Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=9
+level=info ts=2020-05-14T10:01:36.395Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=9
+level=info ts=2020-05-14T10:01:36.400Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=9
+level=info ts=2020-05-14T10:01:36.409Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=9
+level=info ts=2020-05-14T10:01:36.410Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=5 maxSegment=9
+level=info ts=2020-05-14T10:01:36.439Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=6 maxSegment=9
+level=info ts=2020-05-14T10:01:36.469Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=7 maxSegment=9
+level=info ts=2020-05-14T10:01:36.470Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=8 maxSegment=9
+level=info ts=2020-05-14T10:01:36.470Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=9 maxSegment=9
+level=info ts=2020-05-14T10:01:36.470Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=117.871482ms
+level=info ts=2020-05-14T10:01:36.478Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T10:01:36.478Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T10:01:36.478Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T10:01:36.483Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T10:01:36.483Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T10:03:37.274Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T10:03:37.274Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T10:03:37.274Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T10:03:37.274Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T10:03:37.275Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T10:03:37.275Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T10:03:37.275Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T10:03:37.275Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T10:03:37.276Z caller=main.go:565 msg="Scrape manager stopped"
+level=error ts=2020-05-14T10:03:37.286Z caller=web.go:99 component=web msg="panic while serving request" client=47.102.197.233:38314 url=/-/quit err="close of closed channel" stack="goroutine 5130 [running]:\ngithub.com/prometheus/prometheus/web.withStackTracer.func1.1(0x2dcaa00, 0xc00023d320, 0xc00079c200)\n\t/app/web/web.go:98 +0xb5\npanic(0x22317e0, 0x2d7c570)\n\t/usr/local/go/src/runtime/panic.go:679 +0x1b2\ngithub.com/prometheus/prometheus/web.(*Handler).quit(...)\n\t/app/web/web.go:937\nnet/http.HandlerFunc.ServeHTTP(0xc000761970, 0x7f8a6d55aa70, 0xc001a0e820, 0xc00079c500)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerResponseSize.func1(0x7f8a6d55aa70, 0xc001a0e7d0, 0xc00079c500)\n\t/app/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_server.go:196 +0xe9\nnet/http.HandlerFunc.ServeHTTP(0xc00071f860, 0x7f8a6d55aa70, 0xc001a0e7d0, 0xc00079c500)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerDuration.func2(0x7f8a6d55aa70, 0xc001a0e7d0, 0xc00079c500)\n\t/app/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_server.go:76 +0xb2\nnet/http.HandlerFunc.ServeHTTP(0xc00071f950, 0x7f8a6d55aa70, 0xc001a0e7d0, 0xc00079c500)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerCounter.func1(0x2e13e80, 0xc001a0e780, 0xc00079c500)\n\t/app/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_server.go:100 +0xda\ngithub.com/prometheus/prometheus/web.setPathWithPrefix.func1.1(0x2e13e80, 0xc001a0e780, 0xc00079c400)\n\t/app/web/web.go:1122 +0x1c6\ngithub.com/prometheus/common/route.(*Router).handle.func1(0x2e13e80, 0xc001a0e780, 0xc00079c300, 0x0, 0x0, 0x0)\n\t/app/vendor/github.com/prometheus/common/route/route.go:83 +0x296\ngithub.com/julienschmidt/httprouter.(*Router).ServeHTTP(0xc0000869c0, 0x2e13e80, 0xc001a0e780, 0xc00079c300)\n\t/app/vendor/github.com/julienschmidt/httprouter/router.go:334 +0x95e\ngithub.com/prometheus/common/route.(*Router).ServeHTTP(0xc00000c3a0, 0x2e13e80, 0xc001a0e780, 0xc00079c300)\n\t/app/vendor/github.com/prometheus/common/route/route.go:121 +0x4c\nnet/http.(*ServeMux).ServeHTTP(0xc0004d4940, 0x2e13e80, 0xc001a0e780, 0xc00079c300)\n\t/usr/local/go/src/net/http/server.go:2387 +0x1bd\ngithub.com/opentracing-contrib/go-stdlib/nethttp.MiddlewareFunc.func5(0x2e12480, 0xc00195cfc0, 0xc00079c200)\n\t/app/vendor/github.com/opentracing-contrib/go-stdlib/nethttp/server.go:140 +0x5fb\nnet/http.HandlerFunc.ServeHTTP(0xc0002faf60, 0x2e12480, 0xc00195cfc0, 0xc00079c200)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/prometheus/web.withStackTracer.func1(0x2e12480, 0xc00195cfc0, 0xc00079c200)\n\t/app/web/web.go:103 +0xb3\nnet/http.HandlerFunc.ServeHTTP(0xc0002faf90, 0x2e12480, 0xc00195cfc0, 0xc00079c200)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\nnet/http.serverHandler.ServeHTTP(0xc0003c01c0, 0x2e12480, 0xc00195cfc0, 0xc00079c200)\n\t/usr/local/go/src/net/http/server.go:2802 +0xa4\nnet/http.(*conn).serve(0xc001a0a780, 0x2e1c480, 0xc0019dbd80)\n\t/usr/local/go/src/net/http/server.go:1890 +0x875\ncreated by net/http.(*Server).Serve\n\t/usr/local/go/src/net/http/server.go:2928 +0x384\n"
+level=error ts=2020-05-14T10:03:37.286Z caller=stdlib.go:89 component=web caller="http: panic serving 47.102.197.233:38314" msg="close of closed channel"
+level=info ts=2020-05-14T10:03:37.291Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T10:03:37.291Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T10:03:37.291Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T10:29:29.232Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T10:29:29.232Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T10:29:29.232Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T10:29:29.232Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T10:29:29.232Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T10:29:29.239Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T10:29:29.254Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T10:29:29.257Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T10:29:29.274Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=13
+level=info ts=2020-05-14T10:29:29.274Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=13
+level=info ts=2020-05-14T10:29:29.276Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=13
+level=info ts=2020-05-14T10:29:29.286Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=13
+level=info ts=2020-05-14T10:29:29.296Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=13
+level=info ts=2020-05-14T10:29:29.296Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=5 maxSegment=13
+level=info ts=2020-05-14T10:29:29.314Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=6 maxSegment=13
+level=info ts=2020-05-14T10:29:29.328Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=7 maxSegment=13
+level=info ts=2020-05-14T10:29:29.328Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=8 maxSegment=13
+level=info ts=2020-05-14T10:29:29.345Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=9 maxSegment=13
+level=info ts=2020-05-14T10:29:29.348Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=10 maxSegment=13
+level=info ts=2020-05-14T10:29:29.357Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=11 maxSegment=13
+level=info ts=2020-05-14T10:29:29.454Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=12 maxSegment=13
+level=info ts=2020-05-14T10:29:29.454Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=13 maxSegment=13
+level=info ts=2020-05-14T10:29:29.454Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=199.929126ms
+level=info ts=2020-05-14T10:29:29.463Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T10:29:29.463Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T10:29:29.463Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T10:29:29.469Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T10:29:29.469Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T10:31:04.076Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T10:31:04.076Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T10:31:04.076Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T10:31:04.076Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T10:31:04.076Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T10:31:04.076Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T10:31:04.076Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T10:31:04.076Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T10:31:04.078Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-14T10:31:04.096Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T10:31:04.097Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T10:31:04.097Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T10:34:05.314Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T10:34:05.314Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T10:34:05.314Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T10:34:05.314Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T10:34:05.314Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T10:34:05.323Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T10:34:05.341Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T10:34:05.346Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T10:34:05.364Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=15
+level=info ts=2020-05-14T10:34:05.370Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=15
+level=info ts=2020-05-14T10:34:05.376Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=15
+level=info ts=2020-05-14T10:34:05.385Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=15
+level=info ts=2020-05-14T10:34:05.391Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=15
+level=info ts=2020-05-14T10:34:05.392Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=5 maxSegment=15
+level=info ts=2020-05-14T10:34:05.410Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=6 maxSegment=15
+level=info ts=2020-05-14T10:34:05.441Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=7 maxSegment=15
+level=info ts=2020-05-14T10:34:05.441Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=8 maxSegment=15
+level=info ts=2020-05-14T10:34:05.467Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=9 maxSegment=15
+level=info ts=2020-05-14T10:34:05.472Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=10 maxSegment=15
+level=info ts=2020-05-14T10:34:05.476Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=11 maxSegment=15
+level=info ts=2020-05-14T10:34:05.583Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=12 maxSegment=15
+level=info ts=2020-05-14T10:34:05.595Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=13 maxSegment=15
+level=info ts=2020-05-14T10:34:05.620Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=14 maxSegment=15
+level=info ts=2020-05-14T10:34:05.621Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=15 maxSegment=15
+level=info ts=2020-05-14T10:34:05.621Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=275.232066ms
+level=info ts=2020-05-14T10:34:05.629Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T10:34:05.629Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T10:34:05.629Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T10:34:05.642Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T10:34:05.642Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T10:39:48.548Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T10:39:48.604Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T10:39:48.604Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T10:39:48.604Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T10:39:48.607Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T10:39:48.607Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T10:39:48.607Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T10:39:48.607Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T10:39:48.610Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-14T10:39:48.615Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T10:39:48.615Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T10:39:48.620Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T10:44:39.241Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T10:44:39.241Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T10:44:39.241Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T10:44:39.241Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T10:44:39.241Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T10:44:39.247Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T10:44:39.262Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T10:44:39.263Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T10:44:39.283Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=20
+level=info ts=2020-05-14T10:44:39.283Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=20
+level=info ts=2020-05-14T10:44:39.288Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=20
+level=info ts=2020-05-14T10:44:39.291Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=20
+level=info ts=2020-05-14T10:44:39.300Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=20
+level=info ts=2020-05-14T10:44:39.301Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=5 maxSegment=20
+level=info ts=2020-05-14T10:44:39.317Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=6 maxSegment=20
+level=info ts=2020-05-14T10:44:39.332Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=7 maxSegment=20
+level=info ts=2020-05-14T10:44:39.334Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=8 maxSegment=20
+level=info ts=2020-05-14T10:44:39.364Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=9 maxSegment=20
+level=info ts=2020-05-14T10:44:39.367Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=10 maxSegment=20
+level=info ts=2020-05-14T10:44:39.373Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=11 maxSegment=20
+level=info ts=2020-05-14T10:44:39.467Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=12 maxSegment=20
+level=info ts=2020-05-14T10:44:39.483Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=13 maxSegment=20
+level=info ts=2020-05-14T10:44:39.516Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=14 maxSegment=20
+level=info ts=2020-05-14T10:44:39.538Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=15 maxSegment=20
+level=info ts=2020-05-14T10:44:39.538Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=16 maxSegment=20
+level=info ts=2020-05-14T10:44:39.544Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=17 maxSegment=20
+level=info ts=2020-05-14T10:44:39.559Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=18 maxSegment=20
+level=info ts=2020-05-14T10:44:39.559Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=19 maxSegment=20
+level=info ts=2020-05-14T10:44:39.559Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=20 maxSegment=20
+level=info ts=2020-05-14T10:44:39.559Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=295.816525ms
+level=info ts=2020-05-14T10:44:39.584Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T10:44:39.584Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T10:44:39.584Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T10:44:39.595Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T10:44:39.595Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T10:45:01.934Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T10:45:01.934Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T10:45:01.934Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T10:45:01.934Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T10:45:01.935Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T10:45:01.935Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T10:45:01.935Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T10:45:01.935Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T10:45:01.938Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-14T10:45:01.953Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T10:45:01.953Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T10:45:02.042Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T10:45:02.042Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T10:45:02.042Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T10:45:02.042Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T10:45:02.042Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T10:45:02.052Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T10:45:02.067Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T10:45:02.070Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T10:45:02.096Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=21
+level=info ts=2020-05-14T10:45:02.097Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=21
+level=info ts=2020-05-14T10:45:02.098Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=21
+level=info ts=2020-05-14T10:45:02.107Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=21
+level=info ts=2020-05-14T10:45:02.113Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=21
+level=info ts=2020-05-14T10:45:02.114Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=5 maxSegment=21
+level=info ts=2020-05-14T10:45:02.124Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=6 maxSegment=21
+level=info ts=2020-05-14T10:45:02.157Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=7 maxSegment=21
+level=info ts=2020-05-14T10:45:02.157Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=8 maxSegment=21
+level=info ts=2020-05-14T10:45:02.178Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=9 maxSegment=21
+level=info ts=2020-05-14T10:45:02.181Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=10 maxSegment=21
+level=info ts=2020-05-14T10:45:02.183Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=11 maxSegment=21
+level=info ts=2020-05-14T10:45:02.291Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=12 maxSegment=21
+level=info ts=2020-05-14T10:45:02.299Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=13 maxSegment=21
+level=info ts=2020-05-14T10:45:02.312Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=14 maxSegment=21
+level=info ts=2020-05-14T10:45:02.366Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=15 maxSegment=21
+level=info ts=2020-05-14T10:45:02.367Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=16 maxSegment=21
+level=info ts=2020-05-14T10:45:02.374Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=17 maxSegment=21
+level=info ts=2020-05-14T10:45:02.392Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=18 maxSegment=21
+level=info ts=2020-05-14T10:45:02.392Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=19 maxSegment=21
+level=info ts=2020-05-14T10:45:02.399Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=20 maxSegment=21
+level=info ts=2020-05-14T10:45:02.400Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=21 maxSegment=21
+level=info ts=2020-05-14T10:45:02.400Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=329.484215ms
+level=info ts=2020-05-14T10:45:02.405Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T10:45:02.406Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T10:45:02.406Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T10:45:02.411Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T10:45:02.411Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T10:45:41.747Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T10:45:41.747Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T10:45:41.747Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T10:45:41.747Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T10:45:41.747Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T10:45:41.747Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T10:45:41.747Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T10:45:41.748Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T10:45:41.749Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-14T10:45:41.766Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T10:45:41.766Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T10:45:41.766Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T10:45:41.819Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T10:45:41.819Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T10:45:41.819Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T10:45:41.819Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T10:45:41.819Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T10:45:41.823Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T10:45:41.832Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T10:45:41.844Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T10:45:41.851Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=22
+level=info ts=2020-05-14T10:45:41.851Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=22
+level=info ts=2020-05-14T10:45:41.852Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=22
+level=info ts=2020-05-14T10:45:41.859Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=22
+level=info ts=2020-05-14T10:45:41.867Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=22
+level=info ts=2020-05-14T10:45:41.867Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=5 maxSegment=22
+level=info ts=2020-05-14T10:45:41.887Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=6 maxSegment=22
+level=info ts=2020-05-14T10:45:41.900Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=7 maxSegment=22
+level=info ts=2020-05-14T10:45:41.900Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=8 maxSegment=22
+level=info ts=2020-05-14T10:45:41.913Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=9 maxSegment=22
+level=info ts=2020-05-14T10:45:41.917Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=10 maxSegment=22
+level=info ts=2020-05-14T10:45:41.921Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=11 maxSegment=22
+level=info ts=2020-05-14T10:45:42.022Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=12 maxSegment=22
+level=info ts=2020-05-14T10:45:42.029Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=13 maxSegment=22
+level=info ts=2020-05-14T10:45:42.044Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=14 maxSegment=22
+level=info ts=2020-05-14T10:45:42.086Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=15 maxSegment=22
+level=info ts=2020-05-14T10:45:42.087Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=16 maxSegment=22
+level=info ts=2020-05-14T10:45:42.092Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=17 maxSegment=22
+level=info ts=2020-05-14T10:45:42.105Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=18 maxSegment=22
+level=info ts=2020-05-14T10:45:42.105Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=19 maxSegment=22
+level=info ts=2020-05-14T10:45:42.108Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=20 maxSegment=22
+level=info ts=2020-05-14T10:45:42.113Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=21 maxSegment=22
+level=info ts=2020-05-14T10:45:42.113Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=22 maxSegment=22
+level=info ts=2020-05-14T10:45:42.113Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=281.279607ms
+level=info ts=2020-05-14T10:45:42.118Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T10:45:42.118Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T10:45:42.118Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T10:45:42.121Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T10:45:42.121Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=info ts=2020-05-14T10:45:57.508Z caller=main.go:750 msg="See you next time!"
+level=warn ts=2020-05-14T10:46:20.454Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T10:46:20.454Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T10:46:20.454Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T10:46:20.454Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T10:46:20.454Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T10:46:20.454Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T10:46:20.454Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T10:46:20.454Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T10:46:20.456Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-14T10:46:20.475Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T10:46:20.475Z caller=main.go:738 msg="Notifier manager stopped"
+level=error ts=2020-05-14T10:46:20.475Z caller=web.go:99 component=web msg="panic while serving request" client=47.102.197.233:56970 url=/-/quit err="close of closed channel" stack="goroutine 666 [running]:\ngithub.com/prometheus/prometheus/web.withStackTracer.func1.1(0x2dcaa00, 0xc0003c4a20, 0xc001c9d000)\n\t/app/web/web.go:98 +0xb5\npanic(0x22317e0, 0x2d7c570)\n\t/usr/local/go/src/runtime/panic.go:679 +0x1b2\ngithub.com/prometheus/prometheus/web.(*Handler).quit(...)\n\t/app/web/web.go:937\nnet/http.HandlerFunc.ServeHTTP(0xc0007b6110, 0x7f497f930f00, 0xc001c8b5e0, 0xc001c9d300)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerResponseSize.func1(0x7f497f930f00, 0xc001c8b590, 0xc001c9d300)\n\t/app/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_server.go:196 +0xe9\nnet/http.HandlerFunc.ServeHTTP(0xc000776450, 0x7f497f930f00, 0xc001c8b590, 0xc001c9d300)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerDuration.func2(0x7f497f930f00, 0xc001c8b590, 0xc001c9d300)\n\t/app/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_server.go:76 +0xb2\nnet/http.HandlerFunc.ServeHTTP(0xc000776540, 0x7f497f930f00, 0xc001c8b590, 0xc001c9d300)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerCounter.func1(0x2e13e80, 0xc001c8b540, 0xc001c9d300)\n\t/app/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_server.go:100 +0xda\ngithub.com/prometheus/prometheus/web.setPathWithPrefix.func1.1(0x2e13e80, 0xc001c8b540, 0xc001c9d200)\n\t/app/web/web.go:1122 +0x1c6\ngithub.com/prometheus/common/route.(*Router).handle.func1(0x2e13e80, 0xc001c8b540, 0xc001c9d100, 0x0, 0x0, 0x0)\n\t/app/vendor/github.com/prometheus/common/route/route.go:83 +0x296\ngithub.com/julienschmidt/httprouter.(*Router).ServeHTTP(0xc0004d4300, 0x2e13e80, 0xc001c8b540, 0xc001c9d100)\n\t/app/vendor/github.com/julienschmidt/httprouter/router.go:334 +0x95e\ngithub.com/prometheus/common/route.(*Router).ServeHTTP(0xc00065fde0, 0x2e13e80, 0xc001c8b540, 0xc001c9d100)\n\t/app/vendor/github.com/prometheus/common/route/route.go:121 +0x4c\nnet/http.(*ServeMux).ServeHTTP(0xc0004d4540, 0x2e13e80, 0xc001c8b540, 0xc001c9d100)\n\t/usr/local/go/src/net/http/server.go:2387 +0x1bd\ngithub.com/opentracing-contrib/go-stdlib/nethttp.MiddlewareFunc.func5(0x2e12480, 0xc001c88540, 0xc001c9d000)\n\t/app/vendor/github.com/opentracing-contrib/go-stdlib/nethttp/server.go:140 +0x5fb\nnet/http.HandlerFunc.ServeHTTP(0xc000300f60, 0x2e12480, 0xc001c88540, 0xc001c9d000)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/prometheus/web.withStackTracer.func1(0x2e12480, 0xc001c88540, 0xc001c9d000)\n\t/app/web/web.go:103 +0xb3\nnet/http.HandlerFunc.ServeHTTP(0xc000300f90, 0x2e12480, 0xc001c88540, 0xc001c9d000)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\nnet/http.serverHandler.ServeHTTP(0xc0003c01c0, 0x2e12480, 0xc001c88540, 0xc001c9d000)\n\t/usr/local/go/src/net/http/server.go:2802 +0xa4\nnet/http.(*conn).serve(0xc001cd6640, 0x2e1c480, 0xc001c6db80)\n\t/usr/local/go/src/net/http/server.go:1890 +0x875\ncreated by net/http.(*Server).Serve\n\t/usr/local/go/src/net/http/server.go:2928 +0x384\n"
+level=error ts=2020-05-14T10:46:20.476Z caller=stdlib.go:89 component=web caller="http: panic serving 47.102.197.233:56970" msg="close of closed channel"
+level=info ts=2020-05-14T10:46:20.476Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T10:49:47.977Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T10:49:47.977Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T10:49:47.977Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T10:49:47.977Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T10:49:47.977Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T10:49:47.982Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T10:49:47.994Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T10:49:47.995Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T10:49:48.022Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=23
+level=info ts=2020-05-14T10:49:48.022Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=23
+level=info ts=2020-05-14T10:49:48.025Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=23
+level=info ts=2020-05-14T10:49:48.027Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=23
+level=info ts=2020-05-14T10:49:48.032Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=23
+level=info ts=2020-05-14T10:49:48.032Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=5 maxSegment=23
+level=info ts=2020-05-14T10:49:48.050Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=6 maxSegment=23
+level=info ts=2020-05-14T10:49:48.072Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=7 maxSegment=23
+level=info ts=2020-05-14T10:49:48.073Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=8 maxSegment=23
+level=info ts=2020-05-14T10:49:48.083Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=9 maxSegment=23
+level=info ts=2020-05-14T10:49:48.084Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=10 maxSegment=23
+level=info ts=2020-05-14T10:49:48.087Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=11 maxSegment=23
+level=info ts=2020-05-14T10:49:48.198Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=12 maxSegment=23
+level=info ts=2020-05-14T10:49:48.212Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=13 maxSegment=23
+level=info ts=2020-05-14T10:49:48.238Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=14 maxSegment=23
+level=info ts=2020-05-14T10:49:48.268Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=15 maxSegment=23
+level=info ts=2020-05-14T10:49:48.268Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=16 maxSegment=23
+level=info ts=2020-05-14T10:49:48.273Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=17 maxSegment=23
+level=info ts=2020-05-14T10:49:48.286Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=18 maxSegment=23
+level=info ts=2020-05-14T10:49:48.286Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=19 maxSegment=23
+level=info ts=2020-05-14T10:49:48.289Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=20 maxSegment=23
+level=info ts=2020-05-14T10:49:48.294Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=21 maxSegment=23
+level=info ts=2020-05-14T10:49:48.297Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=22 maxSegment=23
+level=info ts=2020-05-14T10:49:48.298Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=23 maxSegment=23
+level=info ts=2020-05-14T10:49:48.298Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=302.301821ms
+level=info ts=2020-05-14T10:49:48.302Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T10:49:48.302Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T10:49:48.302Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T10:49:48.308Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T10:49:48.308Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T10:51:07.824Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T10:51:07.824Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T10:51:07.824Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T10:51:07.824Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T10:51:07.824Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T10:51:07.824Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T10:51:07.824Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T10:51:07.824Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T10:51:07.826Z caller=main.go:565 msg="Scrape manager stopped"
+level=error ts=2020-05-14T10:51:07.845Z caller=web.go:99 component=web msg="panic while serving request" client=47.102.197.233:57302 url=/-/quit err="close of closed channel" stack="goroutine 596 [running]:\ngithub.com/prometheus/prometheus/web.withStackTracer.func1.1(0x2dcaa00, 0xc0008890b0, 0xc0019e8500)\n\t/app/web/web.go:98 +0xb5\npanic(0x22317e0, 0x2d7c570)\n\t/usr/local/go/src/runtime/panic.go:679 +0x1b2\ngithub.com/prometheus/prometheus/web.(*Handler).quit(...)\n\t/app/web/web.go:937\nnet/http.HandlerFunc.ServeHTTP(0xc000870d30, 0x7f6902039c18, 0xc0019e2ff0, 0xc0019e8800)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerResponseSize.func1(0x7f6902039c18, 0xc0019e2fa0, 0xc0019e8800)\n\t/app/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_server.go:196 +0xe9\nnet/http.HandlerFunc.ServeHTTP(0xc00080f710, 0x7f6902039c18, 0xc0019e2fa0, 0xc0019e8800)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerDuration.func2(0x7f6902039c18, 0xc0019e2fa0, 0xc0019e8800)\n\t/app/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_server.go:76 +0xb2\nnet/http.HandlerFunc.ServeHTTP(0xc00080f800, 0x7f6902039c18, 0xc0019e2fa0, 0xc0019e8800)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerCounter.func1(0x2e13e80, 0xc0019e2f50, 0xc0019e8800)\n\t/app/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_server.go:100 +0xda\ngithub.com/prometheus/prometheus/web.setPathWithPrefix.func1.1(0x2e13e80, 0xc0019e2f50, 0xc0019e8700)\n\t/app/web/web.go:1122 +0x1c6\ngithub.com/prometheus/common/route.(*Router).handle.func1(0x2e13e80, 0xc0019e2f50, 0xc0019e8600, 0x0, 0x0, 0x0)\n\t/app/vendor/github.com/prometheus/common/route/route.go:83 +0x296\ngithub.com/julienschmidt/httprouter.(*Router).ServeHTTP(0xc000371580, 0x2e13e80, 0xc0019e2f50, 0xc0019e8600)\n\t/app/vendor/github.com/julienschmidt/httprouter/router.go:334 +0x95e\ngithub.com/prometheus/common/route.(*Router).ServeHTTP(0xc000887aa0, 0x2e13e80, 0xc0019e2f50, 0xc0019e8600)\n\t/app/vendor/github.com/prometheus/common/route/route.go:121 +0x4c\nnet/http.(*ServeMux).ServeHTTP(0xc0004d5cc0, 0x2e13e80, 0xc0019e2f50, 0xc0019e8600)\n\t/usr/local/go/src/net/http/server.go:2387 +0x1bd\ngithub.com/opentracing-contrib/go-stdlib/nethttp.MiddlewareFunc.func5(0x2e12480, 0xc0015ab5e0, 0xc0019e8500)\n\t/app/vendor/github.com/opentracing-contrib/go-stdlib/nethttp/server.go:140 +0x5fb\nnet/http.HandlerFunc.ServeHTTP(0xc000351ad0, 0x2e12480, 0xc0015ab5e0, 0xc0019e8500)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/prometheus/web.withStackTracer.func1(0x2e12480, 0xc0015ab5e0, 0xc0019e8500)\n\t/app/web/web.go:103 +0xb3\nnet/http.HandlerFunc.ServeHTTP(0xc000351b00, 0x2e12480, 0xc0015ab5e0, 0xc0019e8500)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\nnet/http.serverHandler.ServeHTTP(0xc0003c21c0, 0x2e12480, 0xc0015ab5e0, 0xc0019e8500)\n\t/usr/local/go/src/net/http/server.go:2802 +0xa4\nnet/http.(*conn).serve(0xc001877ae0, 0x2e1c480, 0xc0014ccfc0)\n\t/usr/local/go/src/net/http/server.go:1890 +0x875\ncreated by net/http.(*Server).Serve\n\t/usr/local/go/src/net/http/server.go:2928 +0x384\n"
+level=error ts=2020-05-14T10:51:07.846Z caller=stdlib.go:89 component=web caller="http: panic serving 47.102.197.233:57302" msg="close of closed channel"
+level=info ts=2020-05-14T10:51:07.852Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T10:51:07.852Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T10:51:07.852Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T10:55:02.997Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T10:55:02.997Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T10:55:02.997Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T10:55:02.997Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T10:55:02.997Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T10:55:03.002Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T10:55:03.003Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T10:55:03.015Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T10:55:03.040Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=26
+level=info ts=2020-05-14T10:55:03.040Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=26
+level=info ts=2020-05-14T10:55:03.044Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=26
+level=info ts=2020-05-14T10:55:03.048Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=26
+level=info ts=2020-05-14T10:55:03.051Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=26
+level=info ts=2020-05-14T10:55:03.052Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=5 maxSegment=26
+level=info ts=2020-05-14T10:55:03.070Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=6 maxSegment=26
+level=info ts=2020-05-14T10:55:03.103Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=7 maxSegment=26
+level=info ts=2020-05-14T10:55:03.103Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=8 maxSegment=26
+level=info ts=2020-05-14T10:55:03.119Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=9 maxSegment=26
+level=info ts=2020-05-14T10:55:03.120Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=10 maxSegment=26
+level=info ts=2020-05-14T10:55:03.124Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=11 maxSegment=26
+level=info ts=2020-05-14T10:55:03.283Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=12 maxSegment=26
+level=info ts=2020-05-14T10:55:03.293Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=13 maxSegment=26
+level=info ts=2020-05-14T10:55:03.343Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=14 maxSegment=26
+level=info ts=2020-05-14T10:55:03.379Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=15 maxSegment=26
+level=info ts=2020-05-14T10:55:03.381Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=16 maxSegment=26
+level=info ts=2020-05-14T10:55:03.387Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=17 maxSegment=26
+level=info ts=2020-05-14T10:55:03.404Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=18 maxSegment=26
+level=info ts=2020-05-14T10:55:03.406Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=19 maxSegment=26
+level=info ts=2020-05-14T10:55:03.414Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=20 maxSegment=26
+level=info ts=2020-05-14T10:55:03.426Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=21 maxSegment=26
+level=info ts=2020-05-14T10:55:03.437Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=22 maxSegment=26
+level=info ts=2020-05-14T10:55:03.452Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=23 maxSegment=26
+level=info ts=2020-05-14T10:55:03.466Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=24 maxSegment=26
+level=info ts=2020-05-14T10:55:03.483Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=25 maxSegment=26
+level=info ts=2020-05-14T10:55:03.484Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=26 maxSegment=26
+level=info ts=2020-05-14T10:55:03.484Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=468.740061ms
+level=info ts=2020-05-14T10:55:03.491Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T10:55:03.491Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T10:55:03.491Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T10:55:03.496Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T10:55:03.496Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T10:56:56.670Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T10:56:56.670Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T10:56:56.670Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T10:56:56.670Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T10:56:56.670Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T10:56:56.670Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T10:56:56.670Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T10:56:56.670Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T10:56:56.672Z caller=main.go:565 msg="Scrape manager stopped"
+level=error ts=2020-05-14T10:56:56.684Z caller=web.go:99 component=web msg="panic while serving request" client=47.102.197.233:34184 url=/-/quit err="close of closed channel" stack="goroutine 3075 [running]:\ngithub.com/prometheus/prometheus/web.withStackTracer.func1.1(0x2dcaa00, 0xc000881230, 0xc0022a1d00)\n\t/app/web/web.go:98 +0xb5\npanic(0x22317e0, 0x2d7c570)\n\t/usr/local/go/src/runtime/panic.go:679 +0x1b2\ngithub.com/prometheus/prometheus/web.(*Handler).quit(...)\n\t/app/web/web.go:937\nnet/http.HandlerFunc.ServeHTTP(0xc000858e10, 0x7f1e6e0208f0, 0xc0023821e0, 0xc00237a000)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerResponseSize.func1(0x7f1e6e0208f0, 0xc002382190, 0xc00237a000)\n\t/app/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_server.go:196 +0xe9\nnet/http.HandlerFunc.ServeHTTP(0xc000809890, 0x7f1e6e0208f0, 0xc002382190, 0xc00237a000)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerDuration.func2(0x7f1e6e0208f0, 0xc002382190, 0xc00237a000)\n\t/app/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_server.go:76 +0xb2\nnet/http.HandlerFunc.ServeHTTP(0xc000809980, 0x7f1e6e0208f0, 0xc002382190, 0xc00237a000)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerCounter.func1(0x2e13e80, 0xc002382140, 0xc00237a000)\n\t/app/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_server.go:100 +0xda\ngithub.com/prometheus/prometheus/web.setPathWithPrefix.func1.1(0x2e13e80, 0xc002382140, 0xc0022a1f00)\n\t/app/web/web.go:1122 +0x1c6\ngithub.com/prometheus/common/route.(*Router).handle.func1(0x2e13e80, 0xc002382140, 0xc0022a1e00, 0x0, 0x0, 0x0)\n\t/app/vendor/github.com/prometheus/common/route/route.go:83 +0x296\ngithub.com/julienschmidt/httprouter.(*Router).ServeHTTP(0xc000373a40, 0x2e13e80, 0xc002382140, 0xc0022a1e00)\n\t/app/vendor/github.com/julienschmidt/httprouter/router.go:334 +0x95e\ngithub.com/prometheus/common/route.(*Router).ServeHTTP(0xc00083ffa0, 0x2e13e80, 0xc002382140, 0xc0022a1e00)\n\t/app/vendor/github.com/prometheus/common/route/route.go:121 +0x4c\nnet/http.(*ServeMux).ServeHTTP(0xc0004d1cc0, 0x2e13e80, 0xc002382140, 0xc0022a1e00)\n\t/usr/local/go/src/net/http/server.go:2387 +0x1bd\ngithub.com/opentracing-contrib/go-stdlib/nethttp.MiddlewareFunc.func5(0x2e12480, 0xc0022248c0, 0xc0022a1d00)\n\t/app/vendor/github.com/opentracing-contrib/go-stdlib/nethttp/server.go:140 +0x5fb\nnet/http.HandlerFunc.ServeHTTP(0xc00020da10, 0x2e12480, 0xc0022248c0, 0xc0022a1d00)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/prometheus/web.withStackTracer.func1(0x2e12480, 0xc0022248c0, 0xc0022a1d00)\n\t/app/web/web.go:103 +0xb3\nnet/http.HandlerFunc.ServeHTTP(0xc00020dec0, 0x2e12480, 0xc0022248c0, 0xc0022a1d00)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\nnet/http.serverHandler.ServeHTTP(0xc0003c02a0, 0x2e12480, 0xc0022248c0, 0xc0022a1d00)\n\t/usr/local/go/src/net/http/server.go:2802 +0xa4\nnet/http.(*conn).serve(0xc002223180, 0x2e1c480, 0xc002384180)\n\t/usr/local/go/src/net/http/server.go:1890 +0x875\ncreated by net/http.(*Server).Serve\n\t/usr/local/go/src/net/http/server.go:2928 +0x384\n"
+level=error ts=2020-05-14T10:56:56.684Z caller=stdlib.go:89 component=web caller="http: panic serving 47.102.197.233:34184" msg="close of closed channel"
+level=info ts=2020-05-14T10:56:56.701Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T10:56:56.701Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T10:56:56.706Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T10:58:17.279Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T10:58:17.279Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T10:58:17.279Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T10:58:17.279Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T10:58:17.279Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T10:58:17.284Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T10:58:17.299Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T10:58:17.300Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T10:58:17.313Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=27
+level=info ts=2020-05-14T10:58:17.314Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=27
+level=info ts=2020-05-14T10:58:17.320Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=27
+level=info ts=2020-05-14T10:58:17.326Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=27
+level=info ts=2020-05-14T10:58:17.332Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=27
+level=info ts=2020-05-14T10:58:17.333Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=5 maxSegment=27
+level=info ts=2020-05-14T10:58:17.349Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=6 maxSegment=27
+level=info ts=2020-05-14T10:58:17.363Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=7 maxSegment=27
+level=info ts=2020-05-14T10:58:17.364Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=8 maxSegment=27
+level=info ts=2020-05-14T10:58:17.383Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=9 maxSegment=27
+level=info ts=2020-05-14T10:58:17.384Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=10 maxSegment=27
+level=info ts=2020-05-14T10:58:17.391Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=11 maxSegment=27
+level=info ts=2020-05-14T10:58:17.479Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=12 maxSegment=27
+level=info ts=2020-05-14T10:58:17.490Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=13 maxSegment=27
+level=info ts=2020-05-14T10:58:17.521Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=14 maxSegment=27
+level=info ts=2020-05-14T10:58:17.541Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=15 maxSegment=27
+level=info ts=2020-05-14T10:58:17.542Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=16 maxSegment=27
+level=info ts=2020-05-14T10:58:17.551Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=17 maxSegment=27
+level=info ts=2020-05-14T10:58:17.572Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=18 maxSegment=27
+level=info ts=2020-05-14T10:58:17.573Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=19 maxSegment=27
+level=info ts=2020-05-14T10:58:17.578Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=20 maxSegment=27
+level=info ts=2020-05-14T10:58:17.583Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=21 maxSegment=27
+level=info ts=2020-05-14T10:58:17.589Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=22 maxSegment=27
+level=info ts=2020-05-14T10:58:17.598Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=23 maxSegment=27
+level=info ts=2020-05-14T10:58:17.602Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=24 maxSegment=27
+level=info ts=2020-05-14T10:58:17.613Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=25 maxSegment=27
+level=info ts=2020-05-14T10:58:17.620Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=26 maxSegment=27
+level=info ts=2020-05-14T10:58:17.620Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=27 maxSegment=27
+level=info ts=2020-05-14T10:58:17.620Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=319.714017ms
+level=info ts=2020-05-14T10:58:17.625Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T10:58:17.625Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T10:58:17.625Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T10:58:17.629Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T10:58:17.629Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T10:58:35.813Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T10:58:35.813Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T10:58:35.813Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T10:58:35.814Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T10:58:35.814Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T10:58:35.814Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T10:58:35.814Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T10:58:35.814Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T10:58:35.816Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-14T10:58:35.830Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T10:58:35.830Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T10:58:35.831Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T11:00:59.709Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T11:00:59.709Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T11:00:59.709Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T11:00:59.709Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T11:00:59.709Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T11:00:59.713Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T11:00:59.723Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T11:00:59.724Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T11:00:59.741Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=28
+level=info ts=2020-05-14T11:00:59.742Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=28
+level=info ts=2020-05-14T11:00:59.743Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=28
+level=info ts=2020-05-14T11:00:59.749Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=28
+level=info ts=2020-05-14T11:00:59.757Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=28
+level=info ts=2020-05-14T11:00:59.757Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=5 maxSegment=28
+level=info ts=2020-05-14T11:00:59.776Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=6 maxSegment=28
+level=info ts=2020-05-14T11:00:59.789Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=7 maxSegment=28
+level=info ts=2020-05-14T11:00:59.790Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=8 maxSegment=28
+level=info ts=2020-05-14T11:00:59.801Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=9 maxSegment=28
+level=info ts=2020-05-14T11:00:59.803Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=10 maxSegment=28
+level=info ts=2020-05-14T11:00:59.813Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=11 maxSegment=28
+level=info ts=2020-05-14T11:00:59.914Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=12 maxSegment=28
+level=info ts=2020-05-14T11:00:59.922Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=13 maxSegment=28
+level=info ts=2020-05-14T11:00:59.942Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=14 maxSegment=28
+level=info ts=2020-05-14T11:00:59.975Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=15 maxSegment=28
+level=info ts=2020-05-14T11:00:59.977Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=16 maxSegment=28
+level=info ts=2020-05-14T11:00:59.980Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=17 maxSegment=28
+level=info ts=2020-05-14T11:00:59.992Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=18 maxSegment=28
+level=info ts=2020-05-14T11:00:59.992Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=19 maxSegment=28
+level=info ts=2020-05-14T11:00:59.996Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=20 maxSegment=28
+level=info ts=2020-05-14T11:00:59.999Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=21 maxSegment=28
+level=info ts=2020-05-14T11:01:00.002Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=22 maxSegment=28
+level=info ts=2020-05-14T11:01:00.016Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=23 maxSegment=28
+level=info ts=2020-05-14T11:01:00.025Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=24 maxSegment=28
+level=info ts=2020-05-14T11:01:00.048Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=25 maxSegment=28
+level=info ts=2020-05-14T11:01:00.056Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=26 maxSegment=28
+level=info ts=2020-05-14T11:01:00.059Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=27 maxSegment=28
+level=info ts=2020-05-14T11:01:00.059Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=28 maxSegment=28
+level=info ts=2020-05-14T11:01:00.059Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=335.591177ms
+level=info ts=2020-05-14T11:01:00.063Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T11:01:00.064Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T11:01:00.064Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T11:01:00.069Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T11:01:00.069Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T11:01:20.613Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T11:01:20.613Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T11:01:20.613Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T11:01:20.613Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T11:01:20.613Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T11:01:20.614Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T11:01:20.614Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T11:01:20.614Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T11:01:20.616Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-14T11:01:20.631Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T11:01:20.632Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T11:01:20.633Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T11:04:40.441Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T11:04:40.441Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T11:04:40.441Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T11:04:40.441Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T11:04:40.441Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T11:04:40.452Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T11:04:40.457Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T11:04:40.468Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T11:04:40.491Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=30
+level=info ts=2020-05-14T11:04:40.492Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=30
+level=info ts=2020-05-14T11:04:40.493Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=30
+level=info ts=2020-05-14T11:04:40.498Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=30
+level=info ts=2020-05-14T11:04:40.501Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=30
+level=info ts=2020-05-14T11:04:40.501Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=5 maxSegment=30
+level=info ts=2020-05-14T11:04:40.517Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=6 maxSegment=30
+level=info ts=2020-05-14T11:04:40.545Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=7 maxSegment=30
+level=info ts=2020-05-14T11:04:40.545Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=8 maxSegment=30
+level=info ts=2020-05-14T11:04:40.556Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=9 maxSegment=30
+level=info ts=2020-05-14T11:04:40.559Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=10 maxSegment=30
+level=info ts=2020-05-14T11:04:40.562Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=11 maxSegment=30
+level=info ts=2020-05-14T11:04:40.672Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=12 maxSegment=30
+level=info ts=2020-05-14T11:04:40.682Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=13 maxSegment=30
+level=info ts=2020-05-14T11:04:40.724Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=14 maxSegment=30
+level=info ts=2020-05-14T11:04:40.772Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=15 maxSegment=30
+level=info ts=2020-05-14T11:04:40.773Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=16 maxSegment=30
+level=info ts=2020-05-14T11:04:40.780Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=17 maxSegment=30
+level=info ts=2020-05-14T11:04:40.792Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=18 maxSegment=30
+level=info ts=2020-05-14T11:04:40.792Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=19 maxSegment=30
+level=info ts=2020-05-14T11:04:40.798Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=20 maxSegment=30
+level=info ts=2020-05-14T11:04:40.802Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=21 maxSegment=30
+level=info ts=2020-05-14T11:04:40.805Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=22 maxSegment=30
+level=info ts=2020-05-14T11:04:40.816Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=23 maxSegment=30
+level=info ts=2020-05-14T11:04:40.827Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=24 maxSegment=30
+level=info ts=2020-05-14T11:04:40.850Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=25 maxSegment=30
+level=info ts=2020-05-14T11:04:40.860Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=26 maxSegment=30
+level=info ts=2020-05-14T11:04:40.862Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=27 maxSegment=30
+level=info ts=2020-05-14T11:04:40.864Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=28 maxSegment=30
+level=info ts=2020-05-14T11:04:40.876Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=29 maxSegment=30
+level=info ts=2020-05-14T11:04:40.876Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=30 maxSegment=30
+level=info ts=2020-05-14T11:04:40.876Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=419.123776ms
+level=info ts=2020-05-14T11:04:40.883Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T11:04:40.883Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T11:04:40.883Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T11:04:40.889Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T11:04:40.889Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T11:10:32.733Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T11:10:32.733Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T11:10:32.733Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T11:10:32.733Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T11:10:32.733Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T11:10:32.733Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T11:10:32.733Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T11:10:32.733Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T11:10:32.735Z caller=main.go:565 msg="Scrape manager stopped"
+level=error ts=2020-05-14T11:10:32.746Z caller=web.go:99 component=web msg="panic while serving request" client=47.102.197.233:41874 url=/-/quit err="close of closed channel" stack="goroutine 9821 [running]:\ngithub.com/prometheus/prometheus/web.withStackTracer.func1.1(0x2dcaa00, 0xc0006e93e0, 0xc001d5df00)\n\t/app/web/web.go:98 +0xb5\npanic(0x22317e0, 0x2d7c570)\n\t/usr/local/go/src/runtime/panic.go:679 +0x1b2\ngithub.com/prometheus/prometheus/web.(*Handler).quit(...)\n\t/app/web/web.go:937\nnet/http.HandlerFunc.ServeHTTP(0xc00053f070, 0x7fd1012ab7e8, 0xc001d7adc0, 0xc000032200)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerResponseSize.func1(0x7fd1012ab7e8, 0xc001d7ad70, 0xc000032200)\n\t/app/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_server.go:196 +0xe9\nnet/http.HandlerFunc.ServeHTTP(0xc0006573e0, 0x7fd1012ab7e8, 0xc001d7ad70, 0xc000032200)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerDuration.func2(0x7fd1012ab7e8, 0xc001d7ad70, 0xc000032200)\n\t/app/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_server.go:76 +0xb2\nnet/http.HandlerFunc.ServeHTTP(0xc0006574d0, 0x7fd1012ab7e8, 0xc001d7ad70, 0xc000032200)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerCounter.func1(0x2e13e80, 0xc001d7ad20, 0xc000032200)\n\t/app/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_server.go:100 +0xda\ngithub.com/prometheus/prometheus/web.setPathWithPrefix.func1.1(0x2e13e80, 0xc001d7ad20, 0xc000032100)\n\t/app/web/web.go:1122 +0x1c6\ngithub.com/prometheus/common/route.(*Router).handle.func1(0x2e13e80, 0xc001d7ad20, 0xc000032000, 0x0, 0x0, 0x0)\n\t/app/vendor/github.com/prometheus/common/route/route.go:83 +0x296\ngithub.com/julienschmidt/httprouter.(*Router).ServeHTTP(0xc000087d80, 0x2e13e80, 0xc001d7ad20, 0xc000032000)\n\t/app/vendor/github.com/julienschmidt/httprouter/router.go:334 +0x95e\ngithub.com/prometheus/common/route.(*Router).ServeHTTP(0xc0006ffd60, 0x2e13e80, 0xc001d7ad20, 0xc000032000)\n\t/app/vendor/github.com/prometheus/common/route/route.go:121 +0x4c\nnet/http.(*ServeMux).ServeHTTP(0xc0004d0880, 0x2e13e80, 0xc001d7ad20, 0xc000032000)\n\t/usr/local/go/src/net/http/server.go:2387 +0x1bd\ngithub.com/opentracing-contrib/go-stdlib/nethttp.MiddlewareFunc.func5(0x2e12480, 0xc001c88fc0, 0xc001d5df00)\n\t/app/vendor/github.com/opentracing-contrib/go-stdlib/nethttp/server.go:140 +0x5fb\nnet/http.HandlerFunc.ServeHTTP(0xc000eb3e00, 0x2e12480, 0xc001c88fc0, 0xc001d5df00)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/prometheus/web.withStackTracer.func1(0x2e12480, 0xc001c88fc0, 0xc001d5df00)\n\t/app/web/web.go:103 +0xb3\nnet/http.HandlerFunc.ServeHTTP(0xc000eb3e30, 0x2e12480, 0xc001c88fc0, 0xc001d5df00)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\nnet/http.serverHandler.ServeHTTP(0xc0003c0380, 0x2e12480, 0xc001c88fc0, 0xc001d5df00)\n\t/usr/local/go/src/net/http/server.go:2802 +0xa4\nnet/http.(*conn).serve(0xc001d7e140, 0x2e1c480, 0xc001d652c0)\n\t/usr/local/go/src/net/http/server.go:1890 +0x875\ncreated by net/http.(*Server).Serve\n\t/usr/local/go/src/net/http/server.go:2928 +0x384\n"
+level=error ts=2020-05-14T11:10:32.746Z caller=stdlib.go:89 component=web caller="http: panic serving 47.102.197.233:41874" msg="close of closed channel"
+level=info ts=2020-05-14T11:10:32.763Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T11:10:32.763Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T11:10:32.764Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T11:42:47.761Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T11:42:47.764Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T11:42:47.764Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T11:42:47.764Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T11:42:47.764Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T11:42:47.774Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T11:42:47.792Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T11:42:47.807Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T11:42:47.817Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=32
+level=info ts=2020-05-14T11:42:47.819Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=32
+level=info ts=2020-05-14T11:42:47.832Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=32
+level=info ts=2020-05-14T11:42:47.840Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=32
+level=info ts=2020-05-14T11:42:47.849Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=32
+level=info ts=2020-05-14T11:42:47.849Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=5 maxSegment=32
+level=info ts=2020-05-14T11:42:47.863Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=6 maxSegment=32
+level=info ts=2020-05-14T11:42:47.880Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=7 maxSegment=32
+level=info ts=2020-05-14T11:42:47.880Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=8 maxSegment=32
+level=info ts=2020-05-14T11:42:47.907Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=9 maxSegment=32
+level=info ts=2020-05-14T11:42:47.914Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=10 maxSegment=32
+level=info ts=2020-05-14T11:42:47.919Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=11 maxSegment=32
+level=info ts=2020-05-14T11:42:48.010Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=12 maxSegment=32
+level=info ts=2020-05-14T11:42:48.024Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=13 maxSegment=32
+level=info ts=2020-05-14T11:42:48.058Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=14 maxSegment=32
+level=info ts=2020-05-14T11:42:48.083Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=15 maxSegment=32
+level=info ts=2020-05-14T11:42:48.087Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=16 maxSegment=32
+level=info ts=2020-05-14T11:42:48.092Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=17 maxSegment=32
+level=info ts=2020-05-14T11:42:48.112Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=18 maxSegment=32
+level=info ts=2020-05-14T11:42:48.113Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=19 maxSegment=32
+level=info ts=2020-05-14T11:42:48.122Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=20 maxSegment=32
+level=info ts=2020-05-14T11:42:48.130Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=21 maxSegment=32
+level=info ts=2020-05-14T11:42:48.138Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=22 maxSegment=32
+level=info ts=2020-05-14T11:42:48.151Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=23 maxSegment=32
+level=info ts=2020-05-14T11:42:48.157Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=24 maxSegment=32
+level=info ts=2020-05-14T11:42:48.170Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=25 maxSegment=32
+level=info ts=2020-05-14T11:42:48.179Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=26 maxSegment=32
+level=info ts=2020-05-14T11:42:48.183Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=27 maxSegment=32
+level=info ts=2020-05-14T11:42:48.188Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=28 maxSegment=32
+level=info ts=2020-05-14T11:42:48.213Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=29 maxSegment=32
+level=info ts=2020-05-14T11:42:48.253Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=30 maxSegment=32
+level=info ts=2020-05-14T11:42:48.401Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=31 maxSegment=32
+level=info ts=2020-05-14T11:42:48.401Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=32 maxSegment=32
+level=info ts=2020-05-14T11:42:48.401Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=608.659317ms
+level=info ts=2020-05-14T11:42:48.410Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T11:42:48.410Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T11:42:48.410Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T11:42:48.417Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T11:42:48.417Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T11:43:29.591Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T11:43:29.591Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T11:43:29.591Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T11:43:29.591Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T11:43:29.591Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T11:43:29.591Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T11:43:29.591Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T11:43:29.591Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T11:43:29.594Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-14T11:43:29.626Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T11:43:29.626Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T11:43:29.628Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T11:43:29.699Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T11:43:29.699Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T11:43:29.699Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T11:43:29.699Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T11:43:29.699Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T11:43:29.705Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T11:43:29.733Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T11:43:29.734Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T11:43:29.757Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=33
+level=info ts=2020-05-14T11:43:29.762Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=33
+level=info ts=2020-05-14T11:43:29.763Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=33
+level=info ts=2020-05-14T11:43:29.772Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=33
+level=info ts=2020-05-14T11:43:29.779Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=33
+level=info ts=2020-05-14T11:43:29.779Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=5 maxSegment=33
+level=info ts=2020-05-14T11:43:29.791Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=6 maxSegment=33
+level=info ts=2020-05-14T11:43:29.826Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=7 maxSegment=33
+level=info ts=2020-05-14T11:43:29.827Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=8 maxSegment=33
+level=info ts=2020-05-14T11:43:29.858Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=9 maxSegment=33
+level=info ts=2020-05-14T11:43:29.860Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=10 maxSegment=33
+level=info ts=2020-05-14T11:43:29.867Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=11 maxSegment=33
+level=info ts=2020-05-14T11:43:29.967Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=12 maxSegment=33
+level=info ts=2020-05-14T11:43:29.977Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=13 maxSegment=33
+level=info ts=2020-05-14T11:43:30.005Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=14 maxSegment=33
+level=info ts=2020-05-14T11:43:30.046Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=15 maxSegment=33
+level=info ts=2020-05-14T11:43:30.047Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=16 maxSegment=33
+level=info ts=2020-05-14T11:43:30.053Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=17 maxSegment=33
+level=info ts=2020-05-14T11:43:30.066Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=18 maxSegment=33
+level=info ts=2020-05-14T11:43:30.066Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=19 maxSegment=33
+level=info ts=2020-05-14T11:43:30.068Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=20 maxSegment=33
+level=info ts=2020-05-14T11:43:30.074Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=21 maxSegment=33
+level=info ts=2020-05-14T11:43:30.076Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=22 maxSegment=33
+level=info ts=2020-05-14T11:43:30.089Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=23 maxSegment=33
+level=info ts=2020-05-14T11:43:30.103Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=24 maxSegment=33
+level=info ts=2020-05-14T11:43:30.123Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=25 maxSegment=33
+level=info ts=2020-05-14T11:43:30.132Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=26 maxSegment=33
+level=info ts=2020-05-14T11:43:30.133Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=27 maxSegment=33
+level=info ts=2020-05-14T11:43:30.139Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=28 maxSegment=33
+level=info ts=2020-05-14T11:43:30.159Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=29 maxSegment=33
+level=info ts=2020-05-14T11:43:30.199Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=30 maxSegment=33
+level=info ts=2020-05-14T11:43:30.313Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=31 maxSegment=33
+level=info ts=2020-05-14T11:43:30.319Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=32 maxSegment=33
+level=info ts=2020-05-14T11:43:30.319Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=33 maxSegment=33
+level=info ts=2020-05-14T11:43:30.319Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=584.855179ms
+level=info ts=2020-05-14T11:43:30.326Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T11:43:30.326Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T11:43:30.326Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T11:43:30.332Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T11:43:30.332Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T11:46:54.993Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T11:46:54.993Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T11:46:54.993Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T11:46:54.993Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T11:46:54.993Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T11:46:54.993Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T11:46:54.993Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T11:46:54.993Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T11:46:54.995Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-14T11:46:55.016Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T11:46:55.016Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T11:46:55.017Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-14T11:48:50.355Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-14T11:48:50.355Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-14T11:48:50.355Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-14T11:48:50.355Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-14T11:48:50.355Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-14T11:48:50.365Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-14T11:48:50.375Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-14T11:48:50.392Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-14T11:48:50.399Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=35
+level=info ts=2020-05-14T11:48:50.400Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=35
+level=info ts=2020-05-14T11:48:50.403Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=35
+level=info ts=2020-05-14T11:48:50.406Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=35
+level=info ts=2020-05-14T11:48:50.412Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=35
+level=info ts=2020-05-14T11:48:50.413Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=5 maxSegment=35
+level=info ts=2020-05-14T11:48:50.432Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=6 maxSegment=35
+level=info ts=2020-05-14T11:48:50.455Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=7 maxSegment=35
+level=info ts=2020-05-14T11:48:50.455Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=8 maxSegment=35
+level=info ts=2020-05-14T11:48:50.466Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=9 maxSegment=35
+level=info ts=2020-05-14T11:48:50.466Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=10 maxSegment=35
+level=info ts=2020-05-14T11:48:50.471Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=11 maxSegment=35
+level=info ts=2020-05-14T11:48:50.578Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=12 maxSegment=35
+level=info ts=2020-05-14T11:48:50.586Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=13 maxSegment=35
+level=info ts=2020-05-14T11:48:50.607Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=14 maxSegment=35
+level=info ts=2020-05-14T11:48:50.641Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=15 maxSegment=35
+level=info ts=2020-05-14T11:48:50.645Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=16 maxSegment=35
+level=info ts=2020-05-14T11:48:50.650Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=17 maxSegment=35
+level=info ts=2020-05-14T11:48:50.662Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=18 maxSegment=35
+level=info ts=2020-05-14T11:48:50.662Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=19 maxSegment=35
+level=info ts=2020-05-14T11:48:50.666Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=20 maxSegment=35
+level=info ts=2020-05-14T11:48:50.669Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=21 maxSegment=35
+level=info ts=2020-05-14T11:48:50.673Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=22 maxSegment=35
+level=info ts=2020-05-14T11:48:50.683Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=23 maxSegment=35
+level=info ts=2020-05-14T11:48:50.693Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=24 maxSegment=35
+level=info ts=2020-05-14T11:48:50.717Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=25 maxSegment=35
+level=info ts=2020-05-14T11:48:50.729Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=26 maxSegment=35
+level=info ts=2020-05-14T11:48:50.731Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=27 maxSegment=35
+level=info ts=2020-05-14T11:48:50.735Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=28 maxSegment=35
+level=info ts=2020-05-14T11:48:50.746Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=29 maxSegment=35
+level=info ts=2020-05-14T11:48:50.771Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=30 maxSegment=35
+level=info ts=2020-05-14T11:48:50.904Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=31 maxSegment=35
+level=info ts=2020-05-14T11:48:50.910Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=32 maxSegment=35
+level=info ts=2020-05-14T11:48:50.923Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=33 maxSegment=35
+level=info ts=2020-05-14T11:48:50.923Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=34 maxSegment=35
+level=info ts=2020-05-14T11:48:50.923Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=35 maxSegment=35
+level=info ts=2020-05-14T11:48:50.923Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=547.721235ms
+level=info ts=2020-05-14T11:48:50.929Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-14T11:48:50.930Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-14T11:48:50.930Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T11:48:50.938Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-14T11:48:50.938Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-14T11:49:04.901Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-14T11:49:04.901Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-14T11:49:04.901Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-14T11:49:04.901Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-14T11:49:04.901Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-14T11:49:04.901Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-14T11:49:04.901Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-14T11:49:04.901Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-14T11:49:04.903Z caller=main.go:565 msg="Scrape manager stopped"
+level=error ts=2020-05-14T11:49:04.916Z caller=web.go:99 component=web msg="panic while serving request" client=47.102.197.233:44774 url=/-/quit err="close of closed channel" stack="goroutine 514 [running]:\ngithub.com/prometheus/prometheus/web.withStackTracer.func1.1(0x2dcaa00, 0xc0006ed3e0, 0xc0018e1500)\n\t/app/web/web.go:98 +0xb5\npanic(0x22317e0, 0x2d7c570)\n\t/usr/local/go/src/runtime/panic.go:679 +0x1b2\ngithub.com/prometheus/prometheus/web.(*Handler).quit(...)\n\t/app/web/web.go:937\nnet/http.HandlerFunc.ServeHTTP(0xc0006e9010, 0x7feb5ac937e0, 0xc0018e3680, 0xc0018e1800)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerResponseSize.func1(0x7feb5ac937e0, 0xc0018e3630, 0xc0018e1800)\n\t/app/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_server.go:196 +0xe9\nnet/http.HandlerFunc.ServeHTTP(0xc000657cb0, 0x7feb5ac937e0, 0xc0018e3630, 0xc0018e1800)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerDuration.func2(0x7feb5ac937e0, 0xc0018e3630, 0xc0018e1800)\n\t/app/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_server.go:76 +0xb2\nnet/http.HandlerFunc.ServeHTTP(0xc000657da0, 0x7feb5ac937e0, 0xc0018e3630, 0xc0018e1800)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/client_golang/prometheus/promhttp.InstrumentHandlerCounter.func1(0x2e13e80, 0xc0018e35e0, 0xc0018e1800)\n\t/app/vendor/github.com/prometheus/client_golang/prometheus/promhttp/instrument_server.go:100 +0xda\ngithub.com/prometheus/prometheus/web.setPathWithPrefix.func1.1(0x2e13e80, 0xc0018e35e0, 0xc0018e1700)\n\t/app/web/web.go:1122 +0x1c6\ngithub.com/prometheus/common/route.(*Router).handle.func1(0x2e13e80, 0xc0018e35e0, 0xc0018e1600, 0x0, 0x0, 0x0)\n\t/app/vendor/github.com/prometheus/common/route/route.go:83 +0x296\ngithub.com/julienschmidt/httprouter.(*Router).ServeHTTP(0xc000370100, 0x2e13e80, 0xc0018e35e0, 0xc0018e1600)\n\t/app/vendor/github.com/julienschmidt/httprouter/router.go:334 +0x95e\ngithub.com/prometheus/common/route.(*Router).ServeHTTP(0xc000693900, 0x2e13e80, 0xc0018e35e0, 0xc0018e1600)\n\t/app/vendor/github.com/prometheus/common/route/route.go:121 +0x4c\nnet/http.(*ServeMux).ServeHTTP(0xc000370a40, 0x2e13e80, 0xc0018e35e0, 0xc0018e1600)\n\t/usr/local/go/src/net/http/server.go:2387 +0x1bd\ngithub.com/opentracing-contrib/go-stdlib/nethttp.MiddlewareFunc.func5(0x2e12480, 0xc00181e8c0, 0xc0018e1500)\n\t/app/vendor/github.com/opentracing-contrib/go-stdlib/nethttp/server.go:140 +0x5fb\nnet/http.HandlerFunc.ServeHTTP(0xc000332f60, 0x2e12480, 0xc00181e8c0, 0xc0018e1500)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\ngithub.com/prometheus/prometheus/web.withStackTracer.func1(0x2e12480, 0xc00181e8c0, 0xc0018e1500)\n\t/app/web/web.go:103 +0xb3\nnet/http.HandlerFunc.ServeHTTP(0xc000332f90, 0x2e12480, 0xc00181e8c0, 0xc0018e1500)\n\t/usr/local/go/src/net/http/server.go:2007 +0x44\nnet/http.serverHandler.ServeHTTP(0xc0003c2540, 0x2e12480, 0xc00181e8c0, 0xc0018e1500)\n\t/usr/local/go/src/net/http/server.go:2802 +0xa4\nnet/http.(*conn).serve(0xc0018a7cc0, 0x2e1c480, 0xc0018e8a80)\n\t/usr/local/go/src/net/http/server.go:1890 +0x875\ncreated by net/http.(*Server).Serve\n\t/usr/local/go/src/net/http/server.go:2928 +0x384\n"
+level=error ts=2020-05-14T11:49:04.919Z caller=stdlib.go:89 component=web caller="http: panic serving 47.102.197.233:44774" msg="close of closed channel"
+level=info ts=2020-05-14T11:49:04.921Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-14T11:49:04.921Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-14T11:49:27.757Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-16T04:51:55.851Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-16T04:51:55.852Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-16T04:51:55.852Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-16T04:51:55.852Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-16T04:51:55.852Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-16T04:51:55.861Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-16T04:51:55.874Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-16T04:51:55.877Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-16T04:51:55.901Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=40
+level=info ts=2020-05-16T04:51:55.904Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=1 maxSegment=40
+level=info ts=2020-05-16T04:51:55.907Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=2 maxSegment=40
+level=info ts=2020-05-16T04:51:55.918Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=3 maxSegment=40
+level=info ts=2020-05-16T04:51:55.935Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=4 maxSegment=40
+level=info ts=2020-05-16T04:51:55.935Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=5 maxSegment=40
+level=info ts=2020-05-16T04:51:55.949Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=6 maxSegment=40
+level=info ts=2020-05-16T04:51:55.969Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=7 maxSegment=40
+level=info ts=2020-05-16T04:51:55.969Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=8 maxSegment=40
+level=info ts=2020-05-16T04:51:55.991Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=9 maxSegment=40
+level=info ts=2020-05-16T04:51:55.996Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=10 maxSegment=40
+level=info ts=2020-05-16T04:51:56.000Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=11 maxSegment=40
+level=info ts=2020-05-16T04:51:56.116Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=12 maxSegment=40
+level=info ts=2020-05-16T04:51:56.125Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=13 maxSegment=40
+level=info ts=2020-05-16T04:51:56.141Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=14 maxSegment=40
+level=info ts=2020-05-16T04:51:56.167Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=15 maxSegment=40
+level=info ts=2020-05-16T04:51:56.205Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=16 maxSegment=40
+level=info ts=2020-05-16T04:51:56.210Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=17 maxSegment=40
+level=info ts=2020-05-16T04:51:56.224Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=18 maxSegment=40
+level=info ts=2020-05-16T04:51:56.225Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=19 maxSegment=40
+level=info ts=2020-05-16T04:51:56.232Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=20 maxSegment=40
+level=info ts=2020-05-16T04:51:56.238Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=21 maxSegment=40
+level=info ts=2020-05-16T04:51:56.244Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=22 maxSegment=40
+level=info ts=2020-05-16T04:51:56.257Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=23 maxSegment=40
+level=info ts=2020-05-16T04:51:56.271Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=24 maxSegment=40
+level=info ts=2020-05-16T04:51:56.283Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=25 maxSegment=40
+level=info ts=2020-05-16T04:51:56.294Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=26 maxSegment=40
+level=info ts=2020-05-16T04:51:56.297Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=27 maxSegment=40
+level=info ts=2020-05-16T04:51:56.301Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=28 maxSegment=40
+level=info ts=2020-05-16T04:51:56.313Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=29 maxSegment=40
+level=info ts=2020-05-16T04:51:56.368Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=30 maxSegment=40
+level=info ts=2020-05-16T04:51:56.512Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=31 maxSegment=40
+level=info ts=2020-05-16T04:51:56.521Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=32 maxSegment=40
+level=info ts=2020-05-16T04:51:56.534Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=33 maxSegment=40
+level=info ts=2020-05-16T04:51:56.535Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=34 maxSegment=40
+level=info ts=2020-05-16T04:51:56.540Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=35 maxSegment=40
+level=info ts=2020-05-16T04:51:56.558Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=36 maxSegment=40
+level=info ts=2020-05-16T04:51:56.602Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=37 maxSegment=40
+level=info ts=2020-05-16T04:51:56.618Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=38 maxSegment=40
+level=info ts=2020-05-16T04:51:56.622Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=39 maxSegment=40
+level=info ts=2020-05-16T04:51:56.623Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=40 maxSegment=40
+level=info ts=2020-05-16T04:51:56.623Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=748.606519ms
+level=info ts=2020-05-16T04:51:56.630Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-16T04:51:56.630Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-16T04:51:56.630Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-16T04:51:56.643Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-16T04:51:56.643Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=info ts=2020-05-16T04:52:01.891Z caller=compact.go:495 component=tsdb msg="write block" mint=1589449621708 maxt=1589450400000 ulid=01E8DX691K3D8M2VNNWCPF00FH duration=175.319546ms
+level=info ts=2020-05-16T04:52:01.963Z caller=head.go:662 component=tsdb msg="head GC completed" duration=9.87731ms
+level=info ts=2020-05-16T04:52:02.147Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=0 last=13 duration=183.489634ms
+level=info ts=2020-05-16T04:52:02.575Z caller=compact.go:495 component=tsdb msg="write block" mint=1589450400000 maxt=1589457600000 ulid=01E8DX69G9GAJHHKF47KHK6RKA duration=390.228084ms
+level=info ts=2020-05-16T04:52:02.646Z caller=head.go:662 component=tsdb msg="head GC completed" duration=13.744746ms
+level=info ts=2020-05-16T04:52:02.771Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=14 last=22 duration=125.193812ms
+level=info ts=2020-05-16T04:52:03.065Z caller=compact.go:495 component=tsdb msg="write block" mint=1589457600000 maxt=1589464800000 ulid=01E8DX6A3WCYF3PYNSSN0DSFEB duration=253.262978ms
+level=info ts=2020-05-16T04:52:03.121Z caller=head.go:662 component=tsdb msg="head GC completed" duration=4.308525ms
+level=info ts=2020-05-16T04:52:03.217Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=23 last=29 duration=96.375532ms
+level=info ts=2020-05-16T04:52:03.359Z caller=head.go:662 component=tsdb msg="head GC completed" duration=1.200992ms
+level=info ts=2020-05-16T04:52:03.447Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=30 last=34 duration=88.422623ms
+level=info ts=2020-05-16T04:52:03.543Z caller=head.go:662 component=tsdb msg="head GC completed" duration=1.226575ms
+level=info ts=2020-05-16T04:52:03.589Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=35 last=37 duration=46.033595ms
+level=info ts=2020-05-16T04:52:03.713Z caller=head.go:662 component=tsdb msg="head GC completed" duration=1.299763ms
+level=info ts=2020-05-16T04:52:03.750Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=38 last=40 duration=37.024148ms
+level=info ts=2020-05-16T04:52:03.857Z caller=head.go:662 component=tsdb msg="head GC completed" duration=1.307572ms
+level=info ts=2020-05-16T04:52:03.892Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=41 last=42 duration=35.217019ms
+level=info ts=2020-05-16T04:52:03.980Z caller=head.go:662 component=tsdb msg="head GC completed" duration=1.967366ms
+level=info ts=2020-05-16T04:52:04.010Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=43 last=44 duration=29.21299ms
+level=info ts=2020-05-16T04:52:04.157Z caller=head.go:662 component=tsdb msg="head GC completed" duration=7.142777ms
+level=info ts=2020-05-16T04:52:04.253Z caller=head.go:662 component=tsdb msg="head GC completed" duration=1.247986ms
+level=info ts=2020-05-16T04:52:04.288Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=45 last=46 duration=34.424771ms
+level=info ts=2020-05-16T04:52:04.376Z caller=head.go:662 component=tsdb msg="head GC completed" duration=1.270009ms
+level=info ts=2020-05-16T04:52:04.511Z caller=head.go:662 component=tsdb msg="head GC completed" duration=1.172401ms
+level=info ts=2020-05-16T04:52:04.546Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=47 last=48 duration=34.949562ms
+level=info ts=2020-05-16T04:52:04.646Z caller=head.go:662 component=tsdb msg="head GC completed" duration=2.291409ms
+level=info ts=2020-05-16T04:52:04.719Z caller=head.go:662 component=tsdb msg="head GC completed" duration=1.15147ms
+level=info ts=2020-05-16T04:52:04.752Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=49 last=50 duration=33.398403ms
+level=info ts=2020-05-16T04:52:04.846Z caller=head.go:662 component=tsdb msg="head GC completed" duration=1.118907ms
+level=info ts=2020-05-16T04:52:05.008Z caller=head.go:662 component=tsdb msg="head GC completed" duration=1.801324ms
+level=info ts=2020-05-16T04:52:05.065Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=51 last=52 duration=56.341074ms
+level=info ts=2020-05-16T04:52:05.216Z caller=head.go:662 component=tsdb msg="head GC completed" duration=1.714ms
+level=info ts=2020-05-16T04:52:05.306Z caller=head.go:662 component=tsdb msg="head GC completed" duration=1.749899ms
+level=info ts=2020-05-16T04:52:05.336Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=53 last=54 duration=29.059901ms
+level=info ts=2020-05-16T04:52:05.453Z caller=head.go:662 component=tsdb msg="head GC completed" duration=1.603736ms
+level=info ts=2020-05-16T04:52:05.609Z caller=head.go:662 component=tsdb msg="head GC completed" duration=3.268673ms
+level=info ts=2020-05-16T04:52:05.631Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=55 last=56 duration=21.364829ms
+level=info ts=2020-05-16T04:52:05.760Z caller=head.go:662 component=tsdb msg="head GC completed" duration=2.8612ms
+level=info ts=2020-05-16T05:00:00.579Z caller=head.go:662 component=tsdb msg="head GC completed" duration=3.709569ms
+level=info ts=2020-05-16T05:00:00.612Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=57 last=58 duration=33.164301ms
+level=info ts=2020-05-16T07:00:00.666Z caller=compact.go:495 component=tsdb msg="write block" mint=1589601600000 maxt=1589608800000 ulid=01E8E4GKVHS3SP6K06TGYAD5CC duration=169.449876ms
+level=info ts=2020-05-16T07:00:00.748Z caller=head.go:662 component=tsdb msg="head GC completed" duration=11.904793ms
+level=info ts=2020-05-16T07:00:01.085Z caller=compact.go:441 component=tsdb msg="compact blocks" count=2 mint=1589449621708 maxt=1589457600000 ulid=01E8E4GM4BRCAMN5EYFPY05CZN sources="[01E8DX691K3D8M2VNNWCPF00FH 01E8DX69G9GAJHHKF47KHK6RKA]" duration=305.316674ms
+level=info ts=2020-05-16T09:00:00.707Z caller=compact.go:495 component=tsdb msg="write block" mint=1589608800000 maxt=1589616000000 ulid=01E8EBCB3H88MJND49CAMGN0D4 duration=209.899908ms
+level=info ts=2020-05-16T09:00:00.774Z caller=head.go:662 component=tsdb msg="head GC completed" duration=4.439012ms
+level=info ts=2020-05-16T09:00:00.811Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=59 last=60 duration=37.274629ms
+level=info ts=2020-05-16T09:00:01.159Z caller=compact.go:441 component=tsdb msg="compact blocks" count=2 mint=1589449621708 maxt=1589464800000 ulid=01E8EBCBEKSBXDR2JBD1KTY0FC sources="[01E8E4GM4BRCAMN5EYFPY05CZN 01E8DX6A3WCYF3PYNSSN0DSFEB]" duration=308.412847ms
+level=info ts=2020-05-16T11:00:00.747Z caller=compact.go:495 component=tsdb msg="write block" mint=1589616000000 maxt=1589623200000 ulid=01E8EJ82BPSNVHRSEXFG43TA9B duration=245.200456ms
+level=info ts=2020-05-16T11:00:00.823Z caller=head.go:662 component=tsdb msg="head GC completed" duration=7.817174ms
+level=info ts=2020-05-16T11:00:01.262Z caller=compact.go:441 component=tsdb msg="compact blocks" count=2 mint=1589449621708 maxt=1589608800000 ulid=01E8EJ82Q0S0YR5Y76MBNKY1YC sources="[01E8EBCBEKSBXDR2JBD1KTY0FC 01E8E4GKVHS3SP6K06TGYAD5CC]" duration=397.734578ms
+level=info ts=2020-05-16T13:00:00.666Z caller=compact.go:495 component=tsdb msg="write block" mint=1589623200000 maxt=1589630400000 ulid=01E8ES3SKF5D257TKQ04R8BQKT duration=170.751096ms
+level=info ts=2020-05-16T13:00:00.723Z caller=head.go:662 component=tsdb msg="head GC completed" duration=3.516072ms
+level=info ts=2020-05-16T13:00:01.430Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=61 last=62 duration=706.832175ms
+level=info ts=2020-05-16T15:00:00.683Z caller=compact.go:495 component=tsdb msg="write block" mint=1589630400000 maxt=1589637600000 ulid=01E8EZZGVHF48YHR0VRKVKKX64 duration=186.233552ms
+level=info ts=2020-05-16T15:00:00.759Z caller=head.go:662 component=tsdb msg="head GC completed" duration=9.894888ms
+level=info ts=2020-05-16T15:00:01.200Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1589608800000 maxt=1589630400000 ulid=01E8EZZH4Z2MH9TD24A2VZ4F79 sources="[01E8EBCB3H88MJND49CAMGN0D4 01E8EJ82BPSNVHRSEXFG43TA9B 01E8ES3SKF5D257TKQ04R8BQKT]" duration=400.82906ms
+level=info ts=2020-05-16T17:00:00.685Z caller=compact.go:495 component=tsdb msg="write block" mint=1589637600000 maxt=1589644800000 ulid=01E8F6V83GYHQJHRZKK5P0378Q duration=188.985911ms
+level=info ts=2020-05-16T17:00:00.751Z caller=head.go:662 component=tsdb msg="head GC completed" duration=7.901995ms
+level=info ts=2020-05-16T17:00:01.412Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=63 last=64 duration=660.674824ms
+level=info ts=2020-05-16T19:00:00.654Z caller=compact.go:495 component=tsdb msg="write block" mint=1589644800000 maxt=1589652000000 ulid=01E8FDPZBG4WVY4J1FYCT2YJ44 duration=158.16986ms
+level=info ts=2020-05-16T19:00:00.735Z caller=head.go:662 component=tsdb msg="head GC completed" duration=3.48146ms
+level=info ts=2020-05-16T21:00:00.668Z caller=compact.go:495 component=tsdb msg="write block" mint=1589652000000 maxt=1589659200000 ulid=01E8FMJPKFV96EZK8YQ5FWAWY5 duration=173.221777ms
+level=info ts=2020-05-16T21:00:00.735Z caller=head.go:662 component=tsdb msg="head GC completed" duration=8.583273ms
+level=info ts=2020-05-16T21:00:01.186Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=65 last=66 duration=450.538545ms
+level=info ts=2020-05-16T21:00:01.590Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1589630400000 maxt=1589652000000 ulid=01E8FMJQAADZ6YMQ9WQE07C8KC sources="[01E8EZZGVHF48YHR0VRKVKKX64 01E8F6V83GYHQJHRZKK5P0378Q 01E8FDPZBG4WVY4J1FYCT2YJ44]" duration=364.337286ms
+level=info ts=2020-05-16T23:00:00.666Z caller=compact.go:495 component=tsdb msg="write block" mint=1589659200000 maxt=1589666400000 ulid=01E8FVEDVJPT70GJNF9K4863P7 duration=168.096838ms
+level=info ts=2020-05-16T23:00:00.726Z caller=head.go:662 component=tsdb msg="head GC completed" duration=8.582892ms
+level=info ts=2020-05-17T01:00:00.667Z caller=compact.go:495 component=tsdb msg="write block" mint=1589666400000 maxt=1589673600000 ulid=01E8G2A53FAM8CC9WBT0P8VFA2 duration=171.800959ms
+level=info ts=2020-05-17T01:00:00.715Z caller=head.go:662 component=tsdb msg="head GC completed" duration=3.355192ms
+level=info ts=2020-05-17T01:00:01.149Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=67 last=68 duration=434.723975ms
+level=info ts=2020-05-17T03:00:00.671Z caller=compact.go:495 component=tsdb msg="write block" mint=1589673600000 maxt=1589680800000 ulid=01E8G95WBG18ETVK8D0ZWH669R duration=174.873159ms
+level=info ts=2020-05-17T03:00:00.750Z caller=head.go:662 component=tsdb msg="head GC completed" duration=7.701128ms
+level=info ts=2020-05-17T03:00:01.227Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1589652000000 maxt=1589673600000 ulid=01E8G95WMHHE1MSA468CMG6FM8 sources="[01E8FMJPKFV96EZK8YQ5FWAWY5 01E8FVEDVJPT70GJNF9K4863P7 01E8G2A53FAM8CC9WBT0P8VFA2]" duration=441.54321ms
+level=info ts=2020-05-17T03:00:02.034Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1589608800000 maxt=1589673600000 ulid=01E8G95X566D86P5F2NVKX1N62 sources="[01E8EZZH4Z2MH9TD24A2VZ4F79 01E8FMJQAADZ6YMQ9WQE07C8KC 01E8G95WMHHE1MSA468CMG6FM8]" duration=715.619026ms
+level=info ts=2020-05-17T05:00:00.676Z caller=compact.go:495 component=tsdb msg="write block" mint=1589680800000 maxt=1589688000000 ulid=01E8GG1KKH6JY5MM11YX6PTETR duration=178.431583ms
+level=info ts=2020-05-17T05:00:00.743Z caller=head.go:662 component=tsdb msg="head GC completed" duration=3.500726ms
+level=info ts=2020-05-17T05:00:01.218Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=69 last=70 duration=475.386477ms
+level=info ts=2020-05-17T07:00:00.669Z caller=compact.go:495 component=tsdb msg="write block" mint=1589688000000 maxt=1589695200000 ulid=01E8GPXAVMW8T5HSG9K5Z23MAH duration=169.789125ms
+level=info ts=2020-05-17T07:00:00.739Z caller=head.go:662 component=tsdb msg="head GC completed" duration=3.691235ms
+level=info ts=2020-05-17T09:00:00.715Z caller=compact.go:495 component=tsdb msg="write block" mint=1589695200000 maxt=1589702400000 ulid=01E8GXS23HV1H4HAXQCG798VM6 duration=217.635451ms
+level=info ts=2020-05-17T09:00:00.781Z caller=head.go:662 component=tsdb msg="head GC completed" duration=13.830195ms
+level=info ts=2020-05-17T09:00:01.202Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=71 last=72 duration=420.845159ms
+level=info ts=2020-05-17T09:00:01.574Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1589673600000 maxt=1589695200000 ulid=01E8GXS2VE83H8QJC7SPRFEX96 sources="[01E8G95WBG18ETVK8D0ZWH669R 01E8GG1KKH6JY5MM11YX6PTETR 01E8GPXAVMW8T5HSG9K5Z23MAH]" duration=312.702239ms
+level=info ts=2020-05-17T11:00:00.664Z caller=compact.go:495 component=tsdb msg="write block" mint=1589702400000 maxt=1589709600000 ulid=01E8H4MSBGVF872TCCFCC3HQ4F duration=167.849102ms
+level=info ts=2020-05-17T11:00:00.733Z caller=head.go:662 component=tsdb msg="head GC completed" duration=3.278592ms
+level=info ts=2020-05-17T13:02:12.054Z caller=compact.go:495 component=tsdb msg="write block" mint=1589709600000 maxt=1589716800000 ulid=01E8HBHS338JMQR9YJJBW01P8K duration=1m19.30301905s
+level=info ts=2020-05-17T13:02:24.662Z caller=head.go:662 component=tsdb msg="head GC completed" duration=5.046455ms
+level=info ts=2020-05-17T13:02:25.057Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=73 last=74 duration=394.985548ms
+level=info ts=2020-05-17T15:00:00.671Z caller=compact.go:495 component=tsdb msg="write block" mint=1589716800000 maxt=1589724000000 ulid=01E8HJC7VFR6QEK7HHT9S687NZ duration=175.529956ms
+level=info ts=2020-05-17T15:00:00.745Z caller=head.go:662 component=tsdb msg="head GC completed" duration=8.947834ms
+level=info ts=2020-05-17T15:00:01.223Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1589695200000 maxt=1589716800000 ulid=01E8HJC84C7JVGKAZBMJNZZ42F sources="[01E8GXS23HV1H4HAXQCG798VM6 01E8H4MSBGVF872TCCFCC3HQ4F 01E8HBHS338JMQR9YJJBW01P8K]" duration=442.61096ms
+level=info ts=2020-05-17T17:00:00.660Z caller=compact.go:495 component=tsdb msg="write block" mint=1589724000000 maxt=1589731200000 ulid=01E8HS7Z3HESGPHQ9Z39SQNAM5 duration=162.924395ms
+level=info ts=2020-05-17T17:00:00.732Z caller=head.go:662 component=tsdb msg="head GC completed" duration=3.570873ms
+level=info ts=2020-05-17T17:00:01.162Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=75 last=76 duration=430.454105ms
+level=info ts=2020-05-17T19:00:00.680Z caller=compact.go:495 component=tsdb msg="write block" mint=1589731200000 maxt=1589738400000 ulid=01E8J03PC0M322FBJHCNW23M31 duration=167.831458ms
+level=info ts=2020-05-17T19:00:00.755Z caller=head.go:662 component=tsdb msg="head GC completed" duration=7.877813ms
+level=info ts=2020-05-17T21:00:00.679Z caller=compact.go:495 component=tsdb msg="write block" mint=1589738400000 maxt=1589745600000 ulid=01E8J6ZDKH86E0GFD0EKEZ4DNC duration=181.775188ms
+level=info ts=2020-05-17T21:00:00.749Z caller=head.go:662 component=tsdb msg="head GC completed" duration=3.398443ms
+level=info ts=2020-05-17T21:00:01.141Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=77 last=78 duration=391.703738ms
+level=info ts=2020-05-17T21:00:01.584Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1589716800000 maxt=1589738400000 ulid=01E8J6ZE9D0CRBBJ0AMS91A5ZE sources="[01E8HJC7VFR6QEK7HHT9S687NZ 01E8HS7Z3HESGPHQ9Z39SQNAM5 01E8J03PC0M322FBJHCNW23M31]" duration=387.983038ms
+level=info ts=2020-05-17T21:00:02.367Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1589673600000 maxt=1589738400000 ulid=01E8J6ZERHRHDC3X6NMX36YS21 sources="[01E8GXS2VE83H8QJC7SPRFEX96 01E8HJC84C7JVGKAZBMJNZZ42F 01E8J6ZE9D0CRBBJ0AMS91A5ZE]" duration=685.658027ms
+level=info ts=2020-05-17T23:00:00.667Z caller=compact.go:495 component=tsdb msg="write block" mint=1589745600000 maxt=1589752800000 ulid=01E8JDV4VFGERHBKVCSWK8C9VZ duration=171.391417ms
+level=info ts=2020-05-17T23:00:00.737Z caller=head.go:662 component=tsdb msg="head GC completed" duration=3.821223ms
+level=info ts=2020-05-18T01:00:00.678Z caller=compact.go:495 component=tsdb msg="write block" mint=1589752800000 maxt=1589760000000 ulid=01E8JMPW3HS55ZRR2W0KTTHTPE duration=180.98532ms
+level=info ts=2020-05-18T01:00:00.732Z caller=head.go:662 component=tsdb msg="head GC completed" duration=3.356533ms
+level=info ts=2020-05-18T01:00:01.164Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=79 last=80 duration=431.510822ms
+level=info ts=2020-05-18T03:00:00.668Z caller=compact.go:495 component=tsdb msg="write block" mint=1589760000000 maxt=1589767200000 ulid=01E8JVJKBKV7JX0G943HFZB6G0 duration=169.236772ms
+level=info ts=2020-05-18T03:00:00.724Z caller=head.go:662 component=tsdb msg="head GC completed" duration=3.450095ms
+level=info ts=2020-05-18T03:00:01.128Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1589738400000 maxt=1589760000000 ulid=01E8JVJKKWJWHZZ315CS28C6VM sources="[01E8J6ZDKH86E0GFD0EKEZ4DNC 01E8JDV4VFGERHBKVCSWK8C9VZ 01E8JMPW3HS55ZRR2W0KTTHTPE]" duration=363.617958ms
+level=info ts=2020-05-18T05:00:00.668Z caller=compact.go:495 component=tsdb msg="write block" mint=1589767200000 maxt=1589774400000 ulid=01E8K2EAKHH5NNKXZY5E45TAP4 duration=171.177971ms
+level=info ts=2020-05-18T05:00:00.731Z caller=head.go:662 component=tsdb msg="head GC completed" duration=8.210806ms
+level=info ts=2020-05-18T05:00:01.156Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=81 last=82 duration=425.199132ms
+level=info ts=2020-05-18T07:00:00.657Z caller=compact.go:495 component=tsdb msg="write block" mint=1589774400000 maxt=1589781600000 ulid=01E8K9A1VHNYT32MH63RMNJYAH duration=160.075225ms
+level=info ts=2020-05-18T07:00:00.717Z caller=head.go:662 component=tsdb msg="head GC completed" duration=17.98182ms
+level=info ts=2020-05-18T09:00:00.682Z caller=compact.go:495 component=tsdb msg="write block" mint=1589781600000 maxt=1589788800000 ulid=01E8KG5S3GKHPJJDKSHRKDJYBE duration=186.831669ms
+level=info ts=2020-05-18T09:00:00.740Z caller=head.go:662 component=tsdb msg="head GC completed" duration=4.57096ms
+level=info ts=2020-05-18T09:00:01.279Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=83 last=84 duration=538.469956ms
+level=info ts=2020-05-18T09:00:01.629Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1589760000000 maxt=1589781600000 ulid=01E8KG5SXBNPG677002DJ5K3XR sources="[01E8JVJKBKV7JX0G943HFZB6G0 01E8K2EAKHH5NNKXZY5E45TAP4 01E8K9A1VHNYT32MH63RMNJYAH]" duration=305.709863ms
+level=info ts=2020-05-18T11:00:00.676Z caller=compact.go:495 component=tsdb msg="write block" mint=1589788800000 maxt=1589796000000 ulid=01E8KQ1GBHFHT6NN61W93PESH5 duration=179.118475ms
+level=info ts=2020-05-18T11:00:00.763Z caller=head.go:662 component=tsdb msg="head GC completed" duration=7.73987ms
+level=info ts=2020-05-18T13:00:00.659Z caller=compact.go:495 component=tsdb msg="write block" mint=1589796000000 maxt=1589803200000 ulid=01E8KXX7KHSQH75AA6A5JVF986 duration=162.201376ms
+level=info ts=2020-05-18T13:00:00.743Z caller=head.go:662 component=tsdb msg="head GC completed" duration=5.776493ms
+level=info ts=2020-05-18T13:00:01.268Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=85 last=86 duration=524.798001ms
+level=info ts=2020-05-18T15:00:00.700Z caller=compact.go:495 component=tsdb msg="write block" mint=1589803200000 maxt=1589810400000 ulid=01E8M4RYVN6GH2V9QHE9P2SACM duration=198.996959ms
+level=info ts=2020-05-18T15:00:00.781Z caller=head.go:662 component=tsdb msg="head GC completed" duration=11.80363ms
+level=info ts=2020-05-18T15:00:01.162Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1589781600000 maxt=1589803200000 ulid=01E8M4RZ5SP65ACP9ZN0QM7RV7 sources="[01E8KG5S3GKHPJJDKSHRKDJYBE 01E8KQ1GBHFHT6NN61W93PESH5 01E8KXX7KHSQH75AA6A5JVF986]" duration=337.245124ms
+level=info ts=2020-05-18T15:00:01.954Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1589738400000 maxt=1589803200000 ulid=01E8M4RZMVNKHY205NV8KNEJS3 sources="[01E8JVJKKWJWHZZ315CS28C6VM 01E8KG5SXBNPG677002DJ5K3XR 01E8M4RZ5SP65ACP9ZN0QM7RV7]" duration=647.055478ms
+level=info ts=2020-05-18T15:00:03.391Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1589608800000 maxt=1589803200000 ulid=01E8M4S0CNTC72VDKSYRDHBWS5 sources="[01E8G95X566D86P5F2NVKX1N62 01E8J6ZERHRHDC3X6NMX36YS21 01E8M4RZMVNKHY205NV8KNEJS3]" duration=1.321917733s
+level=info ts=2020-05-18T17:00:00.689Z caller=compact.go:495 component=tsdb msg="write block" mint=1589810400000 maxt=1589817600000 ulid=01E8MBMP442D7DBB5BFK1PF8V1 duration=172.521708ms
+level=info ts=2020-05-18T17:00:00.762Z caller=head.go:662 component=tsdb msg="head GC completed" duration=11.624182ms
+level=info ts=2020-05-18T17:00:01.694Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=87 last=88 duration=931.543459ms
+level=info ts=2020-05-18T17:00:02.676Z caller=compact.go:441 component=tsdb msg="compact blocks" count=2 mint=1589449621708 maxt=1589803200000 ulid=01E8MBMQA0E78PTWXA28K7GDTA sources="[01E8EJ82Q0S0YR5Y76MBNKY1YC 01E8M4S0CNTC72VDKSYRDHBWS5]" duration=948.01107ms
+level=info ts=2020-05-18T19:00:00.678Z caller=compact.go:495 component=tsdb msg="write block" mint=1589817600000 maxt=1589824800000 ulid=01E8MJGDBHXXWJ6MBE22KG9AF8 duration=180.966173ms
+level=info ts=2020-05-18T19:00:00.750Z caller=head.go:662 component=tsdb msg="head GC completed" duration=12.154999ms
+level=info ts=2020-05-18T21:00:00.711Z caller=compact.go:495 component=tsdb msg="write block" mint=1589824800000 maxt=1589832000000 ulid=01E8MSC4KJW54KQSK8BVXW9BBX duration=213.326636ms
+level=info ts=2020-05-18T21:00:00.779Z caller=head.go:662 component=tsdb msg="head GC completed" duration=6.584377ms
+level=info ts=2020-05-18T21:00:01.217Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=89 last=90 duration=437.467164ms
+level=info ts=2020-05-18T21:00:01.656Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1589803200000 maxt=1589824800000 ulid=01E8MSC5B9EW4DYHHP2ZY1D64Z sources="[01E8M4RYVN6GH2V9QHE9P2SACM 01E8MBMP442D7DBB5BFK1PF8V1 01E8MJGDBHXXWJ6MBE22KG9AF8]" duration=398.495351ms
+level=info ts=2020-05-18T23:00:00.684Z caller=compact.go:495 component=tsdb msg="write block" mint=1589832000000 maxt=1589839200000 ulid=01E8N07VVHFY6S0HX854J2JNYT duration=186.700872ms
+level=info ts=2020-05-18T23:00:00.748Z caller=head.go:662 component=tsdb msg="head GC completed" duration=10.242505ms
+level=info ts=2020-05-19T01:00:00.678Z caller=compact.go:495 component=tsdb msg="write block" mint=1589839200000 maxt=1589846400000 ulid=01E8N73K3K614RE2Q4EE6RT1S0 duration=178.894136ms
+level=info ts=2020-05-19T01:00:00.737Z caller=head.go:662 component=tsdb msg="head GC completed" duration=3.857175ms
+level=info ts=2020-05-19T01:00:01.158Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=91 last=92 duration=421.233192ms
+level=info ts=2020-05-19T03:00:00.684Z caller=compact.go:495 component=tsdb msg="write block" mint=1589846400000 maxt=1589853600000 ulid=01E8NDZABMRXG52EB8PEJSPQN6 duration=183.671955ms
+level=info ts=2020-05-19T03:00:00.754Z caller=head.go:662 component=tsdb msg="head GC completed" duration=8.347026ms
+level=info ts=2020-05-19T03:00:01.203Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1589824800000 maxt=1589846400000 ulid=01E8NDZAMNDQ2YFHEYXXTZXN4N sources="[01E8MSC4KJW54KQSK8BVXW9BBX 01E8N07VVHFY6S0HX854J2JNYT 01E8N73K3K614RE2Q4EE6RT1S0]" duration=413.27061ms
+level=info ts=2020-05-19T05:00:00.667Z caller=compact.go:495 component=tsdb msg="write block" mint=1589853600000 maxt=1589860800000 ulid=01E8NMV1KGR57QCVD4QH3HACZJ duration=170.582233ms
+level=info ts=2020-05-19T05:00:00.730Z caller=head.go:662 component=tsdb msg="head GC completed" duration=5.103237ms
+level=info ts=2020-05-19T05:00:01.280Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=93 last=94 duration=550.435895ms
+level=warn ts=2020-05-19T05:58:33.393Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-19T05:58:33.393Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-19T05:58:33.393Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-19T05:58:33.393Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-19T05:58:33.393Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-19T05:58:33.393Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-19T05:58:33.393Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-19T05:58:33.393Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-19T05:58:33.393Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-19T05:58:33.402Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-19T05:58:33.402Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-19T05:58:33.415Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-19T05:58:33.545Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-19T05:58:33.545Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-19T05:58:33.545Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-19T05:58:33.545Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-19T05:58:33.545Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-19T05:58:33.553Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-19T05:58:33.553Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589449621708 maxt=1589803200000 ulid=01E8MBMQA0E78PTWXA28K7GDTA
+level=info ts=2020-05-19T05:58:33.553Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589803200000 maxt=1589824800000 ulid=01E8MSC5B9EW4DYHHP2ZY1D64Z
+level=info ts=2020-05-19T05:58:33.553Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589846400000 maxt=1589853600000 ulid=01E8NDZABMRXG52EB8PEJSPQN6
+level=info ts=2020-05-19T05:58:33.553Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589824800000 maxt=1589846400000 ulid=01E8NDZAMNDQ2YFHEYXXTZXN4N
+level=info ts=2020-05-19T05:58:33.553Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589853600000 maxt=1589860800000 ulid=01E8NMV1KGR57QCVD4QH3HACZJ
+level=info ts=2020-05-19T05:58:33.566Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-19T05:58:33.574Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-19T05:58:33.584Z caller=head.go:600 component=tsdb msg="WAL checkpoint loaded"
+level=info ts=2020-05-19T05:58:33.808Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=95 maxSegment=99
+level=info ts=2020-05-19T05:58:34.003Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=96 maxSegment=99
+level=info ts=2020-05-19T05:58:34.312Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=97 maxSegment=99
+level=info ts=2020-05-19T05:58:34.513Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=98 maxSegment=99
+level=info ts=2020-05-19T05:58:34.513Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=99 maxSegment=99
+level=info ts=2020-05-19T05:58:34.513Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=939.629006ms
+level=info ts=2020-05-19T05:58:34.523Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-19T05:58:34.523Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-19T05:58:34.523Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-19T05:58:34.547Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-19T05:58:34.547Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-19T06:19:34.511Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-19T06:19:34.515Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-19T06:19:34.515Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-19T06:19:34.515Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-19T06:19:34.515Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-19T06:19:34.515Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-19T06:19:34.515Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-19T06:19:34.515Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-19T06:19:34.517Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-19T06:19:34.532Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-19T06:19:34.532Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-19T06:19:34.540Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-19T06:19:34.662Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-19T06:19:34.662Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-19T06:19:34.662Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-19T06:19:34.662Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-19T06:19:34.662Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-19T06:19:34.666Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-19T06:19:34.666Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589449621708 maxt=1589803200000 ulid=01E8MBMQA0E78PTWXA28K7GDTA
+level=info ts=2020-05-19T06:19:34.666Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589803200000 maxt=1589824800000 ulid=01E8MSC5B9EW4DYHHP2ZY1D64Z
+level=info ts=2020-05-19T06:19:34.666Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589846400000 maxt=1589853600000 ulid=01E8NDZABMRXG52EB8PEJSPQN6
+level=info ts=2020-05-19T06:19:34.666Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589824800000 maxt=1589846400000 ulid=01E8NDZAMNDQ2YFHEYXXTZXN4N
+level=info ts=2020-05-19T06:19:34.666Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589853600000 maxt=1589860800000 ulid=01E8NMV1KGR57QCVD4QH3HACZJ
+level=info ts=2020-05-19T06:19:34.702Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-19T06:19:34.801Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-19T06:19:34.811Z caller=head.go:600 component=tsdb msg="WAL checkpoint loaded"
+level=info ts=2020-05-19T06:19:35.039Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=95 maxSegment=100
+level=info ts=2020-05-19T06:19:35.265Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=96 maxSegment=100
+level=info ts=2020-05-19T06:19:35.570Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=97 maxSegment=100
+level=info ts=2020-05-19T06:19:35.850Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=98 maxSegment=100
+level=info ts=2020-05-19T06:19:35.988Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=99 maxSegment=100
+level=info ts=2020-05-19T06:19:35.989Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=100 maxSegment=100
+level=info ts=2020-05-19T06:19:35.989Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=1.187986624s
+level=info ts=2020-05-19T06:19:35.997Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-19T06:19:35.997Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-19T06:19:35.997Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-19T06:19:36.026Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-19T06:19:36.026Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-19T06:28:39.258Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-19T06:28:39.259Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-19T06:28:39.259Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-19T06:28:39.259Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-19T06:28:39.259Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-19T06:28:39.259Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-19T06:28:39.259Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-19T06:28:39.259Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-19T06:28:39.259Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-19T06:28:39.274Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-19T06:28:39.274Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-19T06:28:39.275Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-19T06:29:46.354Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-19T06:29:46.354Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-19T06:29:46.354Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-19T06:29:46.354Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-19T06:29:46.354Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-19T06:29:46.362Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-19T06:29:46.362Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589449621708 maxt=1589803200000 ulid=01E8MBMQA0E78PTWXA28K7GDTA
+level=info ts=2020-05-19T06:29:46.362Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589803200000 maxt=1589824800000 ulid=01E8MSC5B9EW4DYHHP2ZY1D64Z
+level=info ts=2020-05-19T06:29:46.362Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589846400000 maxt=1589853600000 ulid=01E8NDZABMRXG52EB8PEJSPQN6
+level=info ts=2020-05-19T06:29:46.362Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589824800000 maxt=1589846400000 ulid=01E8NDZAMNDQ2YFHEYXXTZXN4N
+level=info ts=2020-05-19T06:29:46.362Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589853600000 maxt=1589860800000 ulid=01E8NMV1KGR57QCVD4QH3HACZJ
+level=info ts=2020-05-19T06:29:46.380Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-19T06:29:46.387Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-19T06:29:46.398Z caller=head.go:600 component=tsdb msg="WAL checkpoint loaded"
+level=info ts=2020-05-19T06:29:46.644Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=95 maxSegment=101
+level=info ts=2020-05-19T06:29:46.858Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=96 maxSegment=101
+level=info ts=2020-05-19T06:29:47.221Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=97 maxSegment=101
+level=info ts=2020-05-19T06:29:47.495Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=98 maxSegment=101
+level=info ts=2020-05-19T06:29:47.584Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=99 maxSegment=101
+level=info ts=2020-05-19T06:29:47.667Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=100 maxSegment=101
+level=info ts=2020-05-19T06:29:47.668Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=101 maxSegment=101
+level=info ts=2020-05-19T06:29:47.668Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=1.280733687s
+level=info ts=2020-05-19T06:29:47.683Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-19T06:29:47.683Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-19T06:29:47.683Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-19T06:29:47.697Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-19T06:29:47.698Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-19T06:31:27.745Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-19T06:31:27.745Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-19T06:31:27.745Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-19T06:31:27.745Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-19T06:31:27.745Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-19T06:31:27.745Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-19T06:31:27.745Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-19T06:31:27.745Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-19T06:31:27.745Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-19T06:31:27.758Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-19T06:31:27.758Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-19T06:31:27.759Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-19T06:38:45.895Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-19T06:38:45.897Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-19T06:38:45.897Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-19T06:38:45.897Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-19T06:38:45.897Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-19T06:38:45.905Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-19T06:38:45.906Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589449621708 maxt=1589803200000 ulid=01E8MBMQA0E78PTWXA28K7GDTA
+level=info ts=2020-05-19T06:38:45.906Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589803200000 maxt=1589824800000 ulid=01E8MSC5B9EW4DYHHP2ZY1D64Z
+level=info ts=2020-05-19T06:38:45.906Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589846400000 maxt=1589853600000 ulid=01E8NDZABMRXG52EB8PEJSPQN6
+level=info ts=2020-05-19T06:38:45.906Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589824800000 maxt=1589846400000 ulid=01E8NDZAMNDQ2YFHEYXXTZXN4N
+level=info ts=2020-05-19T06:38:45.906Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589853600000 maxt=1589860800000 ulid=01E8NMV1KGR57QCVD4QH3HACZJ
+level=info ts=2020-05-19T06:38:45.920Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-19T06:38:45.928Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-19T06:38:45.942Z caller=head.go:600 component=tsdb msg="WAL checkpoint loaded"
+level=info ts=2020-05-19T06:38:46.146Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=95 maxSegment=110
+level=info ts=2020-05-19T06:38:46.368Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=96 maxSegment=110
+level=info ts=2020-05-19T06:38:46.746Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=97 maxSegment=110
+level=info ts=2020-05-19T06:38:47.042Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=98 maxSegment=110
+level=info ts=2020-05-19T06:38:47.163Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=99 maxSegment=110
+level=info ts=2020-05-19T06:38:47.236Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=100 maxSegment=110
+level=info ts=2020-05-19T06:38:47.259Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=101 maxSegment=110
+level=info ts=2020-05-19T06:38:47.268Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=102 maxSegment=110
+level=info ts=2020-05-19T06:38:47.283Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=103 maxSegment=110
+level=info ts=2020-05-19T06:38:47.377Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=104 maxSegment=110
+level=info ts=2020-05-19T06:38:47.378Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=105 maxSegment=110
+level=info ts=2020-05-19T06:38:47.378Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=106 maxSegment=110
+level=info ts=2020-05-19T06:38:47.413Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=107 maxSegment=110
+level=info ts=2020-05-19T06:38:47.435Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=108 maxSegment=110
+level=info ts=2020-05-19T06:38:47.439Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=109 maxSegment=110
+level=info ts=2020-05-19T06:38:47.440Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=110 maxSegment=110
+level=info ts=2020-05-19T06:38:47.440Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=1.512140446s
+level=info ts=2020-05-19T06:38:47.446Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-19T06:38:47.446Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-19T06:38:47.447Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-19T06:38:47.454Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-19T06:38:47.454Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=warn ts=2020-05-19T06:39:00.528Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-19T06:39:00.528Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-19T06:39:00.528Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-19T06:39:00.528Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-19T06:39:00.528Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-19T06:39:00.528Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-19T06:39:00.528Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-19T06:39:00.528Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-19T06:39:00.528Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-19T06:39:00.555Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-19T06:39:00.555Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-19T06:39:00.557Z caller=main.go:750 msg="See you next time!"
+level=info ts=2020-05-19T06:57:01.585Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-05-19T06:57:01.585Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-05-19T06:57:01.585Z caller=main.go:335 host_details="(Linux 3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017 x86_64 iZuf63qubkh4obmynfl2iiZ (none))"
+level=info ts=2020-05-19T06:57:01.585Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-05-19T06:57:01.585Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-05-19T06:57:01.602Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-05-19T06:57:01.603Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589449621708 maxt=1589803200000 ulid=01E8MBMQA0E78PTWXA28K7GDTA
+level=info ts=2020-05-19T06:57:01.603Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589803200000 maxt=1589824800000 ulid=01E8MSC5B9EW4DYHHP2ZY1D64Z
+level=info ts=2020-05-19T06:57:01.603Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589846400000 maxt=1589853600000 ulid=01E8NDZABMRXG52EB8PEJSPQN6
+level=info ts=2020-05-19T06:57:01.603Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589824800000 maxt=1589846400000 ulid=01E8NDZAMNDQ2YFHEYXXTZXN4N
+level=info ts=2020-05-19T06:57:01.603Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589853600000 maxt=1589860800000 ulid=01E8NMV1KGR57QCVD4QH3HACZJ
+level=info ts=2020-05-19T06:57:01.630Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-05-19T06:57:01.634Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-05-19T06:57:01.649Z caller=head.go:600 component=tsdb msg="WAL checkpoint loaded"
+level=info ts=2020-05-19T06:57:01.860Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=95 maxSegment=124
+level=info ts=2020-05-19T06:57:02.072Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=96 maxSegment=124
+level=info ts=2020-05-19T06:57:02.639Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=97 maxSegment=124
+level=info ts=2020-05-19T06:57:02.892Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=98 maxSegment=124
+level=info ts=2020-05-19T06:57:03.135Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=99 maxSegment=124
+level=info ts=2020-05-19T06:57:03.173Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=100 maxSegment=124
+level=info ts=2020-05-19T06:57:03.183Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=101 maxSegment=124
+level=info ts=2020-05-19T06:57:03.186Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=102 maxSegment=124
+level=info ts=2020-05-19T06:57:03.193Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=103 maxSegment=124
+level=info ts=2020-05-19T06:57:03.209Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=104 maxSegment=124
+level=info ts=2020-05-19T06:57:03.209Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=105 maxSegment=124
+level=info ts=2020-05-19T06:57:03.216Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=106 maxSegment=124
+level=info ts=2020-05-19T06:57:03.232Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=107 maxSegment=124
+level=info ts=2020-05-19T06:57:03.256Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=108 maxSegment=124
+level=info ts=2020-05-19T06:57:03.258Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=109 maxSegment=124
+level=info ts=2020-05-19T06:57:03.263Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=110 maxSegment=124
+level=info ts=2020-05-19T06:57:03.266Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=111 maxSegment=124
+level=info ts=2020-05-19T06:57:03.284Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=112 maxSegment=124
+level=info ts=2020-05-19T06:57:03.288Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=113 maxSegment=124
+level=info ts=2020-05-19T06:57:03.296Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=114 maxSegment=124
+level=info ts=2020-05-19T06:57:03.308Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=115 maxSegment=124
+level=info ts=2020-05-19T06:57:03.320Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=116 maxSegment=124
+level=info ts=2020-05-19T06:57:03.330Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=117 maxSegment=124
+level=info ts=2020-05-19T06:57:03.401Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=118 maxSegment=124
+level=info ts=2020-05-19T06:57:03.428Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=119 maxSegment=124
+level=info ts=2020-05-19T06:57:03.456Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=120 maxSegment=124
+level=info ts=2020-05-19T06:57:03.463Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=121 maxSegment=124
+level=info ts=2020-05-19T06:57:03.467Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=122 maxSegment=124
+level=info ts=2020-05-19T06:57:03.489Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=123 maxSegment=124
+level=info ts=2020-05-19T06:57:03.489Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=124 maxSegment=124
+level=info ts=2020-05-19T06:57:03.489Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=1.855174949s
+level=info ts=2020-05-19T06:57:03.509Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-05-19T06:57:03.509Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-05-19T06:57:03.509Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-19T06:57:03.517Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-05-19T06:57:03.518Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=info ts=2020-05-19T07:00:00.722Z caller=compact.go:495 component=tsdb msg="write block" mint=1589860800000 maxt=1589868000000 ulid=01E8NVPRV7W54EXDA3FWZEW8QJ duration=235.442323ms
+level=info ts=2020-05-19T07:00:00.878Z caller=head.go:662 component=tsdb msg="head GC completed" duration=13.639458ms
+level=info ts=2020-05-19T07:00:02.041Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=95 last=104 duration=1.162634068s
+level=warn ts=2020-05-19T07:00:19.016Z caller=main.go:515 msg="Received termination request via web service, exiting gracefully..."
+level=info ts=2020-05-19T07:00:19.016Z caller=main.go:535 msg="Stopping scrape discovery manager..."
+level=info ts=2020-05-19T07:00:19.016Z caller=main.go:549 msg="Stopping notify discovery manager..."
+level=info ts=2020-05-19T07:00:19.016Z caller=main.go:571 msg="Stopping scrape manager..."
+level=info ts=2020-05-19T07:00:19.016Z caller=main.go:531 msg="Scrape discovery manager stopped"
+level=info ts=2020-05-19T07:00:19.016Z caller=main.go:545 msg="Notify discovery manager stopped"
+level=info ts=2020-05-19T07:00:19.017Z caller=manager.go:882 component="rule manager" msg="Stopping rule manager..."
+level=info ts=2020-05-19T07:00:19.017Z caller=manager.go:892 component="rule manager" msg="Rule manager stopped"
+level=info ts=2020-05-19T07:00:19.017Z caller=main.go:565 msg="Scrape manager stopped"
+level=info ts=2020-05-19T07:00:19.026Z caller=notifier.go:598 component=notifier msg="Stopping notification manager..."
+level=info ts=2020-05-19T07:00:19.026Z caller=main.go:738 msg="Notifier manager stopped"
+level=info ts=2020-05-19T07:00:19.028Z caller=main.go:750 msg="See you next time!"
