@@ -29,11 +29,11 @@ class UserController {
   async login(ctx) {
     let { userGroup, username, password } = ctx.request.body;
     if (userGroup == 0) username = 'admin';
-    console.log(1);
+    // console.log(1);
 
-    let user = await query(`select * from user where username = '${username}'`)
+    let user = await query(`select * from user where username = '${username}' and userGroup = '${userGroup}'`)
     if (!user[0]) {
-      return ctx.error({ msg: '该用户尚未注册' });
+      return ctx.error({ msg: '该用户尚未注册或用户群错误' });
     }
     if(md5(password, key) != user[0].password){
       return ctx.error({ msg: '密码错误' });

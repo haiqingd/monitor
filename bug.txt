@@ -1,3 +1,18 @@
 1.在配置命令行参数重启Prometheus时，没有获取启动的状态信息
   child_process和nohup命令异步处理的配合不知道该怎么处理
 2.还需要在user数据表中加上emailForReceiving一项
+
+
+
+修改过，加上了用户验证的接口
+
+
+1.所有的查看数据库的接口
+用户权限：仅浏览、普通用户、管理员
+加上的项
+(
+  监控界面-监控总览(MySQL)-CPU（已完成）
+  http://{{host}}:{{port}}/api/monit/overviewMySQL/CPU
+
+  
+)

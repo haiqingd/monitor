@@ -46,6 +46,7 @@ let query = async function( sql, values) {
         connection.query(sql, values, ( err, rows) => {
           
           if ( err ) {
+            console.log(sql + values)
             reject( err )
             
           } else {

@@ -111,11 +111,10 @@ class BenchSettings {
   }
   async delete(ctx) {
     const { DBID,data } = ctx.request.body
-    console.log(ctx.request.body)
     let res = await query(`delete from ${cfg.table_name_ChartOption}  where DBID = ${DBID} and data = ${data}`);
-    // if (!rows[0]) {
-    //   return ctx.error({msg:"数据库不存在或者尚未初始化。"})
-    // }
+    if (res.affectedRows == 0) {
+      return ctx.error({msg:"数据库不存在或者尚未初始化。"})
+    }
     return ctx.success({msg:res})
   }
 }

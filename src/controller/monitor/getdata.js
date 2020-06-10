@@ -57,7 +57,78 @@ function exchangePromQL (startTime, endTime){
 
 }
 
+
 class DataCollectController{
+
+//CurrentInfo
+async getCurrentInfo(ctx){
+  await verToken(ctx);
+  const username_login = ctx.state.username;
+  if(username_login != 'admin'){
+    return ctx.error({msg:"非管理员用户无权添加新用户"})
+  }
+  
+  const{DBID,accuracy} = ctx.request.query;
+  if(!DBID) {
+    return ctx.error({msg:"未输入DBID"})
+  }
+  let rows = await query(`select NodeName,DBName from ${mysqlconfig.table_name_database} WHERE DBID = ?`,DBID);
+  if(!rows[0]){
+    return ctx.error({msg:"查询失败"})
+  }
+  const NodeName = rows[0].NodeName;
+  const DBName  = rows[0].DBName
+  let res ={'instance':NodeName, data:[]} 
+  
+  //CPU
+  let qstr = PromQL.currentCPU;
+  qstr = qstr.replace(/NodeName/g, NodeName)
+    .replace(/accuracy/g, accuracy)
+  const para = '?query=';
+  const date = new Date().toLocaleTimeString();
+  // console.log('\n['+date+"]PromQL 执行语句：\n"+qstr)
+  const cpuInfo = await query_api(uri_query+para+qstr)
+  res.data.push({name:'cpuInfo',data:cpuInfo.data.result[0].value})
+  console.log(cpuInfo.data.result)
+
+
+  //UP
+  qstr = PromQL.currentMysqlUP;
+  qstr = qstr.replace(/DBName/g, DBName)
+  // console.log("PromQL 执行语句：\n"+qstr)
+  const mysqlInfo = await query_api(uri_query+para+qstr)
+  res.data.push({name:'mysqlUp',data:mysqlInfo.data.result[0].value})
+  
+  qstr = PromQL.currentNodeUP;
+  qstr = qstr.replace(/NodeName/g, NodeName)
+  // console.log("PromQL 执行语句：\n"+qstr)
+  const nodeInfo = await query_api(uri_query+para+qstr)
+  res.data.push({name:'NodeUp',data:nodeInfo.data.result[0].value})
+  
+  
+  //DISK
+  qstr = PromQL.currentDiskRead;
+  qstr = qstr.replace(/NodeName/g, NodeName)
+  // console.log("PromQL 执行语句：\n"+qstr)
+  const readInfo = await query_api(uri_query+para+qstr)
+  res.data.push({name:'currentDiskRead[30s] byte/s',data:readInfo.data.result[0].value})
+
+  qstr = PromQL.currentDiskWrite;
+  qstr = qstr.replace(/NodeName/g, NodeName)
+  // console.log("PromQL 执行语句：\n"+qstr)
+  const writeInfo = await query_api(uri_query+para+qstr)
+  res.data.push({name:'currentDiskWrite[30s] byte/s',data:writeInfo.data.result[0].value})
+
+  //wait
+  qstr = PromQL.currentWait;
+  qstr = qstr.replace(/NodeName/g, NodeName)
+    .replace(/accuracy/g, accuracy)
+  // console.log("PromQL 执行语句：\n"+qstr)
+  const waitInfo = await query_api(uri_query+para+qstr)
+  res.data.push({name:'iowait ms/s',data:waitInfo.data.result[0].value})
+  return ctx.success({data:res})
+  
+}
 
   //CPU
   async getCPU(ctx){
@@ -93,61 +164,7 @@ class DataCollectController{
     return ctx.success({data:res.data.result[0], msg : uri_query+para+qstr})
   }
 
-  //CurrentInfo
-  async getCurrentInfo(ctx){
-    const{DBID,accuracy} = ctx.request.query;
-    let rows = await query(`select NodeName,DBName from ${mysqlconfig.table_name_database} WHERE DBID = ?`,DBID);
-    const NodeName = rows[0].NodeName;
-    const DBName  = rows[0].DBName
-    let res ={'instance':NodeName, data:[]} 
-    
-    //CPU
-    let qstr = PromQL.currentCPU;
-    qstr = qstr.replace(/NodeName/g, NodeName)
-      .replace(/accuracy/g, accuracy)
-    const para = '?query=';
-    const date = new Date().toLocaleTimeString();
-    // console.log('\n['+date+"]PromQL 执行语句：\n"+qstr)
-    const cpuInfo = await query_api(uri_query+para+qstr)
-    res.data.push({name:'cpuInfo',data:cpuInfo.data.result[0].value})
-    
-    //UP
-    qstr = PromQL.currentMysqlUP;
-    qstr = qstr.replace(/DBName/g, DBName)
-    // console.log("PromQL 执行语句：\n"+qstr)
-    const mysqlInfo = await query_api(uri_query+para+qstr)
-    res.data.push({name:'mysqlUp',data:mysqlInfo.data.result[0].value})
-    
-    qstr = PromQL.currentNodeUP;
-    qstr = qstr.replace(/NodeName/g, NodeName)
-    // console.log("PromQL 执行语句：\n"+qstr)
-    const nodeInfo = await query_api(uri_query+para+qstr)
-    res.data.push({name:'NodeUp',data:nodeInfo.data.result[0].value})
-    
-    
-    //DISK
-    qstr = PromQL.currentDiskRead;
-    qstr = qstr.replace(/NodeName/g, NodeName)
-    // console.log("PromQL 执行语句：\n"+qstr)
-    const readInfo = await query_api(uri_query+para+qstr)
-    res.data.push({name:'currentDiskRead[30s] byte/s',data:readInfo.data.result[0].value})
-
-    qstr = PromQL.currentDiskWrite;
-    qstr = qstr.replace(/NodeName/g, NodeName)
-    // console.log("PromQL 执行语句：\n"+qstr)
-    const writeInfo = await query_api(uri_query+para+qstr)
-    res.data.push({name:'currentDiskWrite[30s] byte/s',data:writeInfo.data.result[0].value})
-
-    //wait
-    qstr = PromQL.currentWait;
-    qstr = qstr.replace(/NodeName/g, NodeName)
-      .replace(/accuracy/g, accuracy)
-    // console.log("PromQL 执行语句：\n"+qstr)
-    const waitInfo = await query_api(uri_query+para+qstr)
-    res.data.push({name:'iowait ms/s',data:waitInfo.data.result[0].value})
-    return ctx.success({data:res})
-    
-  }
+  
   
   //MeMory
   async getMeMory(ctx){
