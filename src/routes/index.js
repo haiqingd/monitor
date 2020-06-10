@@ -18,7 +18,7 @@ router.post('/api/user/login', user.login);
 
 // 添加成员
 router.post('/api/user/addUser', user.addUser);
-
+router.get('/api/user',user.getUserInfo)
 
 
 //添加数据库
@@ -53,6 +53,7 @@ router.get('/api/monit/allName',getdata.allName);
 
 //current
 router.get('/api/monit/toTimeMonit/status',getdata.getCurrentInfo);
+router.get('/api/monit/toTimeMonit/alert',getdata.getAlert);
 
 
 

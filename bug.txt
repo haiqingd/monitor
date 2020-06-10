@@ -4,15 +4,59 @@
 
 
 
-修改过，加上了用户验证的接口
+2020.6.10接口修改
+
+一、修改的接口
+加上了用户验证的接口
+
+1.监控项、数据库管理 用户权限：仅浏览、普通用户、管理员
+加上的项{
+  (1)-(17).所有的监控项，实时监控以及后面的16个总览监控项
+  (18).列出监控到的所有属性名和具体的查询方式
+  (19)数据库管理-列出所有数据库id
+  (20)数据库管理-查询数据库基本信息（已完成）
+}
+2.配置信息 用户权限：普通用户、管理员
+加上的项{
+  (21)查看Prometheus状态（已完成）
+  (22)查看Prometheus Target信息（已完成）
+  (23)查看Prometheus CommandLineFlags信息（已完成）
+  (24)设置命令行参数（已完成，待完善状态信息的返回，目前的等待4s是虚假的等待）
+  (25)查看配置文件信息（已完成）
+  (26)查看监控后台参数（已完成）
+  (27)查看已有的报警规则（已完成）
+}
+
+3.测试接口 用户权限：普通用户、管理员
+加上的项{
+  (28)restart（已完成，请在出现“服务未开启时运行此接口”）
+  (29)reload(已完成)
+}
+
+4.用户自定义页面 用户权限：仅浏览、普通用户、管理员(对应自己Username的页面配置)
+加上的项{
+  (30)Bench页面配置-删除配置（已完成）
+  (31)Bench页面配置-修改配置-组修改（已完成）
+  (32)Bench页面配置-初始化（已完成）
+  (33)Bench页面配置-查询配置（已完成）
+  (34)Bench页面配置-修改配置（已完成）
+}
 
 
-1.所有的查看数据库的接口
-用户权限：仅浏览、普通用户、管理员
-加上的项
-(
-  监控界面-监控总览(MySQL)-CPU（已完成）
-  http://{{host}}:{{port}}/api/monit/overviewMySQL/CPU
+二、新增的已完成接口
+2.监控系统用户-查看用户资料（已完成）
+  http://{{host}}:{{port}}/api/user
+3.监控界面-实时监控-实时输出警告
+  http://{{host}}:{{port}}/api/monit/toTimeMonit/alert
 
-  
-)
+
+
+测试token:
+
+userGroup:2
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiY3d5MiIsImV4cCI6MTU5NzgwNDg3NiwiaWF0IjoxNTkxNzU2ODc2fQ.soIDyzHB4UtMfRvtnZCr0ykKZ1H4WepPbOWSlb_Jubc
+
+userGroup:1
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiY3d5MSIsImV4cCI6MTU5NzgxNTkwNSwiaWF0IjoxNTkxNzY3OTA1fQ.SVPfCNjAWfMiMUP0QsKCtUAFS8wcjJw6dDDKTaw0NNs

@@ -80,6 +80,18 @@ class UserController {
 
   }
 
+  //查看用户信息
+  async getUserInfo(ctx){
+    await verToken(ctx);
+    const username = ctx.state.username;
+    let user = await query(`select * from user where username = '${username}'`)
+    if (!user[0]) {
+      return ctx.error({ msg: '用户未登录' });
+    }
+    delete user[0].password
+    return ctx.success({data:user[0]})
+  }
+
 }
 
 

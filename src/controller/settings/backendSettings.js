@@ -1,4 +1,5 @@
 const query_api = require("../monitor/getdata").query_api
+const query = require('../../mysqlConnect/mysqlconnect')
 const prometheusAddr = require("../../../config/config.js").prometheus
 const request = require('request');
 const verToken = require('../../middlewares/passport');
@@ -48,6 +49,13 @@ function quit() {
 
 class backendSettingsController {
   async reload(ctx) {
+    await verToken(ctx);
+    const username_login = ctx.state.username;
+
+    let rows = await query(`select * from user where username = '${username_login}'`);
+    if (rows[0].userGroup != 0 && rows[0].userGroup != 1) {
+      return ctx.error({ msg: "用户权限不足！请使用管理员或标准用户" })
+    }
     await reload();
     console.log("Prometheus reloaded successfully!!")
     const lastConfigTime = (await new backendSettingsController().getPrometheusStatus(ctx)).lastConfigTime
@@ -58,6 +66,13 @@ class backendSettingsController {
 
 
   async restart(ctx) {
+    await verToken(ctx);
+    const username_login = ctx.state.username;
+
+    let rows = await query(`select * from user where username = '${username_login}'`);
+    if (rows[0].userGroup != 0 && rows[0].userGroup != 1) {
+      return ctx.error({ msg: "用户权限不足！请使用管理员或标准用户" })
+    }
     const exec = util.promisify(require('child_process').exec);
     const { stdout, err } = await exec('./restart.sh');
 
@@ -84,6 +99,13 @@ class backendSettingsController {
   }
   //Prometheus Status
   async getPrometheusStatus(ctx) {
+    await verToken(ctx);
+    const username_login = ctx.state.username;
+
+    let rows = await query(`select * from user where username = '${username_login}'`);
+    if (rows[0].userGroup != 0 && rows[0].userGroup != 1) {
+      return ctx.error({ msg: "用户权限不足！请使用管理员或标准用户" })
+    }
 
     const runtimeinfo = prometheusAddr + "/api/v1/status/runtimeinfo"
     const buildinfo = prometheusAddr + "/api/v1/status/buildinfo"
@@ -132,6 +154,13 @@ class backendSettingsController {
   //Target
 
   async getTargets(ctx) {
+    await verToken(ctx);
+    const username_login = ctx.state.username;
+
+    let rows = await query(`select * from user where username = '${username_login}'`);
+    if (rows[0].userGroup != 0 && rows[0].userGroup != 1) {
+      return ctx.error({ msg: "用户权限不足！请使用管理员或标准用户" })
+    }
     const targets = prometheusAddr + "/api/v1/targets"
     let res = await new Promise((resolve, reject) => {
       request(targets, function (error, response, body) {
@@ -153,6 +182,13 @@ class backendSettingsController {
 
   //getcmdFlags
   async getCommandLineFlags(ctx) {
+    await verToken(ctx);
+    const username_login = ctx.state.username;
+
+    let rows = await query(`select * from user where username = '${username_login}'`);
+    if (rows[0].userGroup != 0 && rows[0].userGroup != 1) {
+      return ctx.error({ msg: "用户权限不足！请使用管理员或标准用户" })
+    }
     const CommandLineFlags = prometheusAddr + "/api/v1/status/flags"
     let res = await new Promise((resolve, reject) => {
       request(CommandLineFlags, function (error, response, body) {
@@ -176,12 +212,14 @@ class backendSettingsController {
 
   //setcmdFlags
   async setCommandLineFlags(ctx) {
-
     await verToken(ctx);
     const username_login = ctx.state.username;
-    if (username_login != 'admin') {
-      return ctx.error({ msg: "非管理员用户无权修改命令行参数" })
+
+    let rows = await query(`select * from user where username = '${username_login}'`);
+    if (rows[0].userGroup != 0 && rows[0].userGroup != 1) {
+      return ctx.error({ msg: "用户权限不足！请使用管理员或标准用户" })
     }
+
 
     const originData = await new backendSettingsController().getCommandLineFlags(ctx)
     const nowData = ctx.request.body;
@@ -270,6 +308,13 @@ class backendSettingsController {
 
   //prometheusConfig
   async getPrometheusConfig(ctx) {
+    await verToken(ctx);
+    const username_login = ctx.state.username;
+
+    let rows = await query(`select * from user where username = '${username_login}'`);
+    if (rows[0].userGroup != 0 && rows[0].userGroup != 1) {
+      return ctx.error({ msg: "用户权限不足！请使用管理员或标准用户" })
+    }
     const targets = prometheusAddr + "/api/v1/status/config"
     let res = await new Promise((resolve, reject) => {
       request(targets, function (error, response, body) {
@@ -291,6 +336,13 @@ class backendSettingsController {
 
   //backendparam
   async getBackend(ctx) {
+    await verToken(ctx);
+    const username_login = ctx.state.username;
+
+    let rows = await query(`select * from user where username = '${username_login}'`);
+    if (rows[0].userGroup != 0 && rows[0].userGroup != 1) {
+      return ctx.error({ msg: "用户权限不足！请使用管理员或标准用户" })
+    }
     var backend_copy = backend
     delete eval(backend_copy).key
     delete eval(backend_copy).query
@@ -319,6 +371,13 @@ class backendSettingsController {
 
   //rules
   async getRules(ctx){
+    await verToken(ctx);
+    const username_login = ctx.state.username;
+
+    let rows = await query(`select * from user where username = '${username_login}'`);
+    if (rows[0].userGroup != 0 && rows[0].userGroup != 1) {
+      return ctx.error({ msg: "用户权限不足！请使用管理员或标准用户" })
+    }
     const rules = prometheusAddr + "/api/v1/rules"
     let res = await new Promise((resolve, reject) => {
       request(rules, function (error, response, body) {

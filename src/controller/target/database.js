@@ -11,7 +11,7 @@ class DataCollectController {
     await verToken(ctx);
     const username_login = ctx.state.username;
 
-    let rows = await query('select * from user where username = ?', username_login);
+    let rows = await query(`select * from user where username = '${username_login}'`);
     if (rows[0].userGroup != 0 && rows[0].userGroup != 1) {
       return ctx.error({ msg: "用户权限不足！请使用管理员或标准用户" })
     }
@@ -44,11 +44,23 @@ class DataCollectController {
   }
 
   async getAllID(ctx) {
+    await verToken(ctx);
+    const username = ctx.state.username;
+    let user = await query(`select * from user where username = '${username}'`)
+    if (!user[0]) {
+      return ctx.error({ msg: '用户未登录' });
+    }
     let rows = await query(`select DBid,DBName,DBGroup from ${mysqlconfig.table_name_database} `);
     return ctx.success({ msg: "success", data: rows })
   }
 
   async getInfo(ctx) {
+    await verToken(ctx);
+    const username = ctx.state.username;
+    let user = await query(`select * from user where username = '${username}'`)
+    if (!user[0]) {
+      return ctx.error({ msg: '用户未登录' });
+    }
     const { DBID } = ctx.request.query;
     let rows = await query(`select DBID, host, OSUsername, user, DBGroup, nodePort, nodeName, DBPort, DBName, type from ${mysqlconfig.table_name_database} WHERE DBID = ?`, DBID);
     if (!rows[0]) return ctx.error({ msg: "不存在的数据库ID" })
