@@ -343,7 +343,11 @@ class backendSettingsController {
     if (rows[0].userGroup != 0 && rows[0].userGroup != 1) {
       return ctx.error({ msg: "用户权限不足！请使用管理员或标准用户" })
     }
-    var backend_copy = backend
+
+    let backend_copy = {}
+    for  (let i in backend){
+      backend_copy[i] = backend[i]
+    }
     delete eval(backend_copy).key
     delete eval(backend_copy).query
     delete eval(backend_copy).query_range
@@ -351,26 +355,58 @@ class backendSettingsController {
     delete eval(backend_copy).table_name_user
     delete eval(backend_copy).table_name_database
     delete eval(backend_copy).table_name_alert
+    delete eval(backend_copy).table_name_benchPage
+    delete eval(backend_copy).table_name_ChartOption
+    delete eval(backend_copy).password
+
     return (ctx.success({ data: backend_copy }))
   }
 
-  //尚未完成
+  //setBackend
   async setBackend(ctx) {
-    let cfgStr = "module.exports = "
-    cfgStr += backend.toString()
+    await verToken(ctx);
+    const username_login = ctx.state.username;
+
+    let rows = await query(`select * from user where username = '${username_login}'`);
+    if (rows[0].userGroup != 0 && rows[0].userGroup != 1) {
+      return ctx.error({ msg: "用户权限不足！请使用管理员或标准用户" })
+    }
+
+    
+    const data = ctx.request.body;
+    
+    let backend_copy = {}
 
 
-    console.log(cfgStr)
+    for(let i in backend){
+      if(data[i]!='' && data[i]!= null){
+        backend_copy[i] = data[i]
+      } else 
+      backend_copy[i] = backend[i]
+      
+    }
+    let cfgStr = 'module.exports = '
+    cfgStr += JSON.stringify(backend_copy, null, '  ')
 
-    fs.writeFile('config.js', cfgStr, function (err) {
+    await fs.writeFileSync('config/config_backup.js', cfgStr, function (err) {
       if (err) {
         return console.error(err);
       }
     })
+    const backup = require('../../../config/config_backup')
+    if (!backup.serverport){
+      return ctx.error({msg:"文件占用中，请重试"})
+    }
+    const exec = util.promisify(require('child_process').exec);
+    const { stdout, err } = exec('\\cp -f config/config_backup.js config/config.js');
+    if (err) {
+      return ctx.error({msg:"执行失败，请重试"})
+    }
+    return ctx.success({msg:"success"})
   }
 
   //rules
-  async getRules(ctx){
+  async getRules(ctx) {
     await verToken(ctx);
     const username_login = ctx.state.username;
 
@@ -396,6 +432,35 @@ class backendSettingsController {
     })
     return (ctx.success({ data: res.groups }))
   }
+
+  async getAlertManagerYML(ctx) {
+    await verToken(ctx);
+    const username_login = ctx.state.username;
+
+    let rows = await query(`select * from user where username = '${username_login}'`);
+    if (!rows[0] || (rows[0].userGroup != 0 && rows[0].userGroup != 1)) {
+      return ctx.error({ msg: "用户权限不足或未登录！请使用管理员或标准用户" })
+    }
+
+    const position = (backend.whereAlertManager
+      .slice(0, backend.whereAlertManager.lastIndexOf('/alertmanager')))
+      + '/alertmanager.yml'
+
+    let file = await fs.readFileSync(position, 'utf-8')
+
+    // console.log(file)
+
+    ctx.success({msg:"读取成功",data:file})
+
+
+
+  }
+
+  async setAlertManagerYML(ctx) {
+
+  }
+
+
 }
 
 module.exports = new backendSettingsController();

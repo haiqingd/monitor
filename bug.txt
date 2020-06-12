@@ -60,3 +60,26 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiY3d5MiIsImV4cCI6MTU5NzgwNDg3Niw
 userGroup:1
 
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiY3d5MSIsImV4cCI6MTU5NzgxNTkwNSwiaWF0IjoxNTkxNzY3OTA1fQ.SVPfCNjAWfMiMUP0QsKCtUAFS8wcjJw6dDDKTaw0NNs
+
+
+
+2020.6.11
+开发计划
+1.配置文件操作
+  {
+    (1).设置监控后台参数
+    (2).设置配置文件全局参数
+    (3).设置配置文件指定对象参数
+    (4).新建报警规则
+    (5).修改报警规则
+    (6).删除报警规则
+  }
+
+2.新建的两个接口
+  查看AlertManager配置信息
+  修改AlertManager配置信息
+
+BUG修复
+1.修复了无法获取到实时CPU信息显示的BUG
+2.对多核CPU的占用情况做了处理，现在可以得到正确的数据
+3.修复了配置文件占用导致的配置信息读取失败的错误

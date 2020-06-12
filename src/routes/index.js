@@ -63,9 +63,14 @@ router.get('/api/settings/prometheusTargets',backendSettings.getTargets)
 router.get('/api/settings/prometheusCommandLineFlags',backendSettings.getCommandLineFlags)
 router.post('/api/settings/prometheusCommandLineFlags',backendSettings.setCommandLineFlags)
 router.get('/api/settings/prometheusConfig',backendSettings.getPrometheusConfig)
+
 router.get('/api/settings/backend',backendSettings.getBackend)
 router.post('/api/settings/backend',backendSettings.setBackend)
 router.get('/api/settings/rules',backendSettings.getRules)
+router.get('/api/settings/alertmanager',backendSettings.getAlertManagerYML)
+router.post('/api/settings/alertmanager',backendSettings.setAlertManagerYML)
+
+
 
 
 //Debug

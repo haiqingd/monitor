@@ -1,11 +1,11 @@
 module.exports = {
-    currentCPU:`(100-irate(node_cpu_seconds_total{job="NodeName",mode="idle"}[accuracys])*100)`,
+    currentCPU:`avg((100-irate(node_cpu_seconds_total{job="NodeName",mode="idle"}[accuracys])*100))`,
     currentMysqlUP:`up{job='DBName'}`,
     currentNodeUP:`up{job='NodeName'}`,
     currentDiskRead:`rate(node_disk_read_bytes_total{job="NodeName"}[30s])`,//这里的30s不建议作为参数更改
     currentDiskWrite:`rate(node_disk_written_bytes_total{job="NodeName"}[30s])`,//这里的30s不建议作为参数更改
     currentWait:'irate(node_cpu_seconds_total{job="NodeName",mode="iowait"}[accuracys])*1000',
-    CPU:`(100-irate(node_cpu_seconds_total{job="NodeName",mode="idle"}[accuracys])*100)[total_scales:intervals] offset offsetTimes`,
+    CPU:`avg((100-irate(node_cpu_seconds_total{job="NodeName",mode="idle"}[accuracys])*100))[total_scales:intervals] offset offsetTimes`,
     Memory:`(100- 100*(node_memory_MemFree_bytes{job="NodeName"}+node_memory_Cached_bytes{job="NodeName"} + node_memory_Buffers_bytes{job="NodeName"} + node_memory_Slab_bytes{job="NodeName"} ) /node_memory_MemTotal_bytes{job="NodeName"})[total_scales:intervals] offset offsetTimes`,
     TPS:`sum(rate(mysql_global_status_commands_total{job = 'DBName',command=~"commit|rollback"}[accuracys])) `,
     QPS:`rate(mysql_global_status_questions{job ="DBName"}[accuracys])[total_scales:intervals] offset offsetTimes`,
