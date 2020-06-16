@@ -7,6 +7,8 @@ const startProm = require("../../../config/config").wherePrometheus
 const util = require('util');
 const backend = require("../../../config/config")
 const fs = require("fs");
+const { wherePrometheus } = require("../../../config/config");
+const YAML = require('yamljs');
 
 
 
@@ -22,7 +24,7 @@ function reload() {
     if (!error && response.statusCode == 200) {
       // console.log(response.body) // 请求成功的处理逻辑
     }
-    else console.log(new Error("重启错误"))
+    else console.log(new Error(prometheusAddr + '/-/reload'+" 重启错误"))
   });
 };
 
@@ -117,7 +119,7 @@ class backendSettingsController {
           resolve(body)
         } else {
           if (response) {
-            console.log(JSON.parse(response.body).error)
+            console.log(response.body)
             reject(new Error(JSON.parse(response.body).error))
           }
           else reject(new Error("服务未开启"))
@@ -306,7 +308,7 @@ class backendSettingsController {
 
   }
 
-  //prometheusConfig
+  //getPrometheusConfig
   async getPrometheusConfig(ctx) {
     await verToken(ctx);
     const username_login = ctx.state.username;
@@ -315,24 +317,45 @@ class backendSettingsController {
     if (rows[0].userGroup != 0 && rows[0].userGroup != 1) {
       return ctx.error({ msg: "用户权限不足！请使用管理员或标准用户" })
     }
-    const targets = prometheusAddr + "/api/v1/status/config"
-    let res = await new Promise((resolve, reject) => {
-      request(targets, function (error, response, body) {
-        if (!error && response.statusCode == 200) {
-          body = JSON.parse(body).data;
-          resolve(body)
-        } else {
-          if (response) {
-            console.log(JSON.parse(response.body).error)
-            reject(new Error(JSON.parse(response.body).error))
-          }
-          else reject(new Error("服务未开启"))
-
-        }
-      })
-    })
-    return (ctx.success({ data: res.yaml }))
+    const position = wherePrometheus.slice(0, wherePrometheus.lastIndexOf('/prometheus'))
+    + '/prometheus.yml'
+    let file = YAML.parse(await fs.readFileSync(position, 'utf-8').toString())
+    return (ctx.success({ data: file }))
   }
+
+  //setPromCfg_gl
+  async setPrometheusConfig_gl(ctx){
+    await verToken(ctx);
+    const username_login = ctx.state.username;
+
+    let rows = await query(`select * from user where username = '${username_login}'`);
+    if (rows[0].userGroup != 0 && rows[0].userGroup != 1) {
+      return ctx.error({ msg: "用户权限不足！请使用管理员或标准用户" })
+    }
+
+    const position = wherePrometheus.slice(0, wherePrometheus.lastIndexOf('/prometheus'))
+    + '/prometheus.yml'
+    let file = YAML.parse(await fs.readFileSync(position, 'utf-8').toString())
+    const data = ctx.request.body
+    for (let i in data){
+      if(data[i] !='' && data[i])  {
+        file.global[i] = data[i]
+      }
+    }
+    const yamlfile = YAML.stringify(file)
+
+    let err = null
+    await fs.writeFileSync(position, yamlfile, function (err) {
+      if (err) {
+        return console.error(err);
+      }
+    })
+    if(err) return ctx.error({msg:"文件写入时失败，可能是权限不够，请将data中的内容覆盖Prometheus主机的位置："+position, data :file})
+    await reload();
+    return ctx.success({msg:"设置成功"})
+
+  }
+
 
   //backendparam
   async getBackend(ctx) {
@@ -388,20 +411,11 @@ class backendSettingsController {
     let cfgStr = 'module.exports = '
     cfgStr += JSON.stringify(backend_copy, null, '  ')
 
-    await fs.writeFileSync('config/config_backup.js', cfgStr, function (err) {
+    await fs.writeFileSync('config/config.js', cfgStr, function (err) {
       if (err) {
         return console.error(err);
       }
     })
-    const backup = require('../../../config/config_backup')
-    if (!backup.serverport){
-      return ctx.error({msg:"文件占用中，请重试"})
-    }
-    const exec = util.promisify(require('child_process').exec);
-    const { stdout, err } = exec('\\cp -f config/config_backup.js config/config.js');
-    if (err) {
-      return ctx.error({msg:"执行失败，请重试"})
-    }
     return ctx.success({msg:"success"})
   }
 
@@ -414,23 +428,39 @@ class backendSettingsController {
     if (rows[0].userGroup != 0 && rows[0].userGroup != 1) {
       return ctx.error({ msg: "用户权限不足！请使用管理员或标准用户" })
     }
-    const rules = prometheusAddr + "/api/v1/rules"
-    let res = await new Promise((resolve, reject) => {
-      request(rules, function (error, response, body) {
-        if (!error && response.statusCode == 200) {
-          body = JSON.parse(body).data;
-          resolve(body)
-        } else {
-          if (response) {
-            console.log(JSON.parse(response.body).error)
-            reject(new Error(JSON.parse(response.body).error))
-          }
-          else reject(new Error("服务未开启"))
+    // const rules = prometheusAddr + "/api/v1/rules"
+    // let res = await new Promise((resolve, reject) => {
+    //   request(rules, function (error, response, body) {
+    //     if (!error && response.statusCode == 200) {
+    //       body = JSON.parse(body).data;
+    //       resolve(body)
+    //     } else {
+    //       if (response) {
+    //         console.log(JSON.parse(response.body).error)
+    //         reject(new Error(JSON.parse(response.body).error))
+    //       }
+    //       else reject(new Error("服务未开启"))
 
-        }
-      })
-    })
-    return (ctx.success({ data: res.groups }))
+    //     }
+    //   })
+    // })
+    // return (ctx.success({ data: res.groups }))
+    const position = wherePrometheus.slice(0, wherePrometheus.lastIndexOf('/prometheus'))
+    + '/prometheus_rules.yml'
+    let file = YAML.parse(await fs.readFileSync(position, 'utf-8').toString())
+    return (ctx.success({ data: file }))
+  }
+
+  async setRule(ctx){
+
+  }
+
+  async alterRule(ctx){
+
+  }
+
+  async delRule(ctx){
+
   }
 
   async getAlertManagerYML(ctx) {
@@ -451,8 +481,6 @@ class backendSettingsController {
     // console.log(file)
 
     ctx.success({msg:"读取成功",data:file})
-
-
 
   }
 

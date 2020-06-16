@@ -69,7 +69,6 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiY3d5MSIsImV4cCI6MTU5NzgxNTkwNSw
   {
     (1).设置监控后台参数
     (2).设置配置文件全局参数
-    (3).设置配置文件指定对象参数
     (4).新建报警规则
     (5).修改报警规则
     (6).删除报警规则
@@ -79,7 +78,15 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiY3d5MSIsImV4cCI6MTU5NzgxNTkwNSw
   查看AlertManager配置信息
   修改AlertManager配置信息
 
+
+3.修改过的接口
+  (1)查看配置文件信息（已完成）
+    -修改内容：由之前的文本格式输出，变成了Json格式的输出
+    -输出示例详见 https://apizza.net/pro/#/project/f429ebb446ca37ed9cf3bb7e76a5bd27/dev
+  (2)修改了设置监控后台参数（仅修改了内部逻辑，对返回值等无影响）
+    -不再使用备份的config文件，而直接覆盖原始的config文件，以免创建进城时出现的BUG
+
 BUG修复
 1.修复了无法获取到实时CPU信息显示的BUG
 2.对多核CPU的占用情况做了处理，现在可以得到正确的数据
-3.修复了配置文件占用导致的配置信息读取失败的错误
+3.修复了修改配置文件时配置文件占用导致的配置信息读取失败的错误
