@@ -180,14 +180,9 @@ class DataCollectController {
 
     // const date = new Date(1587637990000)
 
-
-    const date = new Date()
-    if (date.getUTCSeconds() == 0) {
-      console.log('\n[' + date.toLocaleTimeString() + "]每分钟记录信息\nPromQL 正在处理信息例如下：\n" + qstr)
-    }
     
 
-    console.log(qstr)
+    // console.log(qstr)
     //执行查询
     const res = await query_api(uri_query + para + qstr)
     return ctx.success({ data: res.data.result[0], msg: uri_query + para + qstr })

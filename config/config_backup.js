@@ -3,7 +3,7 @@ module.exports = {
   "serverport": "3001",
   "wherePrometheus": "/home/Prometheus/prometheus/prometheus",
   "whereAlertManager": "/home/Prometheus/prometheus/alertmanager/alertmanager",
-  "frequency": "5",
+  "frequency": "7",
   "prometheus": "http://47.102.197.233:9090",
   "query": "/api/v1/query",
   "query_range": "/api/v1/query_range",
@@ -33,5 +33,7 @@ module.exports = {
     "13": "BytesReceived",
     "14": "BytesSent",
     "15": "slaveRunning"
-  }
+  },
+  "loginAccount": "2",
+  "admin": ""
 }

@@ -5,10 +5,11 @@ const request = require('request');
 const verToken = require('../../middlewares/passport');
 const startProm = require("../../../config/config").wherePrometheus
 const util = require('util');
-const backend = require("../../../config/config")
+let backend = require("../../../config/config")
 const fs = require("fs");
 const { wherePrometheus } = require("../../../config/config");
 const YAML = require('yamljs');
+const { resolve } = require("path");
 
 
 
@@ -58,12 +59,40 @@ class backendSettingsController {
     if (rows[0].userGroup != 0 && rows[0].userGroup != 1) {
       return ctx.error({ msg: "用户权限不足！请使用管理员或标准用户" })
     }
-    await reload();
-    console.log("Prometheus reloaded successfully!!")
-    const lastConfigTime = (await new backendSettingsController().getPrometheusStatus(ctx)).lastConfigTime
 
-
-    return ctx.success({ msg: "Prometheus reloaded successfully!", data: { lastConfigTime } })
+    const bkedst = new backendSettingsController()
+    const rld = new Promise(function (resolve, reject) {
+      request({
+        url: prometheusAddr + '/-/reload',
+        method: "POST",
+        json: true,
+        headers: {
+          "content-type": "application/json",
+        }
+      }, function (error, response, body) {
+        if (!error && response.statusCode == 200) {
+          resolve(response.statusCode);
+        }
+        else {
+          reject(-200)
+        }
+      })
+    })
+    await rld.then(async function (value) {
+      console.log("Prometheus reloaded successfully!!")
+      const lastConfigTime = (await bkedst.getPrometheusStatus(ctx)).lastConfigTime
+      ctx.success({ msg: "Prometheus reloaded successfully!", data: { lastConfigTime } })
+      resolve()
+    }, function (err) {
+      console.log("Prometheus reloaded error!!")
+      let errorInfo = ''
+      data = fs.readFileSync('Prometheus.log', 'utf-8')
+      var index = data.slice(0, -1).lastIndexOf('\n');
+      errorInfo = data.slice(index + 1)
+      console.log(data.slice(index + 1))
+      ctx.error({ msg: "重启Prometheus时出错", data: errorInfo })
+      resolve()
+    })
   }
 
 
@@ -319,7 +348,8 @@ class backendSettingsController {
     }
     const position = wherePrometheus.slice(0, wherePrometheus.lastIndexOf('/prometheus'))
       + '/prometheus.yml'
-    let file = YAML.parse(await fs.readFileSync(position, 'utf-8').toString())
+    // let file = fs.readFileSync(position, 'utf-8').toString()
+    let file = YAML.parse(fs.readFileSync(position, 'utf-8').toString())
     return (ctx.success({ data: file }))
   }
 
@@ -351,7 +381,8 @@ class backendSettingsController {
       }
     })
     if (err) return ctx.error({ msg: "文件写入时失败，可能是权限不够，请将data中的内容覆盖Prometheus主机的位置：" + position, data: file })
-    await reload();
+    await new backendSettingsController().reload(ctx);
+    if (ctx.body.code == -200) return ctx.error({ msg: '设置出错', data: ctx.body.data });
     return ctx.success({ msg: "设置成功" })
 
   }
@@ -411,11 +442,16 @@ class backendSettingsController {
     let cfgStr = 'module.exports = '
     cfgStr += JSON.stringify(backend_copy, null, '  ')
 
-    await fs.writeFileSync('config/config.js', cfgStr, function (err) {
+
+    fs.writeFileSync('config/config.js', cfgStr, function (err) {
       if (err) {
         return console.error(err);
       }
     })
+    delete require.cache[require.resolve("../../../config/config")]
+    backend = require("../../../config/config")
+
+    console.log(backend.frequency)
     return ctx.success({ msg: "success" })
   }
 
@@ -480,26 +516,25 @@ class backendSettingsController {
     let file_yaml = YAML.stringify(file, 2)
     // console.log(file_yaml)
 
-    await fs.writeFileSync(position, file_yaml, function (err) {
+    fs.writeFileSync(position, file_yaml, function (err) {
       if (err) {
         return console.error(err);
       }
     })
-    try {
-      await reload()
-    } catch (e) {
-      console.log(e)
-      if (e) {
-        file.groups.pop()
-        file_yaml = YAML.stringify(file)
-        await fs.writeFileSync(position, file_yaml, function (err) {
-          if (err) {
-            return console.error(err);
-          }
-        })
-        return ctx.error({ msg: "更改文件后重启出错，已删除该行，请确认正确后重试" })
-      }
+    await new backendSettingsController().reload(ctx);
+    if (ctx.body.code == -200) {
+      file.groups.pop()
+      file_yaml = YAML.stringify(file)
+      fs.writeFileSync(position, file_yaml, function (err) {
+        if (err) {
+          return console.error(err);
+        }
+      })
+      return ctx.error({ msg: "更改文件后重启出错，已删除该行，请确认正确后重试", data: ctx.body.data })
     }
+
+
+    console.log("set Rule:" + data.name)
     return ctx.success({ msg: "success" })
 
 
@@ -544,7 +579,8 @@ class backendSettingsController {
             return console.error(err);
           }
         })
-        await reload()
+        await new backendSettingsController().reload(ctx);
+        if (ctx.body.code == -200) return ctx.error({ msg: '设置出错', data: ctx.body.data })
         return ctx.success({ msg: "success" })
       }
     }
@@ -578,7 +614,8 @@ class backendSettingsController {
             return console.error(err);
           }
         })
-        await reload()
+        await new backendSettingsController().reload(ctx);
+        if (ctx.body.code == -200) return ctx.error({ msg: '设置出错', data: ctx.body.data })
         return ctx.success({ msg: "success" })
 
       }
@@ -660,22 +697,34 @@ class backendSettingsController {
       }
     })
 
-    request({
-      url: prometheusAddr.slice(0,-1) + '3/-/reload',
-      method: "POST",
-      json: true,
-      headers: {
-        "content-type": "application/json",
-      }
-    }, function (error, response, body) {
-      if (!error && response.statusCode == 200) {
-        // console.log(response.body) // 请求成功的处理逻辑
-      }
-      else console.log(prometheusAddr.slice(0,-1) + '3/-/reload')
-    });
+    const bkedst = new backendSettingsController()
+    const rld = new Promise(function (resolve, reject) {
+      request({
+        url: prometheusAddr.slice(0, -1) + '3/-/reload',
+        method: "POST",
+        json: true,
+        headers: {
+          "content-type": "application/json",
+        }
+      }, function (error, response, body) {
+        if (!error && response.statusCode == 200) {
+          resolve(response.statusCode);
+        }
+        else {
+          reject(-200)
+        }
+      })
+    })
+    await rld.then(async function (value) {
+      console.log("AlertManager reloaded successfully!!")
+      ctx.success({ msg: "AlertManager reloaded successfully!"})
+      resolve()
+    }, function (err) {
+      console.log("AlertManager reloaded error!!")
+      ctx.error({ msg: "重启AlertManager时出错"})
+      resolve()
+    })
 
-    
-    return ctx.success({ msg: "success" })
   }
 
 

@@ -15,7 +15,7 @@ const table = ` (\n\
     span INT not null default 24,\n\
     show1 varchar(10) not null default 'true', \n\
     visible varchar(10) NOT NULL default 'false', \n\
-    color varchar(10) default '',\n\
+    color varchar(30) default '',\n\
     interval1 float NOT NULL default 0.5 , \n\
     type varchar(10) not null default 'line', \n\
     data int not null default '1' \n\

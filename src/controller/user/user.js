@@ -4,6 +4,9 @@ const query = require('../../mysqlConnect/mysqlconnect')
 const mysqlconfig = require('../../../config/config.js');
 const jsonwebtoken = require('jsonwebtoken');
 const verToken = require('../../middlewares/passport');
+const config = require('../../../config/config');
+const { stringify } = require('querystring');
+const util = require('util')
 
 
 
@@ -12,13 +15,14 @@ class UserController {
   async register(ctx) {
     let rows = await query('select * from user where userGroup = 0')
     if(rows[0]) return ctx.error({msg:'已存在管理员，无法再次创建'});
-    const {password} = ctx.request.body
+    const {username, password} = ctx.request.body
     const pw_encrypt = md5(password, key)
     const query_context = "(userGroup, username, password)\
       VALUES\
       (0, \'admin\', \'"+ pw_encrypt+"\')\
       "; 
     query("INSERT INTO "+ mysqlconfig.table_name_user + " " + query_context);
+    config.admin = username
     ctx.success({ 
       msg: '注册成功!',
       data: {'username':"admin"}
@@ -28,7 +32,10 @@ class UserController {
   // 用户登录 
   async login(ctx) {
     let { userGroup, username, password } = ctx.request.body;
-    if (userGroup == 0) username = 'admin';
+    if (userGroup == 0) {
+      if(username != config.admin) return ctx.error({msg:"管理员用户名错误"})
+      username = 'admin';
+    }
     // console.log(1);
 
     let user = await query(`select * from user where username = '${username}' and userGroup = '${userGroup}'`)
@@ -40,6 +47,10 @@ class UserController {
     }
 
     console.log("用户"+user[0].username+"登陆成功");
+
+    let account = parseInt(config.loginAccount)
+    account++;
+    config.loginAccount = account + ''
 
     ctx.success({ msg: '登录成功', data: {
       username: user[0].username,
@@ -90,6 +101,29 @@ class UserController {
     }
     delete user[0].password
     return ctx.success({data:user[0]})
+  }
+
+  //查看登录次数
+  async getloginAccount(ctx){
+    return ctx.success({data:parseInt(config.loginAccount)})
+  }
+
+  //登录次数清零
+  async resetloginAccount(ctx){
+    config.loginAccount = '0'
+    return ctx.success({data:parseInt(config.loginAccount)})
+  }
+  //删除管理员
+  async deleteadmin(ctx){
+    config.loginAccount = '0'
+
+  
+    
+    let rows = await query(`
+    delete from user where username = 'admin';
+    `)
+
+    return ctx.success({})
   }
 
 }

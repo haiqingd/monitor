@@ -19,10 +19,14 @@ router.post('/api/user/login', user.login);
 // 添加成员
 router.post('/api/user/addUser', user.addUser);
 router.get('/api/user',user.getUserInfo)
+router.get('/api/user/loginAccount', user.getloginAccount);
+router.post('/api/user/loginAccount', user.resetloginAccount);
+router.post('/api/user/delAdmin',user.deleteadmin)
 
 
 //添加数据库
 router.post('/api/db/addDatabase', database.addDatabase);
+router.post('/api/db/delDatabase', database.delDatabase);
 //查询ID
 router.get('/api/db/allDBID', database.getAllID);
 //查询Info

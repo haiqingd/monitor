@@ -33,5 +33,7 @@ module.exports = {
     "13": "BytesReceived",
     "14": "BytesSent",
     "15": "slaveRunning"
-  }
+  },
+  "loginAccount": "3",
+  "admin": ""
 }

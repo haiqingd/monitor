@@ -1,180 +1,255 @@
-level=info ts=2020-06-16T06:38:45.549Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
-level=info ts=2020-06-16T06:38:45.549Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
-level=info ts=2020-06-16T06:38:45.549Z caller=main.go:335 host_details="(Linux 3.10.0-1062.18.1.el7.x86_64 #1 SMP Tue Mar 17 23:49:17 UTC 2020 x86_64 izuf63qubkh4obmynfl2iiz (none))"
-level=info ts=2020-06-16T06:38:45.549Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
-level=info ts=2020-06-16T06:38:45.549Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
-level=info ts=2020-06-16T06:38:45.562Z caller=main.go:667 msg="Starting TSDB ..."
-level=info ts=2020-06-16T06:38:45.562Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589449621708 maxt=1590386400000 ulid=01E95QTHAYM39M0XAFEJHTAAG8
-level=info ts=2020-06-16T06:38:45.563Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1590386400000 maxt=1592136000000 ulid=01EASNGPW7W9NBBBDCQK63S25X
-level=info ts=2020-06-16T06:38:45.563Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1592136000000 maxt=1592200800000 ulid=01EAVK9YNW1KA2JGKTQH5NV3F6
-level=info ts=2020-06-16T06:38:45.563Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1592265600000 maxt=1592272800000 ulid=01EAXH3DZR5ARR5NJ4Y22CTWA5
-level=info ts=2020-06-16T06:38:45.563Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1592200800000 maxt=1592265600000 ulid=01EAXH3GB2TXP1F4RP05ZZWSEJ
-level=info ts=2020-06-16T06:38:45.563Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1592272800000 maxt=1592280000000 ulid=01EAXQZ57R3X60BWDAQSH7FT6S
-level=info ts=2020-06-16T06:38:45.576Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
-level=info ts=2020-06-16T06:38:45.614Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
-level=info ts=2020-06-16T06:38:45.624Z caller=head.go:600 component=tsdb msg="WAL checkpoint loaded"
-level=info ts=2020-06-16T06:38:46.151Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=581 maxSegment=591
-level=info ts=2020-06-16T06:38:46.677Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=582 maxSegment=591
-level=info ts=2020-06-16T06:38:47.310Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=583 maxSegment=591
-level=info ts=2020-06-16T06:38:48.147Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=584 maxSegment=591
-level=info ts=2020-06-16T06:38:48.583Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=585 maxSegment=591
-level=info ts=2020-06-16T06:38:48.664Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=586 maxSegment=591
-level=info ts=2020-06-16T06:38:48.665Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=587 maxSegment=591
-level=info ts=2020-06-16T06:38:49.255Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=588 maxSegment=591
-level=info ts=2020-06-16T06:38:49.262Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=589 maxSegment=591
-level=info ts=2020-06-16T06:38:49.263Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=590 maxSegment=591
-level=info ts=2020-06-16T06:38:49.263Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=591 maxSegment=591
-level=info ts=2020-06-16T06:38:49.263Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=3.687087939s
-level=info ts=2020-06-16T06:38:49.275Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
-level=info ts=2020-06-16T06:38:49.275Z caller=main.go:684 msg="TSDB started"
-level=info ts=2020-06-16T06:38:49.275Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T06:38:49.279Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T06:38:49.279Z caller=main.go:635 msg="Server is ready to receive web requests."
-level=info ts=2020-06-16T06:39:12.624Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T06:39:12.626Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T06:40:05.556Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T06:40:05.559Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T06:40:20.185Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T06:40:20.187Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T06:58:24.027Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T06:58:24.030Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:00:00.474Z caller=compact.go:495 component=tsdb msg="write block" mint=1592280000000 maxt=1592287200000 ulid=01EAXYTWFR6J2CSF4FPPTNFTFH duration=354.074111ms
-level=info ts=2020-06-16T07:00:00.710Z caller=head.go:662 component=tsdb msg="head GC completed" duration=25.670747ms
-level=info ts=2020-06-16T07:00:02.680Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=581 last=584 duration=1.969970575s
-level=info ts=2020-06-16T07:02:45.251Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:02:45.253Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:03:43.723Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:03:43.724Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:04:08.314Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:04:08.316Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:04:25.208Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:04:25.210Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:04:50.597Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:04:50.599Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:05:07.612Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:05:07.614Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:06:50.125Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:06:50.127Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:07:34.306Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:07:34.308Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:08:08.029Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:08:08.030Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:08:33.592Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T07:08:33.594Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-16T09:00:00.475Z caller=compact.go:495 component=tsdb msg="write block" mint=1592287200000 maxt=1592294400000 ulid=01EAY5PKQR7YQXRPHMWF1W2FQT duration=355.117381ms
-level=info ts=2020-06-16T09:00:00.667Z caller=head.go:662 component=tsdb msg="head GC completed" duration=9.885693ms
-level=info ts=2020-06-16T09:00:00.960Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=585 last=587 duration=291.730741ms
-level=info ts=2020-06-16T09:00:01.926Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1592265600000 maxt=1592287200000 ulid=01EAY5PMMTE0YZFY4NMNVFXZRQ sources="[01EAXH3DZR5ARR5NJ4Y22CTWA5 01EAXQZ57R3X60BWDAQSH7FT6S 01EAXYTWFR6J2CSF4FPPTNFTFH]" duration=875.813896ms
-level=info ts=2020-06-16T11:00:00.464Z caller=compact.go:495 component=tsdb msg="write block" mint=1592294400000 maxt=1592301600000 ulid=01EAYCJAZRZWC9ANCGNJMP8036 duration=344.095286ms
-level=info ts=2020-06-16T11:00:00.639Z caller=head.go:662 component=tsdb msg="head GC completed" duration=8.425914ms
-level=info ts=2020-06-16T11:00:00.956Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=588 last=589 duration=316.278616ms
-level=info ts=2020-06-16T13:00:00.420Z caller=compact.go:495 component=tsdb msg="write block" mint=1592301600000 maxt=1592308800000 ulid=01EAYKE27RW0FTKATYYDZZYQT0 duration=299.334492ms
-level=info ts=2020-06-16T13:00:00.568Z caller=head.go:662 component=tsdb msg="head GC completed" duration=8.250647ms
-level=info ts=2020-06-16T13:00:00.769Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=590 last=591 duration=200.559277ms
-level=info ts=2020-06-16T15:00:00.435Z caller=compact.go:495 component=tsdb msg="write block" mint=1592308800000 maxt=1592316000000 ulid=01EAYT9SFR6A06XE2BFX9B3GAP duration=314.287164ms
-level=info ts=2020-06-16T15:00:00.617Z caller=head.go:662 component=tsdb msg="head GC completed" duration=6.146929ms
-level=info ts=2020-06-16T15:00:01.601Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1592287200000 maxt=1592308800000 ulid=01EAYT9T1R3DCNY6ZQMKMCAZDQ sources="[01EAY5PKQR7YQXRPHMWF1W2FQT 01EAYCJAZRZWC9ANCGNJMP8036 01EAYKE27RW0FTKATYYDZZYQT0]" duration=905.286109ms
-level=info ts=2020-06-16T17:00:00.466Z caller=compact.go:495 component=tsdb msg="write block" mint=1592316000000 maxt=1592323200000 ulid=01EAZ15GQRC8Y61RGTSJANPQX7 duration=345.429206ms
-level=info ts=2020-06-16T17:00:00.580Z caller=head.go:662 component=tsdb msg="head GC completed" duration=7.037091ms
-level=info ts=2020-06-16T17:00:01.796Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=592 last=593 duration=1.21588577s
-level=info ts=2020-06-16T19:00:00.538Z caller=compact.go:495 component=tsdb msg="write block" mint=1592323200000 maxt=1592330400000 ulid=01EAZ817ZRV250A440F1CHJ9K4 duration=418.119715ms
-level=info ts=2020-06-16T19:00:00.675Z caller=head.go:662 component=tsdb msg="head GC completed" duration=14.379931ms
-level=info ts=2020-06-16T21:00:00.425Z caller=compact.go:495 component=tsdb msg="write block" mint=1592330400000 maxt=1592337600000 ulid=01EAZEWZ7RXYF1BR61ABDZRAZD duration=304.464347ms
-level=info ts=2020-06-16T21:00:00.573Z caller=head.go:662 component=tsdb msg="head GC completed" duration=14.999867ms
-level=info ts=2020-06-16T21:00:01.581Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=594 last=595 duration=1.007683423s
-level=info ts=2020-06-16T21:00:02.197Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1592308800000 maxt=1592330400000 ulid=01EAZEX0PYMK8RNN54453NF8BT sources="[01EAYT9SFR6A06XE2BFX9B3GAP 01EAZ15GQRC8Y61RGTSJANPQX7 01EAZ817ZRV250A440F1CHJ9K4]" duration=567.325765ms
-level=info ts=2020-06-16T21:00:03.912Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1592265600000 maxt=1592330400000 ulid=01EAZEX1GFQ5STR1A5E77A0ACD sources="[01EAY5PMMTE0YZFY4NMNVFXZRQ 01EAYT9T1R3DCNY6ZQMKMCAZDQ 01EAZEX0PYMK8RNN54453NF8BT]" duration=1.464939463s
-level=info ts=2020-06-16T21:00:07.060Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1592136000000 maxt=1592330400000 ulid=01EAZEX391M9MBJKVPWC147YG3 sources="[01EAVK9YNW1KA2JGKTQH5NV3F6 01EAXH3GB2TXP1F4RP05ZZWSEJ 01EAZEX1GFQ5STR1A5E77A0ACD]" duration=2.802685052s
-level=info ts=2020-06-16T23:00:00.465Z caller=compact.go:495 component=tsdb msg="write block" mint=1592337600000 maxt=1592344800000 ulid=01EAZNRPFRFWF9S5T00JKGHY08 duration=344.86155ms
-level=info ts=2020-06-16T23:00:00.582Z caller=head.go:662 component=tsdb msg="head GC completed" duration=6.563836ms
-level=info ts=2020-06-17T01:00:00.627Z caller=compact.go:495 component=tsdb msg="write block" mint=1592344800000 maxt=1592352000000 ulid=01EAZWMDQR02P04QC77WD9W6R1 duration=506.696932ms
-level=info ts=2020-06-17T01:00:00.964Z caller=head.go:662 component=tsdb msg="head GC completed" duration=6.127381ms
-level=info ts=2020-06-17T01:00:02.536Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=596 last=597 duration=1.571931806s
-level=info ts=2020-06-17T01:19:21.146Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:19:21.148Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:20:03.050Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:20:03.052Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:20:43.024Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:20:43.026Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:21:19.371Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:21:19.373Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:29:41.720Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:29:41.726Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:30:05.226Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:30:05.230Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:35:41.808Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:35:41.811Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:43:56.743Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:43:56.745Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:52:18.308Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=error ts=2020-06-17T01:52:18.310Z caller=manager.go:904 component="rule manager" msg="loading groups failed" err="/home/Prometheus/prometheus/prometheus_rules.yml: group \"Use More Than 0.98 (3)\", rule 0, \"Used more than 0.98\": annotation \"description\": template: __alert_Used more than 0.98:1: unexpected \"}\" in operand"
-level=error ts=2020-06-17T01:52:18.311Z caller=main.go:807 msg="Failed to apply configuration" err="error loading rules, previous rule set restored"
-level=error ts=2020-06-17T01:52:18.311Z caller=main.go:596 msg="Error reloading config" err="one or more errors occurred while applying the new configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\")"
-level=info ts=2020-06-17T01:54:03.468Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:54:03.471Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:55:29.133Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=error ts=2020-06-17T01:55:29.134Z caller=manager.go:904 component="rule manager" msg="loading groups failed" err="/home/Prometheus/prometheus/prometheus_rules.yml: yaml: line 5: did not find expected ',' or ']'"
-level=error ts=2020-06-17T01:55:29.134Z caller=main.go:807 msg="Failed to apply configuration" err="error loading rules, previous rule set restored"
-level=error ts=2020-06-17T01:55:29.134Z caller=main.go:596 msg="Error reloading config" err="one or more errors occurred while applying the new configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\")"
-level=info ts=2020-06-17T01:56:29.226Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:56:29.228Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:56:43.430Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:56:43.432Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:56:43.723Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:56:43.726Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:56:44.283Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:56:44.286Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T01:58:04.108Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=error ts=2020-06-17T01:58:04.110Z caller=manager.go:904 component="rule manager" msg="loading groups failed" err="/home/Prometheus/prometheus/prometheus_rules.yml: group \"Use More Than 0.98 (3)\", rule 0, \"Used more than 0.98\": annotation \"description\": template: __alert_Used more than 0.98:1: unexpected \"}\" in operand"
-level=error ts=2020-06-17T01:58:04.110Z caller=main.go:807 msg="Failed to apply configuration" err="error loading rules, previous rule set restored"
-level=error ts=2020-06-17T01:58:04.110Z caller=main.go:596 msg="Error reloading config" err="one or more errors occurred while applying the new configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\")"
-level=info ts=2020-06-17T02:01:26.596Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:01:26.599Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:02:35.512Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:02:35.514Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:03:30.178Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:03:30.180Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:04:55.255Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:04:55.257Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:05:37.400Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:05:37.402Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:07:18.459Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:07:18.462Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:16:43.944Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:16:43.946Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:17:15.594Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:17:15.597Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:20:17.888Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:20:17.890Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:24:36.309Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:24:36.312Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:24:59.070Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:24:59.072Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:26:34.871Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:26:34.873Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:27:04.458Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:27:04.460Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:27:15.405Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:27:15.407Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:28:09.158Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:28:09.160Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:28:17.755Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:28:17.757Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:28:33.863Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:28:33.865Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:29:08.917Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:29:08.919Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:29:40.093Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:29:40.096Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:33:35.183Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:33:35.186Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:33:59.720Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:33:59.723Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:35:31.973Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T02:35:31.976Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
-level=info ts=2020-06-17T03:00:00.548Z caller=compact.go:495 component=tsdb msg="write block" mint=1592352000000 maxt=1592359200000 ulid=01EB03G4ZRHG42FDF5TBAVGSRY duration=428.004119ms
-level=info ts=2020-06-17T03:00:00.718Z caller=head.go:662 component=tsdb msg="head GC completed" duration=7.52455ms
-level=info ts=2020-06-17T03:00:01.842Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1592330400000 maxt=1592352000000 ulid=01EB03G5MXW2JTKY985XXJRZAJ sources="[01EAZEWZ7RXYF1BR61ABDZRAZD 01EAZNRPFRFWF9S5T00JKGHY08 01EAZWMDQR02P04QC77WD9W6R1]" duration=1.045399747s
-level=info ts=2020-06-17T05:00:00.436Z caller=compact.go:495 component=tsdb msg="write block" mint=1592359200000 maxt=1592366400000 ulid=01EB0ABW7T5YY14A6JKD5KW7HP duration=313.297177ms
-level=info ts=2020-06-17T05:00:00.639Z caller=head.go:662 component=tsdb msg="head GC completed" duration=29.483745ms
-level=info ts=2020-06-17T05:00:02.044Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=598 last=599 duration=1.404795873s
+level=info ts=2020-06-21T15:54:26.820Z caller=main.go:333 msg="Starting Prometheus" version="(version=2.17.1, branch=HEAD, revision=ae041f97cfc6f43494bed65ec4ea4e3a0cf2ac69)"
+level=info ts=2020-06-21T15:54:26.821Z caller=main.go:334 build_context="(go=go1.13.9, user=root@806b02dfe114, date=20200326-16:18:19)"
+level=info ts=2020-06-21T15:54:26.821Z caller=main.go:335 host_details="(Linux 3.10.0-1062.18.1.el7.x86_64 #1 SMP Tue Mar 17 23:49:17 UTC 2020 x86_64 izuf63qubkh4obmynfl2iiz (none))"
+level=info ts=2020-06-21T15:54:26.821Z caller=main.go:336 fd_limits="(soft=65535, hard=65535)"
+level=info ts=2020-06-21T15:54:26.821Z caller=main.go:337 vm_limits="(soft=unlimited, hard=unlimited)"
+level=info ts=2020-06-21T15:54:26.833Z caller=main.go:667 msg="Starting TSDB ..."
+level=info ts=2020-06-21T15:54:26.834Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1589449621708 maxt=1590386400000 ulid=01E95QTHAYM39M0XAFEJHTAAG8
+level=info ts=2020-06-21T15:54:26.834Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1590386400000 maxt=1592136000000 ulid=01EASNGPW7W9NBBBDCQK63S25X
+level=info ts=2020-06-21T15:54:26.834Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1592136000000 maxt=1592719200000 ulid=01EBB1PDJRBT2GWJ41K16063QE
+level=info ts=2020-06-21T15:54:26.834Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1592740800000 maxt=1592748000000 ulid=01EBBP9CFR5DE0YJSN7RZ6MBG7
+level=info ts=2020-06-21T15:54:26.835Z caller=repair.go:59 component=tsdb msg="found healthy block" mint=1592719200000 maxt=1592740800000 ulid=01EBBP9D113Z6CFTDEWVYVQ1GC
+level=info ts=2020-06-21T15:54:26.865Z caller=web.go:514 component=web msg="Start listening for connections" address=0.0.0.0:9090
+level=info ts=2020-06-21T15:54:27.281Z caller=head.go:575 component=tsdb msg="replaying WAL, this may take awhile"
+level=info ts=2020-06-21T15:54:27.325Z caller=head.go:600 component=tsdb msg="WAL checkpoint loaded"
+level=info ts=2020-06-21T15:54:27.832Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=652 maxSegment=657
+level=info ts=2020-06-21T15:54:29.703Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=653 maxSegment=657
+level=info ts=2020-06-21T15:54:31.390Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=654 maxSegment=657
+level=info ts=2020-06-21T15:54:32.395Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=655 maxSegment=657
+level=info ts=2020-06-21T15:54:32.756Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=656 maxSegment=657
+level=info ts=2020-06-21T15:54:32.756Z caller=head.go:624 component=tsdb msg="WAL segment loaded" segment=657 maxSegment=657
+level=info ts=2020-06-21T15:54:32.756Z caller=head.go:627 component=tsdb msg="WAL replay completed" duration=5.474552374s
+level=info ts=2020-06-21T15:54:32.770Z caller=main.go:683 fs_type=EXT4_SUPER_MAGIC
+level=info ts=2020-06-21T15:54:32.770Z caller=main.go:684 msg="TSDB started"
+level=info ts=2020-06-21T15:54:32.770Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-21T15:54:32.786Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-21T15:54:32.786Z caller=main.go:635 msg="Server is ready to receive web requests."
+level=info ts=2020-06-21T17:00:00.347Z caller=compact.go:495 component=tsdb msg="write block" mint=1592748000000 maxt=1592755200000 ulid=01EBBX53QRJ15KPCA00SG9Z6YX duration=226.550738ms
+level=info ts=2020-06-21T17:00:00.468Z caller=head.go:662 component=tsdb msg="head GC completed" duration=7.724471ms
+level=info ts=2020-06-21T17:00:01.825Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=652 last=653 duration=1.356764648s
+level=info ts=2020-06-21T19:00:00.395Z caller=compact.go:495 component=tsdb msg="write block" mint=1592755200000 maxt=1592762400000 ulid=01EBC40TZR4ZKZD18ESZETAK18 duration=274.989948ms
+level=info ts=2020-06-21T19:00:00.490Z caller=head.go:662 component=tsdb msg="head GC completed" duration=15.446564ms
+level=info ts=2020-06-21T19:00:01.285Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=654 last=655 duration=794.613088ms
+level=info ts=2020-06-21T21:00:00.352Z caller=compact.go:495 component=tsdb msg="write block" mint=1592762400000 maxt=1592769600000 ulid=01EBCAWJ7REM2Q2CZ3EHMAZWKQ duration=231.674772ms
+level=info ts=2020-06-21T21:00:00.483Z caller=head.go:662 component=tsdb msg="head GC completed" duration=17.796148ms
+level=info ts=2020-06-21T21:00:01.221Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1592740800000 maxt=1592762400000 ulid=01EBCAWJNJ1S3F9F74A029G85A sources="[01EBBP9CFR5DE0YJSN7RZ6MBG7 01EBBX53QRJ15KPCA00SG9Z6YX 01EBC40TZR4ZKZD18ESZETAK18]" duration=675.133597ms
+level=info ts=2020-06-21T23:00:00.354Z caller=compact.go:495 component=tsdb msg="write block" mint=1592769600000 maxt=1592776800000 ulid=01EBCHR9FR47P9DTRDQMT87K4F duration=233.652892ms
+level=info ts=2020-06-21T23:00:00.478Z caller=head.go:662 component=tsdb msg="head GC completed" duration=5.713672ms
+level=info ts=2020-06-21T23:00:00.741Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=656 last=657 duration=263.536764ms
+level=info ts=2020-06-22T01:00:00.342Z caller=compact.go:495 component=tsdb msg="write block" mint=1592776800000 maxt=1592784000000 ulid=01EBCRM0QRA2AFJYCDRXHVDHER duration=221.872513ms
+level=info ts=2020-06-22T01:00:00.436Z caller=head.go:662 component=tsdb msg="head GC completed" duration=6.208863ms
+level=info ts=2020-06-22T03:00:00.369Z caller=compact.go:495 component=tsdb msg="write block" mint=1592784000000 maxt=1592791200000 ulid=01EBCZFQZRX12VERSNG6MYTFR0 duration=249.017623ms
+level=info ts=2020-06-22T03:00:00.491Z caller=head.go:662 component=tsdb msg="head GC completed" duration=6.326766ms
+level=info ts=2020-06-22T03:00:01.074Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=658 last=659 duration=582.430915ms
+level=info ts=2020-06-22T03:00:01.647Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1592762400000 maxt=1592784000000 ulid=01EBCZFRZHXS6QZN8Y0WDJQNZE sources="[01EBCAWJ7REM2Q2CZ3EHMAZWKQ 01EBCHR9FR47P9DTRDQMT87K4F 01EBCRM0QRA2AFJYCDRXHVDHER]" duration=510.490218ms
+level=info ts=2020-06-22T03:00:03.015Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1592719200000 maxt=1592784000000 ulid=01EBCZFSQ8KKAV2DQF28SX1EDV sources="[01EBBP9D113Z6CFTDEWVYVQ1GC 01EBCAWJNJ1S3F9F74A029G85A 01EBCZFRZHXS6QZN8Y0WDJQNZE]" duration=1.119455663s
+level=info ts=2020-06-22T05:00:00.366Z caller=compact.go:495 component=tsdb msg="write block" mint=1592791200000 maxt=1592798400000 ulid=01EBD6BF7RPQQDY5BT1BYV90NK duration=245.933223ms
+level=info ts=2020-06-22T05:00:00.510Z caller=head.go:662 component=tsdb msg="head GC completed" duration=37.664279ms
+level=info ts=2020-06-22T07:00:00.360Z caller=compact.go:495 component=tsdb msg="write block" mint=1592798400000 maxt=1592805600000 ulid=01EBDD76FSSZHV2551MRAAG5HQ duration=239.689709ms
+level=info ts=2020-06-22T07:00:00.443Z caller=head.go:662 component=tsdb msg="head GC completed" duration=6.301551ms
+level=info ts=2020-06-22T07:00:01.105Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=660 last=661 duration=662.373723ms
+level=info ts=2020-06-22T09:00:00.365Z caller=compact.go:495 component=tsdb msg="write block" mint=1592805600000 maxt=1592812800000 ulid=01EBDM2XQRDP23EAJ5RQ7M3743 duration=244.383323ms
+level=info ts=2020-06-22T09:00:00.502Z caller=head.go:662 component=tsdb msg="head GC completed" duration=42.842885ms
+level=info ts=2020-06-22T09:00:01.110Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1592784000000 maxt=1592805600000 ulid=01EBDM2Y66EAG4NPYZVD92601T sources="[01EBCZFQZRX12VERSNG6MYTFR0 01EBD6BF7RPQQDY5BT1BYV90NK 01EBDD76FSSZHV2551MRAAG5HQ]" duration=528.343144ms
+level=info ts=2020-06-22T11:00:00.373Z caller=compact.go:495 component=tsdb msg="write block" mint=1592812800000 maxt=1592820000000 ulid=01EBDTYMZRB6R84XRVTXB4QDBH duration=253.196362ms
+level=info ts=2020-06-22T11:00:00.495Z caller=head.go:662 component=tsdb msg="head GC completed" duration=24.37563ms
+level=info ts=2020-06-22T11:00:01.110Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=662 last=663 duration=614.918898ms
+level=info ts=2020-06-22T13:00:00.373Z caller=compact.go:495 component=tsdb msg="write block" mint=1592820000000 maxt=1592827200000 ulid=01EBE1TC7RCTSCVREBJGBRES27 duration=253.017454ms
+level=info ts=2020-06-22T13:00:00.512Z caller=head.go:662 component=tsdb msg="head GC completed" duration=31.588287ms
+level=info ts=2020-06-22T15:00:00.378Z caller=compact.go:495 component=tsdb msg="write block" mint=1592827200000 maxt=1592834400000 ulid=01EBE8P3FRHVJQX76EBZ300FTX duration=257.363242ms
+level=info ts=2020-06-22T15:00:00.479Z caller=head.go:662 component=tsdb msg="head GC completed" duration=6.127296ms
+level=info ts=2020-06-22T15:00:01.018Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=664 last=665 duration=539.057023ms
+level=info ts=2020-06-22T15:00:01.656Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1592805600000 maxt=1592827200000 ulid=01EBE8P4E3GGPGA445527A83WK sources="[01EBDM2XQRDP23EAJ5RQ7M3743 01EBDTYMZRB6R84XRVTXB4QDBH 01EBE1TC7RCTSCVREBJGBRES27]" duration=565.259886ms
+level=info ts=2020-06-22T17:00:00.374Z caller=compact.go:495 component=tsdb msg="write block" mint=1592834400000 maxt=1592841600000 ulid=01EBEFHTQRPA53115S7ZW4E4Z1 duration=253.281577ms
+level=info ts=2020-06-22T17:00:00.484Z caller=head.go:662 component=tsdb msg="head GC completed" duration=6.371227ms
+level=info ts=2020-06-22T19:00:00.379Z caller=compact.go:495 component=tsdb msg="write block" mint=1592841600000 maxt=1592848800000 ulid=01EBEPDHZRMJ1TS3WPSBBFMNET duration=258.396361ms
+level=info ts=2020-06-22T19:00:00.538Z caller=head.go:662 component=tsdb msg="head GC completed" duration=5.873812ms
+level=info ts=2020-06-22T19:00:01.233Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=666 last=667 duration=695.015251ms
+level=info ts=2020-06-22T21:00:00.354Z caller=compact.go:495 component=tsdb msg="write block" mint=1592848800000 maxt=1592856000000 ulid=01EBEX997R153AASXW93QHF5RD duration=233.659042ms
+level=info ts=2020-06-22T21:00:00.477Z caller=head.go:662 component=tsdb msg="head GC completed" duration=8.6736ms
+level=info ts=2020-06-22T21:00:01.171Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1592827200000 maxt=1592848800000 ulid=01EBEX99N8ZEDPFGT50Y9XCM84 sources="[01EBE8P3FRHVJQX76EBZ300FTX 01EBEFHTQRPA53115S7ZW4E4Z1 01EBEPDHZRMJ1TS3WPSBBFMNET]" duration=619.835175ms
+level=info ts=2020-06-22T21:00:02.434Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1592784000000 maxt=1592848800000 ulid=01EBEX9AH1499MJW5DCYS21HS8 sources="[01EBDM2Y66EAG4NPYZVD92601T 01EBE8P4E3GGPGA445527A83WK 01EBEX99N8ZEDPFGT50Y9XCM84]" duration=993.420311ms
+level=info ts=2020-06-22T23:00:00.347Z caller=compact.go:495 component=tsdb msg="write block" mint=1592856000000 maxt=1592863200000 ulid=01EBF450FRJP79HH5TR84MXP0V duration=226.321406ms
+level=info ts=2020-06-22T23:00:00.466Z caller=head.go:662 component=tsdb msg="head GC completed" duration=6.2197ms
+level=info ts=2020-06-22T23:00:01.038Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=668 last=669 duration=572.198018ms
+level=info ts=2020-06-23T01:00:00.592Z caller=compact.go:495 component=tsdb msg="write block" mint=1592863200000 maxt=1592870400000 ulid=01EBFB0QQVVAJ2TGM381ENJEMV duration=469.466728ms
+level=info ts=2020-06-23T01:00:00.763Z caller=head.go:662 component=tsdb msg="head GC completed" duration=24.815882ms
+level=info ts=2020-06-23T03:00:00.338Z caller=compact.go:495 component=tsdb msg="write block" mint=1592870400000 maxt=1592877600000 ulid=01EBFHWEZR0CGGY2SPBWTMV09H duration=217.618968ms
+level=info ts=2020-06-23T03:00:00.463Z caller=head.go:662 component=tsdb msg="head GC completed" duration=26.151486ms
+level=info ts=2020-06-23T03:00:00.991Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=670 last=671 duration=528.091785ms
+level=info ts=2020-06-23T03:00:01.660Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1592848800000 maxt=1592870400000 ulid=01EBFHWFWWNBYQEP3FKA27C9NG sources="[01EBEX997R153AASXW93QHF5RD 01EBF450FRJP79HH5TR84MXP0V 01EBFB0QQVVAJ2TGM381ENJEMV]" duration=608.17613ms
+level=info ts=2020-06-23T04:53:29.614Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T04:53:29.632Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"mysql_3\""
+level=info ts=2020-06-23T04:56:34.952Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T04:56:34.965Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:00:00.391Z caller=compact.go:495 component=tsdb msg="write block" mint=1592877600000 maxt=1592884800000 ulid=01EBFRR67R23F1Y40NEWFHBACB duration=270.510031ms
+level=info ts=2020-06-23T05:00:00.523Z caller=head.go:662 component=tsdb msg="head GC completed" duration=6.93375ms
+level=info ts=2020-06-23T05:01:58.856Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:01:58.863Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:08:42.240Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:08:42.245Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:10:21.337Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:10:21.342Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:12:08.780Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:12:08.788Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:12:54.764Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:12:54.778Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:14:01.300Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:14:01.305Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:14:39.478Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:14:39.482Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:20:54.415Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:20:54.422Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:21:08.015Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:21:08.020Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:21:15.046Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T05:21:15.047Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5\""
+level=info ts=2020-06-23T05:23:58.988Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T05:23:58.988Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5asas\""
+level=info ts=2020-06-23T05:24:03.016Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:24:03.021Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:24:27.919Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:24:27.927Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T05:25:14.027Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T05:25:14.028Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T05:25:34.261Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T05:25:34.261Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T05:26:30.165Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T05:26:30.165Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T05:26:55.271Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T05:26:55.271Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T05:34:21.621Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T05:34:21.622Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T05:39:59.874Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T05:39:59.874Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T05:44:21.368Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T05:44:21.368Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T05:52:32.973Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T05:52:32.973Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T05:54:52.090Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T05:54:52.090Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T05:55:43.145Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T05:55:43.145Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T05:56:19.809Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T05:56:19.809Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T05:56:38.793Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T05:56:38.794Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T05:57:18.197Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T05:57:18.197Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T05:58:15.284Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T05:58:15.284Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T05:59:10.033Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T05:59:10.033Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:00:54.170Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:00:54.170Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:08:22.729Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:08:22.730Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:08:40.178Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:08:40.178Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:10:46.437Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:10:46.438Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:12:17.346Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:12:17.346Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:12:36.917Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:12:36.917Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:14:46.836Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:14:46.837Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:14:59.818Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:14:59.818Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:15:27.594Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:15:27.594Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:15:53.024Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:15:53.024Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:16:02.966Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:16:02.966Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:16:19.461Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:16:19.461Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:18:03.017Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:18:03.017Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:20:16.383Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:20:16.384Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:20:30.353Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:20:30.353Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:20:49.831Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:20:49.831Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:21:07.142Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:21:07.142Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:21:21.256Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:21:21.256Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:22:11.866Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:22:11.866Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:22:25.826Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:22:25.826Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:22:58.362Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:22:58.362Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:23:28.002Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:23:28.002Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:23:43.428Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:23:43.429Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:24:24.275Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:24:24.275Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: not a valid duration string: \"5s2\""
+level=info ts=2020-06-23T06:24:31.482Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T06:24:31.487Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T06:24:49.176Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T06:24:49.180Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T06:33:44.102Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T06:33:44.107Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T06:34:08.665Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T06:34:08.673Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T06:38:55.917Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T06:38:55.922Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T06:39:28.240Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:39:28.245Z caller=manager.go:904 component="rule manager" msg="loading groups failed" err="/home/Prometheus/prometheus/prometheus_rules.yml: 14:85: group \"Use More Than 0.98 (4)\", rule 0, \"Used more than 0.98\": could not parse expression: 1:81: parse error: unexpected number \".98\""
+level=error ts=2020-06-23T06:39:28.251Z caller=main.go:807 msg="Failed to apply configuration" err="error loading rules, previous rule set restored"
+level=error ts=2020-06-23T06:39:28.251Z caller=main.go:596 msg="Error reloading config" err="one or more errors occurred while applying the new configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\")"
+level=info ts=2020-06-23T06:39:49.534Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T06:39:49.539Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T06:55:46.536Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T06:55:46.537Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"mysql_3\""
+level=info ts=2020-06-23T07:00:00.372Z caller=compact.go:495 component=tsdb msg="write block" mint=1592884800000 maxt=1592892000000 ulid=01EBFZKXFSJW2RRXZG86KTRMFB duration=251.736931ms
+level=info ts=2020-06-23T07:00:00.580Z caller=head.go:662 component=tsdb msg="head GC completed" duration=17.346321ms
+level=info ts=2020-06-23T07:00:02.513Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=672 last=673 duration=1.932971125s
+level=info ts=2020-06-23T07:03:45.826Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T07:03:45.827Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"mysql_3\""
+level=info ts=2020-06-23T07:03:54.295Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T07:03:54.295Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"mysql_3\""
+level=info ts=2020-06-23T07:04:50.124Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T07:04:50.125Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"mysql_3\""
+level=info ts=2020-06-23T07:04:56.708Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T07:04:56.709Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"linux_3\""
+level=info ts=2020-06-23T07:05:51.800Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T07:05:51.800Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"linux_3\""
+level=info ts=2020-06-23T07:05:59.924Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T07:05:59.924Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"linux_3\""
+level=info ts=2020-06-23T07:07:14.135Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T07:07:14.136Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"linux_3\""
+level=info ts=2020-06-23T07:07:18.769Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T07:07:18.769Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"linux_3\""
+level=info ts=2020-06-23T07:08:20.179Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T07:08:20.180Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"linux_3\""
+level=info ts=2020-06-23T07:08:23.945Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T07:08:23.945Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"linux_3\""
+level=info ts=2020-06-23T07:08:46.548Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T07:08:46.548Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"linux_3\""
+level=info ts=2020-06-23T07:08:50.874Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T07:08:50.874Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"linux_3\""
+level=info ts=2020-06-23T07:09:21.282Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T07:09:21.283Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"linux_3\""
+level=info ts=2020-06-23T07:09:25.923Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T07:09:25.924Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"linux_3\""
+level=info ts=2020-06-23T07:10:11.668Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T07:10:11.668Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"linux_3\""
+level=info ts=2020-06-23T07:10:19.882Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T07:10:19.887Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T07:10:28.771Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T07:10:28.772Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"mysql_3\""
+level=info ts=2020-06-23T07:11:09.454Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T07:11:09.463Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T07:15:51.235Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T07:15:51.235Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"mysql_3\""
+level=info ts=2020-06-23T07:18:37.784Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=error ts=2020-06-23T07:18:37.784Z caller=main.go:596 msg="Error reloading config" err="couldn't load configuration (--config.file=\"/home/Prometheus/prometheus/prometheus.yml\"): parsing YAML file /home/Prometheus/prometheus/prometheus.yml: found multiple scrape configs with job name \"mysql_3\""
+level=info ts=2020-06-23T07:18:45.567Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T07:18:45.572Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T07:19:13.069Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-23T07:19:13.074Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
