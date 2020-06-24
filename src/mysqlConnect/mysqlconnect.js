@@ -32,7 +32,8 @@ connection.end(function(err){
 const pool = mysql.createPool({
   host: mysqlconfig.host,
   user: mysqlconfig.username,
-  // password: mysqlconfig.password,
+  port: mysqlconfig.port,
+  password: mysqlconfig.password,
   database: DBName
 })
 let query = async function( sql, values) {
