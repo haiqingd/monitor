@@ -23,9 +23,11 @@ class UserController {
       "; 
     query("INSERT INTO "+ mysqlconfig.table_name_user + " " + query_context);
     config.admin = username
+    delete require.cache[require.resolve("../../../config/config")]
+    config = require("../../../config/config")
     ctx.success({ 
       msg: '注册成功!',
-      data: {'username':"admin"}
+      data: {'username':"username"}
     });
   }
 

@@ -9,7 +9,7 @@ module.exports = {
   "query_range": "/api/v1/query_range",
   "host": "localhost",
   "port": "3306",
-  "database": "mysql",
+  "database": "monitoring_end",
   "username": "root",
   "password": "",
   "table_name_user": "user",

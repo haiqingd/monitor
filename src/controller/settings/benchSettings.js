@@ -144,6 +144,7 @@ class BenchSettings {
     }
     const { raw } = ctx.request.body
     console.log(raw)
+    console.log(ctx.request.body)
     const updateData = JSON.parse(raw)
 
     const DBID = updateData.DBID

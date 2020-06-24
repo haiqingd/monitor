@@ -1,5 +1,5 @@
 const mysqlconfig = require('../../config/config');
-const DBName = "monitoring_end"
+const DBName = mysqlconfig.database
 var mysql = require("mysql");
 var connection = mysql.createConnection({
   host: mysqlconfig.host,
@@ -8,6 +8,7 @@ var connection = mysql.createConnection({
   database: mysqlconfig.database
 })
 connection.connect();
+connection.query("Create Database If Not Exists "+ DBName +" Character Set UTF8 " );
 connection.query("use " + DBName);
 connection.on('connect',function(){
   console.log('MySQL connected. Username: ' +
