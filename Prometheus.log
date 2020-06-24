@@ -286,3 +286,5 @@ level=info ts=2020-06-24T03:00:00.359Z caller=compact.go:495 component=tsdb msg=
 level=info ts=2020-06-24T03:00:00.500Z caller=head.go:662 component=tsdb msg="head GC completed" duration=7.024198ms
 level=info ts=2020-06-24T03:00:01.164Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=682 last=683 duration=663.884938ms
 level=info ts=2020-06-24T03:00:01.704Z caller=compact.go:441 component=tsdb msg="compact blocks" count=3 mint=1592935200000 maxt=1592956800000 ulid=01EBJ49736GZ3K5S863FVCMABA sources="[01EBHFP07SH885Z19F1HQH3HYN 01EBHPHQFRSSTQT3X2DWQRWTTX 01EBHXDEQTGY5E5QAK2B2TSDTE]" duration=450.114483ms
+level=info ts=2020-06-24T05:00:00.369Z caller=compact.go:495 component=tsdb msg="write block" mint=1592964000000 maxt=1592971200000 ulid=01EBJB4X7S2DPPNVVVTYPEXYNK duration=248.046112ms
+level=info ts=2020-06-24T05:00:00.508Z caller=head.go:662 component=tsdb msg="head GC completed" duration=6.572998ms
