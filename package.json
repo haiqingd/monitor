@@ -1,0 +1,39 @@
+{
+  "name": "monitor",
+  "version": "1.0.0",
+  "description": "monitor",
+  "main": "src/app.js",
+  "dependencies": {
+    "blueimp-md5": "^2.13.0",
+    "child-process": "^1.0.2",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-jwt": "^3.6.0",
+    "koa-router": "^8.0.8",
+    "koa2-cors": "^2.0.6",
+    "koa-body": "^4.1.1",
+    "mysql": "^2.18.1",
+    "request": "^2.88.2",
+    "tracer": "^1.0.3",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haiqingd/monitor.git"
+  },
+  "keywords": [
+    "mysql",
+    "monitor",
+    "prometheus"
+  ],
+  "author": "haiqingd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haiqingd/monitor/issues"
+  },
+  "homepage": "https://github.com/haiqingd/monitor#readme"
+}
