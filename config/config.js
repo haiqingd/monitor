@@ -34,6 +34,6 @@ module.exports = {
 		"14": "BytesSent",
 		"15": "slaveRunning"
 	},
-	"loginAccount": "3",
+	"loginAccount": "1",
 	"admin": ""
 }
