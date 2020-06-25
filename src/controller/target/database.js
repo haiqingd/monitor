@@ -31,9 +31,9 @@ class DataCollectController {
       if (body[i] == '') body[i] = null;
       value.push(body[i])
     }
-    const query_context = `(host, OSUsername, OSPassword, user, password, DBGroup, nodePort, nodeName, DBPort, DBName, type)\
+    const query_context = `(host, DBGroup, nodePort, nodeName, DBPort, DBName)\
     VALUES\
-    (?,?,?,?,?,?,?,?,?,?,?)\
+    (?,?,?,?,?,?)\
     `;
     await query("INSERT INTO " + mysqlconfig.table_name_database + " " + query_context, value);
 

@@ -328,3 +328,8 @@ level=info ts=2020-06-25T03:34:02.363Z caller=main.go:788 msg="Loading configura
 level=info ts=2020-06-25T03:34:02.464Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
 level=info ts=2020-06-25T05:00:00.469Z caller=compact.go:495 component=tsdb msg="write block" mint=1593050400000 maxt=1593057600000 ulid=01EBMXHM7RWD3THS96FN107D78 duration=348.854225ms
 level=info ts=2020-06-25T05:00:00.639Z caller=head.go:662 component=tsdb msg="head GC completed" duration=10.025903ms
+level=info ts=2020-06-25T06:07:55.129Z caller=main.go:788 msg="Loading configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-25T06:07:55.140Z caller=main.go:816 msg="Completed loading of configuration file" filename=/home/Prometheus/prometheus/prometheus.yml
+level=info ts=2020-06-25T07:00:00.425Z caller=compact.go:495 component=tsdb msg="write block" mint=1593057600000 maxt=1593064800000 ulid=01EBN4DBFRHFWB894WGZSS55F8 duration=304.325382ms
+level=info ts=2020-06-25T07:00:00.575Z caller=head.go:662 component=tsdb msg="head GC completed" duration=6.603362ms
+level=info ts=2020-06-25T07:00:01.846Z caller=head.go:732 component=tsdb msg="WAL checkpoint complete" first=696 last=697 duration=1.270729788s
