@@ -1,11 +1,15 @@
 const mysqlconfig = require('../../config/config');
+const key = require('../../config/config').key;
+const md5 = require('blueimp-md5');
+let config = require('../../config/config')
 const DBName = mysqlconfig.database
 var mysql = require("mysql");
 var connection = mysql.createConnection({
   host: mysqlconfig.host,
   user: mysqlconfig.username,
-  // password: mysqlconfig.password,
-  database: mysqlconfig.database
+  port:mysqlconfig.port,
+  password: mysqlconfig.password,
+  // database: mysqlconfig.database
 })
 connection.connect();
 connection.query("Create Database If Not Exists "+ DBName +" Character Set UTF8 " );
@@ -66,3 +70,20 @@ require('./user/user')()
 require('./db/db')()
 require('./benchPage/CharOption')()
 // require('./benchPage/benchPage')()
+async function createadmin(){
+  let rows = await query('select * from user where userGroup = 0')
+  if(!rows[0]) {
+    const {username, password} = {"username":'root', "password":'asda'}
+    const pw_encrypt = md5(password, key)
+    const query_context = "(userGroup, username, password)\
+      VALUES\
+      (0, \'admin\', \'"+ pw_encrypt+"\')\
+      "; 
+    query("INSERT INTO "+ mysqlconfig.table_name_user + " " + query_context);
+    config.admin = username
+    delete require.cache[require.resolve("../../config/config")]
+    config = require("../../config/config")
+  }
+}
+createadmin();
+

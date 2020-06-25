@@ -90,3 +90,24 @@ BUG修复
 1.修复了无法获取到实时CPU信息显示的BUG
 2.对多核CPU的占用情况做了处理，现在可以得到正确的数据
 3.修复了修改配置文件时配置文件占用导致的配置信息读取失败的错误
+
+仍存在的已知BUG：
+1.restart时经常出现不知情况的错误导致后台崩溃
+....
+
+待修改：
+1.添加数据库时自动重新配置Prometheus.yml文件
+....
+
+
+
+6月21日
+BUG修复
+
+1.文件配置更新没有效果
+  修改nodejs自身文件时，require中的文件内容已经被缓存，无法自动更新
+  修改操作
+  delete require.cache[require.resolve("../../../config/config")]
+  backend = require("../../../config/config")
+
+2.

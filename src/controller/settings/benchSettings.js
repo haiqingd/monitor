@@ -30,9 +30,7 @@ class BenchSettings {
       if (!user[0]) {
         return ctx.error({ msg: '用户未登录' });
       }
-      let { DBID } = ctx.request.body
-      console.log(DBID)
-      console.log(ctx.request.body)
+      let { DBID } = ctx.request.query
       DBID = parseInt(DBID)
 
       let rows = await query(`select * from ${cfg.table_name_ChartOption}  where DBID = ${DBID} and username = '${username}'`);
@@ -142,9 +140,9 @@ class BenchSettings {
     if (!user[0]) {
       return ctx.error({ msg: '用户未登录' });
     }
-    const { raw } = ctx.request.body
+    const { raw } = ctx.request.query
     console.log(raw)
-    console.log(ctx.request.body)
+    console.log(ctx.request.query)
     const updateData = JSON.parse(raw)
 
     const DBID = updateData.DBID

@@ -609,7 +609,7 @@ class backendSettingsController {
 
         file.groups.splice(i, 1)
         let file_yaml = YAML.stringify(file, 2)
-        await fs.writeFileSync(position, file_yaml, function (err) {
+        fs.writeFileSync(position, file_yaml, function (err) {
           if (err) {
             return console.error(err);
           }

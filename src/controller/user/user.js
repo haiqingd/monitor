@@ -4,7 +4,8 @@ const query = require('../../mysqlConnect/mysqlconnect')
 const mysqlconfig = require('../../../config/config.js');
 const jsonwebtoken = require('jsonwebtoken');
 const verToken = require('../../middlewares/passport');
-const config = require('../../../config/config');
+let config = require('../../../config/config');
+const fs = require("fs");
 const { stringify } = require('querystring');
 const util = require('util')
 
@@ -50,9 +51,20 @@ class UserController {
 
     console.log("用户"+user[0].username+"登陆成功");
 
+
     let account = parseInt(config.loginAccount)
     account++;
     config.loginAccount = account + ''
+
+    fs.writeFileSync('config/config.js', 'module.exports = '+JSON.stringify(config,null,'\t'), function (err) {
+      if (err) {
+        return console.error(err);
+      }
+    })
+    
+    delete require.cache[require.resolve("../../../config/config")]
+    config = require("../../../config/config")
+
 
     ctx.success({ msg: '登录成功', data: {
       username: user[0].username,
@@ -113,6 +125,14 @@ class UserController {
   //登录次数清零
   async resetloginAccount(ctx){
     config.loginAccount = '0'
+    fs.writeFileSync('config/config.js', 'module.exports = '+JSON.stringify(config,null,'\t'), function (err) {
+      if (err) {
+        return console.error(err);
+      }
+    })
+    
+    delete require.cache[require.resolve("../../../config/config")]
+    config = require("../../../config/config")
     return ctx.success({data:parseInt(config.loginAccount)})
   }
   //删除管理员
